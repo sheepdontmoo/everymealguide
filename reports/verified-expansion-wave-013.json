@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-24T07:36:43.764Z",
+  "wave": "013",
+  "waveRows": 32,
+  "rowsInserted": 29,
+  "rowsUpdated": 3,
+  "countriesTouched": [
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain",
+    "Sweden",
+    "Switzerland"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-013.csv",
+  "note": "Europe-heavy wave adding prepared, frozen, grocery-dinner, meal-kit, recipe-helper, and senior meal brands with explicit caveats for B2B, app-only, or active-check rows."
+}

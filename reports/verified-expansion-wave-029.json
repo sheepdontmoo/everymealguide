@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-06-24T08:59:08.496Z",
+  "wave": "029",
+  "waveRows": 28,
+  "rowsInserted": 28,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "Japan",
+    "Malaysia",
+    "Philippines",
+    "Thailand",
+    "US",
+    "Vietnam"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-029.csv",
+  "note": "Adds source-backed Thailand, Malaysia, Philippines, Vietnam, Japan, and US regional prepared-meal, high-protein meal-prep, frozen prepared-meal, plant-based, and diet meal brands."
+}

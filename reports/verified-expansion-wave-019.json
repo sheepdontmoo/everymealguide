@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-06-24T07:51:57.027Z",
+  "wave": "019",
+  "waveRows": 20,
+  "rowsInserted": 20,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-019.csv",
+  "note": "Adds mainstream grocery, frozen dinner, high-protein frozen meal, comfort meal, plant-based frozen meal, and skillet dinner coverage for consumer SEO and retail affiliate monetization."
+}

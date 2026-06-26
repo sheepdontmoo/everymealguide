@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-24T07:41:09.374Z",
+  "wave": "015",
+  "waveRows": 30,
+  "rowsInserted": 26,
+  "rowsUpdated": 4,
+  "countriesTouched": [
+    "Australia",
+    "Brazil",
+    "Canada",
+    "Japan",
+    "Mexico",
+    "South Korea",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-015.csv",
+  "note": "Adds Japan, South Korea, Mexico, Brazil, US, Canada, and Australia brand scale with app-route, regional, closed, and active-status caveats where needed."
+}

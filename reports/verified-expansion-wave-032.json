@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-24T09:30:41.917Z",
+  "wave": "032",
+  "waveRows": 26,
+  "rowsInserted": 25,
+  "rowsUpdated": 1,
+  "countriesTouched": [
+    "Norway",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-032.csv",
+  "note": "Adds source-backed US, UK, and Norway prepared-meal, high-protein meal-prep, frozen prepared-meal, medically tailored, meal-kit, and regional/local delivery brands."
+}

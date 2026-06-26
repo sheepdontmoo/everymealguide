@@ -1,0 +1,49 @@
+target_path,page_title,country,brands,page_type,status
+/vs/best-uk-meal-delivery/,Best Uk Meal Delivery,UK,Mindful Chef,comparison,generated_local
+/reviews/frive/,Frive Review,UK,Frive,brand_review,generated_local
+/reviews/lions-prep/,Lions Prep Review,UK,Lions Prep,brand_review,generated_local
+/countries/uk/best-meal-prep/,Best Meal Prep in United Kingdom,UK,Prep Kitchen,country_category,generated_local
+/reviews/tastily/,Tastily Review,UK,Tastily,brand_review,generated_local
+/countries/uk/best-prepared-meals/,Best Prepared Meals in United Kingdom,UK,Field Doctor; COOK,country_category,generated_local
+/vs/simplycook-vs-gousto/,Simplycook Vs Gousto,UK,SimplyCook,comparison,generated_local
+/countries/uk/best-meal-kits/,Best Meal Kits in United Kingdom,UK,Riverford; Pasta Evangelists,country_category,generated_local
+/vs/green-chef-uk-review/,Green Chef Uk Review,UK,Green Chef UK,comparison,generated_local
+/reviews/dropchef/,DropChef Review,Ireland,DropChef,brand_review,generated_local
+/reviews/clean-cut-meals/,Clean Cut Meals Review,Ireland,Clean Cut Meals,brand_review,generated_local
+/countries/ireland/best-meal-delivery/,Best Meal Delivery in Ireland,Ireland,Gourmet Fuel,country_category,generated_local
+/countries/ireland/best-prepared-meals/,Best Prepared Meals in Ireland,Ireland,Eatto,country_category,generated_local
+/countries/ireland/best-meal-prep/,Best Meal Prep in Ireland,Ireland,Fit Foods Ireland,country_category,generated_local
+/reviews/youfoodz/,Youfoodz Review,Australia,Youfoodz,brand_review,generated_local
+/reviews/my-muscle-chef/,My Muscle Chef Review,Australia,My Muscle Chef,brand_review,generated_local
+/vs/hellofresh-vs-marley-spoon-australia/,Hellofresh Vs Marley Spoon Australia,Australia,Marley Spoon Australia,comparison,generated_local
+/countries/australia/best-cheap-meal-kits/,Best Cheap Meal Kits in Australia,Australia,Dinnerly Australia,country_category,generated_local
+/vs/everyplate-vs-dinnerly-australia/,Everyplate Vs Dinnerly Australia,Australia,EveryPlate Australia,comparison,generated_local
+/reviews/chefgood/,Chefgood Review,Australia,Chefgood,brand_review,generated_local
+/countries/australia/best-vegan-meal-delivery/,Best Vegan Meal Delivery in Australia,Australia,Soulara,country_category,generated_local
+/countries/australia/best-prepared-meals/,Best Prepared Meals in Australia,Australia,The Dinner Ladies,country_category,generated_local
+/countries/australia/best-meal-delivery/,Best Meal Delivery in Australia,Australia,Nourish'd,country_category,generated_local
+/countries/australia/best-meal-prep/,Best Meal Prep in Australia,Australia,Macros,country_category,generated_local
+/countries/australia/best-weight-loss-meal-delivery/,Best Weight Loss Meal Delivery in Australia,Australia,Lite n Easy,country_category,generated_local
+/vs/hellofresh-vs-chefs-plate/,Hellofresh Vs Chefs Plate,Canada,Chefs Plate,comparison,generated_local
+/reviews/goodfood/,Goodfood Review,Canada,Goodfood,brand_review,generated_local
+/reviews/fresh-prep/,Fresh Prep Review,Canada,Fresh Prep,brand_review,generated_local
+/reviews/wecook/,WeCook Review,Canada,WeCook,brand_review,generated_local
+/reviews/cookunity-canada/,CookUnity Canada Review,Canada,CookUnity Canada,brand_review,generated_local
+/countries/canada/best-meal-kits/,Best Meal Kits in Canada,Canada,Cook it,country_category,generated_local
+/vs/hellofresh-vs-blue-apron/,Hellofresh Vs Blue Apron,US,Blue Apron,comparison,generated_local
+/vs/marley-spoon-review/,Marley Spoon Review,US,Marley Spoon,comparison,generated_local
+/reviews/hungryroot/,Hungryroot Review,US,Hungryroot,brand_review,generated_local
+/reviews/daily-harvest/,Daily Harvest Review,US,Daily Harvest,brand_review,generated_local
+/reviews/trifecta/,Trifecta Review,US,Trifecta,brand_review,generated_local
+/reviews/territory-foods/,Territory Foods Review,US,Territory Foods,brand_review,generated_local
+/reviews/bistromd/,BistroMD Review,US,BistroMD,brand_review,generated_local
+/vs/nutrisystem-vs-bistromd/,Nutrisystem Vs Bistromd,US,Nutrisystem,comparison,generated_local
+/reviews/tovala/,Tovala Review,US,Tovala,brand_review,generated_local
+/best/family-meal-delivery/,Family Meal Delivery in United States,US,Little Spoon,category,generated_local
+/reviews/gobble/,Gobble Review,US,Gobble,brand_review,generated_local
+/best/frozen-meal-delivery/,Frozen Meal Delivery in United States,US,Mosaic Foods,category,generated_local
+/reviews/sakara/,Sakara Review,US,Sakara,brand_review,generated_local
+/reviews/methodology/,Methodology Review,US,Methodology,brand_review,generated_local
+/reviews/modifyhealth/,ModifyHealth Review,US,ModifyHealth,brand_review,generated_local
+/reviews/epicured/,Epicured Review,US,Epicured,brand_review,generated_local
+/countries/canada/best-meal-prep/,Best Meal Prep in Canada,Canada,LiveFit Foods,country_category,generated_local

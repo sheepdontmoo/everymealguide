@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-23T18:23:13.940Z",
+  "brandRows": 323,
+  "countries": [
+    "Australia",
+    "Canada",
+    "Global",
+    "Ireland",
+    "UK",
+    "US"
+  ],
+  "byCountry": {
+    "US": 93,
+    "UK": 69,
+    "Ireland": 28,
+    "Australia": 69,
+    "Canada": 58,
+    "Global": 6
+  },
+  "byPriority": {
+    "P0": 19,
+    "P1": 34,
+    "P2": 84,
+    "P3": 176,
+    "blocked": 10
+  },
+  "affiliateQueueRows": 42,
+  "next50Rows": 50,
+  "pageManifestRows": 48,
+  "generatedWavePages": 48,
+  "generatedCountryPages": 5,
+  "brandDirectoryReady": true,
+  "pendingP0Tasks": [],
+  "blockedExternalTasks": [
+    "E001: Select domain",
+    "E002: Deploy to Vercel",
+    "E003: Set analytics",
+    "E004: Set Search Console/Bing",
+    "E005: Submit sitemap"
+  ],
+  "nextImmediateLocalActions": [
+    "Resolve remaining Wave 001 manual source follow-ups",
+    "Verify official URLs for Wave 002 top-25 batch",
+    "Wait for live deploy approval or continue Wave 002 verification locally",
+    "Find affiliate program/network for Wave 001 without submitting applications",
+    "Prepare first affiliate application batch after live domain exists"
+  ]
+}

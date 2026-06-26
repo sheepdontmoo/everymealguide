@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-24T07:31:37.153Z",
+  "wave": "011",
+  "waveRows": 26,
+  "rowsInserted": 9,
+  "rowsUpdated": 17,
+  "countriesTouched": [
+    "Canada",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-011.csv",
+  "note": "Upserts stale high-value US/Canada/UK rows and adds verified long-tail meal-kit, prepared, shelf-stable, AIP, grocery-dinner, and recipe-kit brands."
+}

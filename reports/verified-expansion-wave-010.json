@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-24T07:25:59.810Z",
+  "wave": "010",
+  "waveRows": 24,
+  "rowsInserted": 23,
+  "rowsUpdated": 1,
+  "countriesTouched": [
+    "france",
+    "germany",
+    "india",
+    "netherlands",
+    "singapore",
+    "south-africa",
+    "uae"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-010.csv",
+  "note": "Adds international prepared, keto, frozen, grocery-dinner, and diet meal brands across Singapore, UAE, South Africa, India, France, Germany, and Netherlands."
+}

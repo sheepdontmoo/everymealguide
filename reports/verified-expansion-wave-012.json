@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-06-24T07:34:02.410Z",
+  "wave": "012",
+  "waveRows": 26,
+  "rowsInserted": 9,
+  "rowsUpdated": 17,
+  "countriesTouched": [
+    "Australia",
+    "Canada",
+    "Hong Kong",
+    "Ireland",
+    "New Zealand",
+    "UK"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-012.csv",
+  "note": "Adds UK/Ireland/Canada/Australia/New Zealand/Hong Kong frozen, senior, prepared, plant-based, grocery-dinner, and regional delivery coverage with explicit caveats for B2B or inactive brands."
+}

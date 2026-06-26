@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-23T22:18:28.651Z",
+  "wave": "005",
+  "countries": [
+    "belgium",
+    "switzerland",
+    "austria",
+    "poland",
+    "finland"
+  ],
+  "rowsAdded": 21,
+  "waveRows": 21,
+  "countryPagesWritten": [
+    "/countries/belgium/best-meal-delivery/",
+    "/countries/switzerland/best-meal-delivery/",
+    "/countries/austria/best-meal-delivery/",
+    "/countries/poland/best-meal-delivery/",
+    "/countries/finland/best-meal-delivery/"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-005.csv"
+}

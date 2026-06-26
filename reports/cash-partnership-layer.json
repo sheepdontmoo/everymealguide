@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-06-24T09:30:42.257Z",
+  "sourceRows": 917,
+  "uniqueBrands": 878,
+  "readinessPath": "seo\\cash-route-readiness-by-brand.csv",
+  "batchPath": "outreach\\affiliate-and-partner-batch-001.csv",
+  "templates": [
+    "outreach\\direct-partnership-email-template.md",
+    "outreach\\affiliate-application-template.md"
+  ]
+}

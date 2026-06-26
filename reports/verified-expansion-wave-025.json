@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-24T08:23:23.455Z",
+  "wave": "025",
+  "waveRows": 25,
+  "rowsInserted": 22,
+  "rowsUpdated": 3,
+  "countriesTouched": [
+    "Canada",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-025.csv",
+  "note": "Adds Canada and US prepared-meal, shelf-stable meal, pantry dinner helper, frozen prepared meal, and meal-kit rows, including active, regional, adjacent, watchlist, and brand-family caveats."
+}

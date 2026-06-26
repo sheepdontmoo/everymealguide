@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-24T08:12:08.589Z",
+  "wave": "023",
+  "waveRows": 25,
+  "rowsInserted": 18,
+  "rowsUpdated": 7,
+  "countriesTouched": [
+    "India",
+    "Indonesia",
+    "Kenya",
+    "Malaysia",
+    "Nigeria",
+    "Philippines",
+    "South Africa",
+    "Thailand",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-023.csv",
+  "note": "Adds Africa, India, Southeast Asia, and US grocery/prepared-meal brands, while promoting some US watchlist rows to route-ready active status with app, regional, and platform caveats."
+}

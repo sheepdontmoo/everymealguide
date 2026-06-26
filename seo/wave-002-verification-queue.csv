@@ -1,0 +1,186 @@
+country,brand,category,priority,lane,verification_score,official_url,next_action
+Australia,Foober,prepared meals,P2,wave_002_priority_verify,15,,Find official URL and active ordering path
+Australia,Core Powerfoods,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Eat Fit Food,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Gourmet Dinner Service,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Muscle Meals Direct,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Ethey,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Fed,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Meels,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+UK,Grubby,plant-based meal kit,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+US,Seattle Sutton's Healthy Eating,diet prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+US,Sprinly,plant-based prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,My Foodie Box,meal kit,P2,wave_002_secondary_verify,12,,Find official URL and active ordering path
+Ireland,Vegan Meal Prep Ireland,plant-based prepared meals,P3,wave_002_secondary_verify,12,,Find official URL and active ordering path
+UK,Mindful Chef Ready Meals,prepared meals,P2,wave_002_secondary_verify,12,,Find official URL and active ordering path
+Australia,Meals on Wheels Australia,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Plant Based Meals Australia,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Soulara Active,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Vegan Meals Australia,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Heart to Home Meals Alberta,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Heart to Home Meals Ontario,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Plant Prepped,meal kit,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Vegan Meal Prep Canada,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,Abel & Cole Recipe Boxes,organic meal kit,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,DabbaDrop,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,Dishpatch,restaurant meal kits,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,Eat Clean Bro,prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,Fresh Meal Plan,prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,Fuel Meals,fitness prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,MegaFit Meals,fitness prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,Metabolic Meals,prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,MightyMeals,prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+US,Paleo On The Go,specialty prepared meals,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Activate Foods,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Australia,HelloFresh Market Australia,prepared add-ons,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Australia,Marley Spoon Market Australia,prepared add-ons,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Australia,Nutrition Station Meals,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Canada,Revive Superfoods Canada,smoothies and prepared foods,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Canada,Yumba Canada,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Clean Eats Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Cork Meal Prep,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Dublin Meal Prep,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Dublin Meat Company Ready Meals,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Farmhouse Meals Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Fit Food Dublin,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Freshii Ireland Meal Boxes,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Galway Meal Prep,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Healthy Kitchen Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Macro Meals Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Meals4Health,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Protein Prep Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,Ready Chef Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,The Good Chef Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,The Good Food Co Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Ireland,The Meal Prep Company Ireland,prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+UK,Root Kitchen,plant-based prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+US,Freshology,diet prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+US,Personal Trainer Food,diet prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+US,Veestro,plant-based prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+US,Vegin' Out,plant-based prepared meals,P3,wave_002_secondary_verify,10,,Find official URL and active ordering path
+Australia,Aussie Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Aussie Muscle Meals,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Bondi Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Brisbane Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Chef Made Meals Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Fit Food Perth,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Fit Meals Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Food4Fitness Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Fresh Meals 2 U,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Gold Coast Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Healthy Meals Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Macro Meals Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Meal Machine,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Melbourne Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,My Muscle Chef Everyday,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,My Prep Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Perth Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Prep House Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Sydney Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Tender Loving Cuisine,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,The Meal Prep Shop Australia,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,The St Food Co,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Athletes Kitchen Toronto,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Clean Eats Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Fit Food Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Fresh City Farms Meal Kits,meal kit,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Fresh in your Fridge,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Fuel Meals Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Goodfood Ready-to-Eat,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Healthy Alternative Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Inspired Go Alberta,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Macro Meals Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Calgary,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Edmonton,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Montreal,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Ottawa,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Toronto,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Meal Prep Vancouver,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,MealFix Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,MealPro Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Montreal Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Power Kitchen Canada Toronto,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Power Plate Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Prepd Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Protein Chefs Toronto,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,The Good Kitchen Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,The Meal Prep Co Canada,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Toronto Meal Prep Shop,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,truLOCAL,protein box,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Canada,Vancouver Meal Prep,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+UK,Gusto Organic,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+UK,Potage,prepared meals,P3,wave_002_secondary_verify,9,,Find official URL and active ordering path
+Australia,Dinner Sorted,meal kit,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+Canada,Chefs Plate Market,meal kit add-ons,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+Canada,HelloFresh Market Canada,meal kit add-ons,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Balance Meals,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,BOL Foods,ready meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Charlie Bigham's,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Eat Clean Meal Prep UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Fit Fuel UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Fit Kitchen UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Freshly Prepared UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Fuel Station,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Gym Food UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,itsu Grocery Meals,ready meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,London Meal Prep,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Macro Food Co,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Macro Meals UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Manchester Meal Prep,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Muscle Meals UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,My Supper Hero,meal kit,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,No1 Food Prep,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Nourish Fit Food,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Nutribombz Meal Prep,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Perfectly Fresh,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Power Prep Meals,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Prep Perfect,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Prepped by Brek,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Prepped Pots UK,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,The Fitness Fridge,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,The Meal Prep Co,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,The Meal Prep Market,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+UK,Yorkshire Prep Kitchen,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,518 Kitchen,specialty prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Balanced Bites,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Evolve Paleo Chef,specialty prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Fitlife Foods,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Fresh n' Fit Cuisine,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Home Bistro,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Jet Fuel Meals,fitness prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Just Meats,protein meal delivery,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Meal Prep on Fleek,meal prep marketplace,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Nutrition Solutions,fitness prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Revive Superfoods,smoothies and prepared foods,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,The Cumin Club,prepared Indian meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+US,Top Chef Meals,prepared meals,P3,wave_002_long_tail_hold,8,,Find official URL and active ordering path
+Australia,Weight Watchers Meals Australia,diet meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,ButcherBox,protein box,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Catered Fit,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Clean Creations,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Goldbelly Meal Kits,restaurant meal kits,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Healthy Meals Supreme,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Kitchen to Kitchen,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Omaha Steaks Prepared Meals,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Origin Meals,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Porter Road,protein box,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Power Plate Meals,fitness prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,Prepped Pots,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+US,ProMeals,prepared meals,P3,wave_002_long_tail_hold,7,,Find official URL and active ordering path
+UK,Vegan Kind Meal Boxes,plant-based meals,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+US,Cerebelly,kids food,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+US,Once Upon a Farm,kids food,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+US,Raised Real,kids meals,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+US,Serenity Kids,kids meals,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+US,Square Baby,baby meals,P3,wave_002_long_tail_hold,6,,Find official URL and active ordering path
+UK,Oddbox,produce box,P3,wave_002_long_tail_hold,4,,Find official URL and active ordering path
+US,Omsom,meal starter kits,P3,wave_002_long_tail_hold,4,,Find official URL and active ordering path
+US,Schwan's / Yelloh,frozen meals,P3,wave_002_long_tail_hold,4,,Find official URL and active ordering path
+US,SmoothieBox,smoothie delivery,P3,wave_002_long_tail_hold,4,,Find official URL and active ordering path
+US,Stouffer's Delivery / Marketplace,frozen meals,P3,wave_002_long_tail_hold,3,,Find official URL and active ordering path
+Australia,You Plate It,meal kit,blocked,watchlist_or_inactive_check,-3,,Find official URL and active ordering path
+Canada,MissFresh,meal kit,blocked,watchlist_or_inactive_check,-3,,Find official URL and active ordering path
+UK,Parsley Box,prepared meals,blocked,watchlist_or_inactive_check,-3,,Find official URL and active ordering path
+Australia,Jenny Craig Australia,diet meals,blocked,watchlist_or_inactive_check,-4,,Find official URL and active ordering path
+US,FreshlyFit,prepared meals,blocked,watchlist_or_inactive_check,-4,,Find official URL and active ordering path
+US,RealEats,prepared meals,blocked,watchlist_or_inactive_check,-4,,Find official URL and active ordering path

@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find My Meal Delivery Match | Every Meal Guide</title>
+    <meta
+      name="description"
+      content="Answer four practical questions and get a clear meal delivery shortlist for your country, cooking style, household, and budget in under 60 seconds."
+    />
+    <link rel="canonical" href="https://www.everymealguide.com/start/" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .decision-start {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 56px 24px 80px;
+      }
+
+      .decision-start-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.72fr);
+        gap: 28px;
+        align-items: start;
+      }
+
+      .decision-builder,
+      .decision-result {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(40, 32, 28, 0.12);
+        border-radius: 28px;
+        box-shadow: 0 28px 80px rgba(57, 37, 23, 0.08);
+        padding: 28px;
+      }
+
+      .decision-form-lead {
+        display: grid;
+        gap: 6px;
+        margin-bottom: 4px;
+        border: 1px solid rgba(255, 135, 0, 0.2);
+        border-radius: 20px;
+        background: linear-gradient(135deg, #fff4e4, #ffffff 72%);
+        padding: 18px;
+      }
+
+      .decision-form-lead strong {
+        color: #281f1b;
+        font-size: 1.02rem;
+      }
+
+      .decision-form-lead span,
+      .decision-question small,
+      .decision-result-note {
+        color: rgba(40, 31, 27, 0.68);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+
+      .decision-question {
+        border-bottom: 1px solid rgba(40, 32, 28, 0.1);
+        padding: 22px 0;
+      }
+
+      .decision-question:first-child {
+        padding-top: 0;
+      }
+
+      .decision-question:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .decision-question label {
+        display: block;
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+
+      .decision-question small {
+        display: block;
+        margin: 0 0 10px;
+      }
+
+      .decision-question select {
+        width: 100%;
+        min-height: 52px;
+        border: 1px solid rgba(40, 32, 28, 0.18);
+        border-radius: 16px;
+        padding: 0 16px;
+        font: inherit;
+        color: #281f1b;
+        background: #fffaf3;
+      }
+
+      .decision-result {
+        position: sticky;
+        top: 88px;
+        background: #251c18;
+        color: #fff8ef;
+      }
+
+      .decision-result .eyebrow,
+      .decision-result a {
+        color: #ffb04f;
+      }
+
+      .decision-result h2 {
+        margin-top: 8px;
+        color: #fff8ef;
+      }
+
+      .decision-result p {
+        color: rgba(255, 248, 239, 0.82);
+      }
+
+      .decision-result-note {
+        margin: 18px 0 0;
+        color: rgba(255, 248, 239, 0.7);
+      }
+
+      .decision-answer-list {
+        display: grid;
+        gap: 12px;
+        margin: 22px 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .decision-answer-list li {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 14px;
+      }
+
+      .decision-answer-list strong {
+        display: block;
+        color: #ffffff;
+      }
+
+      .decision-actions {
+        display: grid;
+        gap: 12px;
+      }
+
+      .decision-actions .button {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .decision-mini-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .decision-mini-grid article {
+        background: #fffaf3;
+        border: 1px solid rgba(40, 32, 28, 0.1);
+        border-radius: 22px;
+        padding: 20px;
+      }
+
+      @media (max-width: 880px) {
+        .decision-start-grid,
+        .decision-mini-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .decision-result {
+          position: static;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Find My Meal Delivery Match",
+        "description": "A fast meal delivery recommendation path from Every Meal Guide.",
+        "url": "https://www.everymealguide.com/start/"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Every Meal Guide home">
+        <span class="brand-mark">EM</span>
+        <span>Every Meal Guide</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/best/meal-delivery-services/">Top Picks</a>
+        <a href="/meal-delivery-comparisons/">Compare</a>
+        <a href="/reviews/">Reviews</a>
+        <a href="/deals/best-meal-delivery-deals/">Deals</a>
+        <a href="/countries/">Countries</a>
+      </nav>
+      <a class="nav-action" href="/start/">Find my match</a>
+    </header>
+
+    <main class="decision-start">
+      <section class="page-hero compact">
+        <p class="eyebrow">60-second meal match</p>
+        <h1>Find the meal delivery shortlist that fits how you actually eat.</h1>
+        <p>
+          Start with four practical choices: where you live, how much you want to cook, who you feed, and what would
+          make you regret paying. Your best first click updates as you answer.
+        </p>
+      </section>
+
+      <section class="affiliate-disclosure" aria-label="Affiliate disclosure">
+        Every Meal Guide is reader-supported. When you buy through some links, we may earn a commission at no extra cost
+        to you. The recommendation starts with fit first: your country, cooking effort, household, normal price, and
+        cancellation comfort.
+        <a href="/affiliate-disclosure/">Read our disclosure</a>.
+      </section>
+
+      <section class="decision-start-grid" aria-label="Meal delivery recommendation builder">
+        <form class="decision-builder" id="decision-builder">
+          <div class="decision-form-lead">
+            <strong>Your first action: choose where you need delivery.</strong>
+            <span>The result updates instantly. Open the shortlist after the four answers feel right.</span>
+          </div>
+
+          <div class="decision-question">
+            <label for="country">1. Where should the service deliver?</label>
+            <small>Availability, menus, prices, and subscription rules change by country.</small>
+            <select id="country" name="country">
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ireland">Ireland</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+
+          <div class="decision-question">
+            <label for="format">2. How much cooking do you want?</label>
+            <small>This is the biggest shortcut: prepared meals, meal kits, family boxes, and budget plans solve different problems.</small>
+            <select id="format" name="format">
+              <option value="prepared">No cooking, heat and eat</option>
+              <option value="kit">Some cooking, recipes and ingredients</option>
+              <option value="protein">Protein/macros matter most</option>
+              <option value="budget">Lowest sensible price</option>
+              <option value="family">Family dinners</option>
+              <option value="frozen">Freezer backups</option>
+            </select>
+          </div>
+
+          <div class="decision-question">
+            <label for="household">3. Who are you feeding?</label>
+            <small>Serving size and leftovers matter as much as the headline price.</small>
+            <select id="household" name="household">
+              <option value="solo">Just me</option>
+              <option value="couple">Two adults</option>
+              <option value="family">Family or kids</option>
+              <option value="fitness">Fitness routine</option>
+            </select>
+          </div>
+
+          <div class="decision-question">
+            <label for="priority">4. What would make you regret ordering?</label>
+            <small>We surface the check you should make before opening a deal page.</small>
+            <select id="priority" name="priority">
+              <option value="price">Price after the first discount</option>
+              <option value="time">Least time and cleanup</option>
+              <option value="nutrition">Protein, calories, or diet fit</option>
+              <option value="choice">Menu variety</option>
+              <option value="control">Easy skip, pause, or cancel</option>
+            </select>
+          </div>
+        </form>
+
+        <aside class="decision-result" aria-live="polite">
+          <p class="eyebrow">Start with this shortlist</p>
+          <h2 id="result-title">Prepared meals are your fastest first click.</h2>
+          <p id="result-copy">
+            Start with ready-made meals, then check delivery area, normal second-order price, protein, and cancellation
+            rules before ordering.
+          </p>
+          <ul class="decision-answer-list">
+            <li>
+              <strong>Why this fits</strong>
+              <span id="result-category">Compare prepared meal delivery services</span>
+            </li>
+            <li>
+              <strong>Local check</strong>
+              <span id="result-country">Open the United States country guide</span>
+            </li>
+            <li>
+              <strong>Before you pay</strong>
+              <span id="result-warning">Compare the first order against box two, delivery fees, and skip rules.</span>
+            </li>
+          </ul>
+          <p class="decision-result-note">
+            This is a starting shortlist, not a universal winner. Use it to avoid comparing the wrong kind of service.
+          </p>
+          <div class="decision-actions">
+            <a class="button primary" id="result-primary-link" href="/best/prepared-meal-delivery/">Start with prepared meals</a>
+            <a class="button secondary" id="result-country-link" href="/countries/us/best-meal-delivery/">Then check local availability</a>
+            <a class="button text-link" href="/guides/how-to-choose-meal-delivery/">How to choose without overpaying</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="decision-mini-grid" aria-label="How Every Meal Guide chooses">
+        <article>
+          <p class="eyebrow">How it works</p>
+          <h2>Format first</h2>
+          <p>Prepared meals, meal kits, protein plans, family boxes, frozen meals, and budget options solve different problems.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Local fit</p>
+          <h2>Availability second</h2>
+          <p>Delivery areas, menus, discounts, and subscription rules change by market, so local fit matters first.</p>
+        </article>
+        <article>
+          <p class="eyebrow">Payment check</p>
+          <h2>Normal price third</h2>
+          <p>The first discount is not enough. Check the normal price, delivery fees, portions, skip rules, and alternatives.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="/partners/">For partners</a>
+      <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+      <a href="/contact/">Contact</a>
+      <span>Every Meal Guide helps shoppers compare meal delivery services quickly and confidently.</span>
+    </footer>
+
+    <script>
+      const countryGuides = {
+        us: ["United States", "/countries/us/best-meal-delivery/"],
+        uk: ["United Kingdom", "/countries/uk/best-meal-delivery/"],
+        ireland: ["Ireland", "/countries/ireland/best-meal-delivery/"],
+        canada: ["Canada", "/countries/canada/best-meal-delivery/"],
+        australia: ["Australia", "/countries/australia/best-meal-delivery/"],
+      };
+
+      const formatGuides = {
+        prepared: {
+          title: "Prepared meals are your fastest first click.",
+          copy:
+            "Start with ready-made meals, then check delivery area, normal second-order price, protein, and cancellation rules before ordering.",
+          label: "Compare prepared meal delivery services",
+          href: "/best/prepared-meal-delivery/",
+          cta: "Start with prepared meals",
+        },
+        kit: {
+          title: "Meal kits fit best if you still want dinner to feel cooked.",
+          copy:
+            "Start with recipe boxes if you want fresh cooking without planning the shop. Compare prep time, cleanup, serving count, and family fit.",
+          label: "Compare meal kits",
+          href: "/best/meal-kits/",
+          cta: "Start with meal kits",
+        },
+        protein: {
+          title: "High-protein meals should be your first shortlist.",
+          copy:
+            "Start with protein-forward prepared meals or macro-friendly plans. Check calories, grams of protein, portion size, and repeat-order price.",
+          label: "Compare high-protein meals",
+          href: "/best/high-protein-meal-delivery/",
+          cta: "Start with high-protein meals",
+        },
+        budget: {
+          title: "Budget meal delivery is the right first filter.",
+          copy:
+            "Start with cheaper meal kits and value plans, but judge the second order, delivery fees, and serving size instead of the intro discount alone.",
+          label: "Compare cheap meal delivery",
+          href: "/best/cheap-meal-delivery/",
+          cta: "Start with cheap options",
+        },
+        family: {
+          title: "Family meal kits and flexible servings should come first.",
+          copy:
+            "Start with family-friendly dinners, then check picky-eater risk, prep time, allergens, portion count, and whether leftovers work.",
+          label: "Compare family meal kits",
+          href: "/best/meal-kits-for-families/",
+          cta: "Start with family options",
+        },
+        frozen: {
+          title: "Frozen meal delivery is best for flexible backup dinners.",
+          copy:
+            "Start with freezer-friendly options if you want less waste and more flexibility. Check freezer space, texture, minimum order, and delivery timing.",
+          label: "Compare frozen meal delivery",
+          href: "/best/frozen-meal-delivery/",
+          cta: "Start with frozen meals",
+        },
+      };
+
+      const warnings = {
+        price: "Compare the first order against box two, delivery fees, and serving count.",
+        time: "Check real prep time, cleanup, reheating steps, and delivery timing.",
+        nutrition: "Check calories, protein, sodium, allergens, and whether the menu fits your routine.",
+        choice: "Check menu rotation, filters, swaps, and how quickly meals repeat.",
+        control: "Check skip, pause, cancellation cut-off dates, and subscription settings.",
+      };
+
+      function updateRecommendation() {
+        const country = document.querySelector("#country").value;
+        const format = document.querySelector("#format").value;
+        const priority = document.querySelector("#priority").value;
+        const countryData = countryGuides[country] || countryGuides.us;
+        const formatData = formatGuides[format] || formatGuides.prepared;
+
+        document.querySelector("#result-title").textContent = formatData.title;
+        document.querySelector("#result-copy").textContent = formatData.copy;
+        document.querySelector("#result-category").textContent = formatData.label;
+        document.querySelector("#result-country").textContent = `Open the ${countryData[0]} country guide`;
+        document.querySelector("#result-warning").textContent = warnings[priority] || warnings.price;
+
+        document.querySelector("#result-primary-link").href = formatData.href;
+        document.querySelector("#result-primary-link").textContent = formatData.cta || "Start with this shortlist";
+        document.querySelector("#result-country-link").href = countryData[1];
+      }
+
+      document.querySelector("#decision-builder").addEventListener("change", updateRecommendation);
+      updateRecommendation();
+    </script>
+  </body>
+</html>

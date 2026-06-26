@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-24T07:54:49.790Z",
+  "wave": "020",
+  "waveRows": 20,
+  "rowsInserted": 9,
+  "rowsUpdated": 11,
+  "countriesTouched": [
+    "Australia",
+    "Canada",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-020.csv",
+  "note": "Promotes candidate prepared-meal rows and adds UK, US, Canada, and Australia grocery, premium ready-meal, performance meal-prep, frozen, and diet prepared-meal coverage."
+}

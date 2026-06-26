@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-06-23T22:50:32.040Z",
+  "wave": "007",
+  "waveRows": 40,
+  "rowsAdded": 14,
+  "skippedExisting": 26,
+  "countriesTouched": [
+    "austria",
+    "belgium",
+    "denmark",
+    "france",
+    "germany",
+    "italy",
+    "netherlands",
+    "new-zealand",
+    "norway",
+    "spain",
+    "sweden",
+    "switzerland"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-007.csv",
+  "note": "Adds verified priority-2 Europe and New Zealand coverage from official/current sources; market exits are accounted for but not recommended as active brands."
+}

@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-06-24T11:42:20.177Z",
+  "current": {
+    "brandRows": 917,
+    "uniqueBrands": 878,
+    "uniqueCountries": 63,
+    "sitemapUrls": 5185,
+    "goEligibleBrands": 744
+  },
+  "targets": {
+    "uniqueBrands": 1000,
+    "uniqueCountries": 50,
+    "seoLandingPages": 10000
+  },
+  "gaps": {
+    "brandsNeededFor1000": 122,
+    "countriesNeededFor50": 0,
+    "seoPagesNeededFor10000": 4815,
+    "targetPlanCountriesMissing": 3
+  },
+  "topCountriesByRows": [
+    {
+      "country": "United States",
+      "rows": 250,
+      "uniqueBrands": 249
+    },
+    {
+      "country": "United Kingdom",
+      "rows": 91,
+      "uniqueBrands": 91
+    },
+    {
+      "country": "Australia",
+      "rows": 74,
+      "uniqueBrands": 73
+    },
+    {
+      "country": "Canada",
+      "rows": 72,
+      "uniqueBrands": 72
+    },
+    {
+      "country": "Ireland",
+      "rows": 32,
+      "uniqueBrands": 32
+    },
+    {
+      "country": "New Zealand",
+      "rows": 23,
+      "uniqueBrands": 18
+    },
+    {
+      "country": "Germany",
+      "rows": 19,
+      "uniqueBrands": 19
+    },
+    {
+      "country": "France",
+      "rows": 19,
+      "uniqueBrands": 19
+    },
+    {
+      "country": "Netherlands",
+      "rows": 19,
+      "uniqueBrands": 19
+    },
+    {
+      "country": "UAE",
+      "rows": 15,
+      "uniqueBrands": 15
+    },
+    {
+      "country": "South Africa",
+      "rows": 15,
+      "uniqueBrands": 15
+    },
+    {
+      "country": "Singapore",
+      "rows": 14,
+      "uniqueBrands": 14
+    },
+    {
+      "country": "Japan",
+      "rows": 14,
+      "uniqueBrands": 14
+    },
+    {
+      "country": "Spain",
+      "rows": 13,
+      "uniqueBrands": 13
+    },
+    {
+      "country": "Italy",
+      "rows": 12,
+      "uniqueBrands": 12
+    },
+    {
+      "country": "India",
+      "rows": 12,
+      "uniqueBrands": 12
+    },
+    {
+      "country": "Mexico",
+      "rows": 11,
+      "uniqueBrands": 11
+    },
+    {
+      "country": "Hong Kong",
+      "rows": 10,
+      "uniqueBrands": 10
+    },
+    {
+      "country": "Global",
+      "rows": 9,
+      "uniqueBrands": 9
+    },
+    {
+      "country": "Belgium",
+      "rows": 9,
+      "uniqueBrands": 9
+    }
+  ],
+  "underCoveredCountries": [
+    {
+      "country": "Bulgaria",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Croatia",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Latvia",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Lithuania",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Morocco",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Puerto Rico",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Slovakia",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Vietnam",
+      "uniqueBrands": 1,
+      "rows": 1
+    },
+    {
+      "country": "Argentina",
+      "uniqueBrands": 2,
+      "rows": 2
+    },
+    {
+      "country": "Indonesia",
+      "uniqueBrands": 2,
+      "rows": 2
+    },
+    {
+      "country": "Oman",
+      "uniqueBrands": 2,
+      "rows": 2
+    },
+    {
+      "country": "Serbia",
+      "uniqueBrands": 2,
+      "rows": 2
+    },
+    {
+      "country": "Bahrain",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Greece",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Kenya",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Nigeria",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Peru",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Turkey",
+      "uniqueBrands": 3,
+      "rows": 3
+    },
+    {
+      "country": "Austria",
+      "uniqueBrands": 4,
+      "rows": 4
+    },
+    {
+      "country": "Chile",
+      "uniqueBrands": 4,
+      "rows": 4
+    },
+    {
+      "country": "Estonia",
+      "uniqueBrands": 4,
+      "rows": 4
+    },
+    {
+      "country": "Qatar",
+      "uniqueBrands": 4,
+      "rows": 4
+    },
+    {
+      "country": "Saudi Arabia",
+      "uniqueBrands": 4,
+      "rows": 4
+    },
+    {
+      "country": "Colombia",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Denmark",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Egypt",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Finland",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Hungary",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Portugal",
+      "uniqueBrands": 5,
+      "rows": 5
+    },
+    {
+      "country": "Romania",
+      "uniqueBrands": 5,
+      "rows": 5
+    }
+  ],
+  "missingTargetCountries": [
+    "Israel",
+    "Taiwan",
+    "China"
+  ],
+  "topCategories": [
+    {
+      "category": "prepared meals",
+      "rows": 320
+    },
+    {
+      "category": "diet prepared meals",
+      "rows": 126
+    },
+    {
+      "category": "meal kit",
+      "rows": 85
+    },
+    {
+      "category": "high protein meal prep",
+      "rows": 64
+    },
+    {
+      "category": "frozen prepared meals",
+      "rows": 31
+    },
+    {
+      "category": "grocery dinner delivery",
+      "rows": 24
+    },
+    {
+      "category": "high protein prepared meals",
+      "rows": 16
+    },
+    {
+      "category": "plant-based prepared meals",
+      "rows": 16
+    },
+    {
+      "category": "frozen meals",
+      "rows": 13
+    },
+    {
+      "category": "complete nutrition meal replacement",
+      "rows": 13
+    },
+    {
+      "category": "fitness prepared meals",
+      "rows": 10
+    },
+    {
+      "category": "shelf-stable meals",
+      "rows": 10
+    },
+    {
+      "category": "frozen plant-based meals",
+      "rows": 9
+    },
+    {
+      "category": "budget meal kit",
+      "rows": 7
+    },
+    {
+      "category": "protein box",
+      "rows": 7
+    },
+    {
+      "category": "meal kit and prepared meals",
+      "rows": 6
+    },
+    {
+      "category": "premium prepared meals",
+      "rows": 5
+    },
+    {
+      "category": "meal starter kits",
+      "rows": 5
+    },
+    {
+      "category": "organic meal kit",
+      "rows": 5
+    },
+    {
+      "category": "frozen senior meals",
+      "rows": 5
+    },
+    {
+      "category": "plant-based frozen meals",
+      "rows": 5
+    },
+    {
+      "category": "healthy meal delivery",
+      "rows": 5
+    },
+    {
+      "category": "grocery dinner helpers",
+      "rows": 5
+    },
+    {
+      "category": "plant-based meal kit",
+      "rows": 4
+    },
+    {
+      "category": "kids and baby meals",
+      "rows": 4
+    },
+    {
+      "category": "premium meal kit",
+      "rows": 4
+    },
+    {
+      "category": "produce box",
+      "rows": 4
+    },
+    {
+      "category": "medical diet meals",
+      "rows": 3
+    },
+    {
+      "category": "paleo prepared meals",
+      "rows": 3
+    },
+    {
+      "category": "medically tailored meals",
+      "rows": 3
+    }
+  ]
+}

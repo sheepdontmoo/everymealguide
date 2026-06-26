@@ -1,0 +1,16 @@
+rank,brand,country,priority,program_discovery_status,likely_network_or_path,evidence_note,application_status,approval_gate
+1,HelloFresh,US/UK/CA/AU,P0,known_affiliate_ecosystem,direct/network varies by country,Existing publisher links show active affiliate ecosystem; verify official application path.,not_applied,explicit approval required
+2,Factor,US/Canada,P0,known_affiliate_ecosystem,direct/network likely,High commercial fit; verify official application path.,not_applied,explicit approval required
+3,CookUnity,US/Canada,P0,needs_program_lookup,direct/network unknown,Strong prepared-meal P0; find application path.,not_applied,explicit approval required
+4,Gousto,UK,P0,network_clue,Awin clue from publisher links,BBC Good Food publisher links indicate affiliate ecosystem; verify official partner terms.,not_applied,explicit approval required
+5,Mindful Chef,UK,P0,network_clue,Awin clue from publisher links,BBC Good Food publisher links indicate affiliate ecosystem; verify official partner terms.,not_applied,explicit approval required
+6,Chefs Plate,Canada,P0,known_affiliate_ecosystem,direct/network likely,HelloFresh group; verify Canada-specific program.,not_applied,explicit approval required
+7,Youfoodz,Australia,P0,known_affiliate_ecosystem,direct/network likely,High AU prepared-meal intent; verify program.,not_applied,explicit approval required
+8,My Muscle Chef,Australia,P0,known_affiliate_ecosystem,direct/network likely,High AU fitness/prepared intent; verify program.,not_applied,explicit approval required
+9,Blue Apron,US,P0,known_affiliate_ecosystem,direct/network likely,Major US meal-kit comparison target; verify program.,not_applied,explicit approval required
+10,Marley Spoon,US/Australia,P0,known_affiliate_ecosystem,direct/network likely,Major meal-kit comparison target; verify country-specific program.,not_applied,explicit approval required
+11,Frive,UK,P0,needs_program_lookup,direct unknown,High-growth UK prepared meal brand; verify partner route.,not_applied,explicit approval required
+12,Lions Prep,UK,P0,needs_program_lookup,direct unknown,High UK fitness meal prep intent; verify partner route.,not_applied,explicit approval required
+13,Goodfood,Canada,P0,needs_program_lookup,direct/network unknown,Canada meal-kit anchor; verify current program and brand status.,not_applied,explicit approval required
+14,WeCook,Canada,P1,needs_program_lookup,direct/network unknown,Canada ready-to-eat meals; verify partner route.,not_applied,explicit approval required
+15,Trifecta,US,P1,known_affiliate_ecosystem,direct/network likely,Fitness prepared meals; verify program.,not_applied,explicit approval required

@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-06-23T17:32:15.095Z",
+  "targetCount": 20,
+  "pagesUpdated": 20,
+  "skipped": [],
+  "updated": [
+    {
+      "target_path": "/vs/best-uk-meal-delivery/",
+      "title": "Best Uk Meal Delivery",
+      "brands": "Mindful Chef"
+    },
+    {
+      "target_path": "/reviews/frive/",
+      "title": "Frive Review",
+      "brands": "Frive"
+    },
+    {
+      "target_path": "/reviews/lions-prep/",
+      "title": "Lions Prep Review",
+      "brands": "Lions Prep"
+    },
+    {
+      "target_path": "/countries/uk/best-meal-prep/",
+      "title": "Best Meal Prep in United Kingdom",
+      "brands": "Prep Kitchen"
+    },
+    {
+      "target_path": "/reviews/tastily/",
+      "title": "Tastily Review",
+      "brands": "Tastily"
+    },
+    {
+      "target_path": "/countries/uk/best-prepared-meals/",
+      "title": "Best Prepared Meals in United Kingdom",
+      "brands": "Field Doctor; COOK"
+    },
+    {
+      "target_path": "/vs/simplycook-vs-gousto/",
+      "title": "Simplycook Vs Gousto",
+      "brands": "SimplyCook"
+    },
+    {
+      "target_path": "/countries/uk/best-meal-kits/",
+      "title": "Best Meal Kits in United Kingdom",
+      "brands": "Riverford; Pasta Evangelists"
+    },
+    {
+      "target_path": "/vs/green-chef-uk-review/",
+      "title": "Green Chef Uk Review",
+      "brands": "Green Chef UK"
+    },
+    {
+      "target_path": "/reviews/dropchef/",
+      "title": "DropChef Review",
+      "brands": "DropChef"
+    },
+    {
+      "target_path": "/reviews/clean-cut-meals/",
+      "title": "Clean Cut Meals Review",
+      "brands": "Clean Cut Meals"
+    },
+    {
+      "target_path": "/countries/ireland/best-meal-delivery/",
+      "title": "Best Meal Delivery in Ireland",
+      "brands": "Gourmet Fuel"
+    },
+    {
+      "target_path": "/countries/ireland/best-prepared-meals/",
+      "title": "Best Prepared Meals in Ireland",
+      "brands": "Eatto"
+    },
+    {
+      "target_path": "/countries/ireland/best-meal-prep/",
+      "title": "Best Meal Prep in Ireland",
+      "brands": "Fit Foods Ireland"
+    },
+    {
+      "target_path": "/reviews/youfoodz/",
+      "title": "Youfoodz Review",
+      "brands": "Youfoodz"
+    },
+    {
+      "target_path": "/reviews/my-muscle-chef/",
+      "title": "My Muscle Chef Review",
+      "brands": "My Muscle Chef"
+    },
+    {
+      "target_path": "/vs/hellofresh-vs-marley-spoon-australia/",
+      "title": "Hellofresh Vs Marley Spoon Australia",
+      "brands": "Marley Spoon Australia"
+    },
+    {
+      "target_path": "/countries/australia/best-cheap-meal-kits/",
+      "title": "Best Cheap Meal Kits in Australia",
+      "brands": "Dinnerly Australia"
+    },
+    {
+      "target_path": "/vs/everyplate-vs-dinnerly-australia/",
+      "title": "Everyplate Vs Dinnerly Australia",
+      "brands": "EveryPlate Australia"
+    },
+    {
+      "target_path": "/reviews/chefgood/",
+      "title": "Chefgood Review",
+      "brands": "Chefgood"
+    }
+  ]
+}

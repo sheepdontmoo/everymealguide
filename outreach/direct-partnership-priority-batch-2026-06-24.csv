@@ -1,0 +1,11 @@
+rank,brand,country,category,review_url,offer_check_url,official_url,angle,human_gate
+1,15gram,Belgium,meal kit,/reviews/15gram/,/go/15gram/,https://15gram.be/,Belgian recipe-box comparison coverage plus local grocery-dinner intent,Approve/send outreach
+2,Aarstiderne,Denmark,organic meal kit,/reviews/aarstiderne/,/go/aarstiderne/,https://www.aarstiderne.com/,Organic Danish meal-box and produce-box comparison coverage,Approve/send outreach
+3,Angel Delivery,New Zealand,frozen/family meals,/reviews/angel-delivery/,/go/angel-delivery/,https://www.angeldelivery.co.nz/,Family frozen meals and care-package dinner comparison coverage,Approve/send outreach
+4,Apetito UK,UK,frozen senior meals,/reviews/apetito-uk/,/go/apetito-uk/,https://www.apetito.co.uk/,Senior frozen meals and easy-dinner comparison pages,Approve/send outreach
+5,Athletes Kitchen,Canada,high protein meal prep,/reviews/athletes-kitchen/,/go/athletes-kitchen/,https://athleteskitchen.ca/,Canadian high-protein meal-prep comparison coverage,Approve/send outreach
+6,Be Fit Food,Australia,diet prepared meals,/reviews/be-fit-food/,/go/be-fit-food/,https://befitfood.com.au/,Australian diet and weight-loss prepared-meal comparison coverage,Approve/send outreach
+7,BodyChef Ireland,Ireland,diet prepared meals,/reviews/bodychef-ireland/,/go/bodychef-ireland/,https://bodychef.ie/,Ireland diet meal delivery and healthy meal-plan comparison coverage,Approve/send outreach
+8,Calo,UAE/GCC,prepared meals,/reviews/calo/,/go/calo/,https://calo.app/en,App-led prepared-meal and GCC meal-plan comparison coverage,Approve/send outreach
+9,Calori,Finland,prepared meals,/reviews/calori/,/go/calori/,https://calori.fi/,Finland prepared-meal comparison coverage,Approve/send outreach
+10,Catered Fit,US regional,prepared meals,/reviews/catered-fit/,/go/catered-fit/,https://www.cateredfit.com/,Regional US prepared-meal and diet meal delivery coverage,Approve/send outreach

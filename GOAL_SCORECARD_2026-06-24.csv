@@ -1,0 +1,12 @@
+metric,target,current_status,evidence_strength,next_action,human_gate
+Brands covered,1000+,879 generated review/go routes observed,Strong,Add at least 121 verified serious brands,None
+Countries covered,50+,81 markets previously shown but fresh distinct-country proof needed,Medium,Create/run country-count report,None
+SEO landing pages,10000+,Roughly 5000+ generated public page routes observed,Medium,Expand comparison/category/use-case generation safely,None
+Eligible brands linked via go pages,100%,879 go routes for 879 unique brands observed,Strong,Keep go-route generator in build,None
+Affiliate/direct applications submitted,100+,0 confirmed submissions,Strong,Submit first approved application batch,Affiliate account access and explicit approval
+Core Web Vitals pass rate,90%+,Not proven,Missing,Run Lighthouse/PageSpeed or Vercel analytics check,Analytics/tooling access
+Homepage purpose under 5 seconds,Yes,Local homepage supports it but latest local edits not deployed,Medium,Deploy and browser spot-check,Deploy approval
+Recommendation under 3 clicks,Yes,Local homepage supports answer in 1 click and shortlist in 2 clicks,Medium,Deploy and measure decision events,Deploy approval and analytics
+First affiliate revenue,Generated,Not achieved,Strong,Secure approvals and add tracking URLs,Affiliate approval
+Monthly affiliate clicks,100 then 1000,Not proven,Missing,Connect analytics and track affiliate_click,Analytics ownership
+Monthly organic visitors,10000 then 100000,Not proven,Missing,Verify Search Console and submit sitemap,Google account access

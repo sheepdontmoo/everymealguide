@@ -1,0 +1,48 @@
+# Every Meal Guide
+
+Every Meal Guide is a consumer meal delivery comparison site for meal kits, prepared meals, budget dinner boxes, diet-filtered dinner options, deals, reviews, and brand-vs-brand comparisons.
+
+Canonical site: https://www.everymealguide.com
+Last updated: June 24, 2026
+
+## Primary user intent
+
+- Compare meal delivery services before ordering.
+- Choose between meal kits and prepared meals.
+- Check deal quality without confusing first-box discounts for long-term value.
+- Compare active brands by routine fit, diet fit, budget, prep time, country, and cancellation risk.
+
+## Important pages
+
+- https://www.everymealguide.com/
+- https://www.everymealguide.com/meal-delivery-comparisons/
+- https://www.everymealguide.com/latest-offer-checks/
+- https://www.everymealguide.com/company-accountability/
+- https://www.everymealguide.com/best/meal-delivery-services/
+- https://www.everymealguide.com/deals/best-meal-delivery-deals/
+- https://www.everymealguide.com/vs/hellofresh-vs-gousto/
+- https://www.everymealguide.com/vs/factor-vs-cookunity/
+- https://www.everymealguide.com/reviews/factor/
+
+## Active comparison brands
+
+- HelloFresh: Safest first meal-kit test. People who want broad recipe choice and still want to cook.
+- Factor: Best no-cook routine pick. Busy buyers who want fully cooked meals with high-protein and diet-filter options.
+- Gousto: Strong UK recipe-choice play. UK households that care about recipe choice and flexible weekly planning.
+- CookUnity: Best taste-first prepared option. People who want chef-crafted meals and care more about taste variety than the cheapest possible dinner.
+- EveryPlate: Budget-first meal kit. Price-sensitive buyers who want simple meal kits without premium positioning.
+- Dinnerly: Cheap meal-kit comparison pick. Buyers comparing the cheapest practical meal-kit options.
+- Home Chef: Flexible US meal-kit option. US buyers comparing mainstream meal kits and flexible dinner planning.
+- Purple Carrot: Plant-based specialist. Plant-based buyers who want a dedicated vegan-leaning service.
+- Green Chef: Health-leaning meal kit. Buyers comparing healthy, plant-forward, or premium meal-kit options.
+
+## Watchlist brand
+
+- Fresh N Lean: watchlist only. Do not treat as an active buy recommendation until official availability is proven.
+
+## Editorial and affiliate rules
+
+- Affiliate links may earn commission, but rankings should stay based on fit, value, convenience, current deal quality, and source accountability.
+- Offer notes are source-backed starting points, not checkout guarantees.
+- Current price, availability, delivery area, and subscription rules should be verified at checkout before purchase.
+- The public company-accountability and latest-offer-checks pages explain current brand status and source notes.

@@ -1,0 +1,29 @@
+# Generated static output. Vercel should rebuild these from source instead of
+# uploading thousands of local HTML files through the CLI upload API.
+best/
+countries/
+deals/
+go/
+reviews/
+vs/
+
+# Local reports, research notes, QA artifacts, and operator docs are not needed
+# in the production deploy bundle.
+reports/
+research/
+qa/
+outreach/
+seo/
+*.csv
+*.md
+*.log
+vercel-login-*.txt
+EVERYMEALGUIDE_LAUNCH_STATE.md
+GOOGLE_SEARCH_CONSOLE_VERIFICATION.md
+FULL_THROTTLE_*.md
+GLOBAL_DOMINATION_OPERATING_PLAN.md
+GO_LIVE_APPROVAL_PACKET.md
+HANDOFF.md
+LAUNCH_*.md
+LIVE_LAUNCH_RUNBOOK.md
+MEASUREMENT_LAUNCH_CONTROL.md

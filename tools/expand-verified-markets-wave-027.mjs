@@ -1,0 +1,143 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const brandUniversePath = path.join(root, "seo", "global-brand-universe.csv");
+const waveCsvPath = path.join(root, "seo", "verified-expansion-wave-027.csv");
+const waveReportPath = path.join(root, "reports", "verified-expansion-wave-027.json");
+
+const checkedDate = "2026-06-24";
+
+const additions = [
+  ["Turkey", "Rafinera", "diet prepared meals", "P1", "active", "Turkey dietitian-led daily diet meal package service with calorie plans, protein-plus options, and Istanbul meal delivery demand", "https://www.rafinera.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Turkey diet meal delivery and protein-plus prepared meal pages"],
+  ["Portugal", "Natalie's Healthy Kitchen", "meal kit", "P1", "active_region_check", "Portugal local healthy meal-kit alternative to HelloFresh serving Lisbon and Cascais with dietitian-planned recipes", "https://www.natalieshealthykitchen.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Portugal meal-kit anchor with Lisbon/Cascais delivery-area caveat"],
+  ["Argentina", "Frizata", "frozen prepared meals", "P1", "active", "Argentina frozen food delivery brand with direct-to-home freezer stocking demand and broad prepared-food range", "https://www.frizata.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Argentina frozen prepared meal and freezer meal pages"],
+  ["Chile", "FitFood Chile", "diet prepared meals", "P1", "active", "Chile healthy meal-plan delivery brand offering personalized nutrition plans delivered daily", "https://fitfood.cl/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Chile diet meal delivery anchor"],
+  ["Chile", "Plan Nutritivo", "diet prepared meals", "P2", "active_region_check", "Chile healthy prepared meal-plan provider delivering fresh nutritious meals twice weekly", "https://plannutritivo.cl/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chile healthy prepared meal alternatives"],
+  ["Chile", "La Specialite", "prepared meals", "P2", "active_region_check", "Chile healthy prepared meal delivery brand with nutritionist-designed daily delivery plans", "https://www.laspecialite.cl/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chile prepared meal pages with regional caveat"],
+  ["Colombia", "Meal Prep Consciente", "diet prepared meals", "P2", "active_region_check", "Medellin weekly and monthly healthy meal-prep plans with detox and personalized diet positioning", "https://mealprepconsciente.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Colombia Medellin meal-prep alternatives"],
+  ["Colombia", "Foody Colombia", "prepared meals", "P2", "active_region_check", "Bogota natural prepared meals that heat in minutes with programmed ordering", "https://www.foody.com.co/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Colombia prepared meal pages with Bogota caveat"],
+  ["Colombia", "Mingu", "prepared meals", "P2", "active_app_route", "Colombia app-led prepared meal plans delivered together for fridge/freezer stocking", "https://www.mingu.co/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Colombia app-led prepared meal alternatives"],
+  ["Colombia", "Como en Casa Bogota", "prepared lunches", "P3", "active_region_check", "Bogota healthy balanced lunch plan delivered Monday to Friday for recurring weekday meal demand", "https://www.comoencasabta.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use for local lunch-plan alternatives rather than national recommendation"],
+  ["Peru", "getUP!", "diet prepared meals", "P1", "active_region_check", "Lima personalized healthy meal-plan delivery with certified nutritionist positioning", "https://getup.com.pe/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Peru/Lima diet prepared meal anchor"],
+  ["Peru", "Delimas", "prepared meals", "P2", "active_region_check", "Lima prepared-meal delivery service with customizable meals and free delivery across selected districts", "https://delimas.pe/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Peru prepared meal alternatives with district caveat"],
+  ["Mexico", "Myfitnesschef", "diet prepared meals", "P2", "active_region_check", "Mexico balanced gourmet weekly meal delivery brand with recurring prepared meal demand", "https://myfitnesschef.mx/home/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico prepared and fitness meal pages"],
+  ["Mexico", "True Dose Mexico", "prepared meals", "P2", "active_region_check", "Mexico healthy prepared meal delivery with weekly meal plans and heat-and-eat positioning", "https://truedose.mx/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico prepared meal alternatives"],
+  ["Mexico", "Manyar", "diet prepared meals", "P2", "active_region_check", "CDMX and Estado de Mexico personalized healthy meal plan delivery for keto, diabetic, normal, and gourmet plans", "https://www.manyar.com.mx/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico/CDMX diet meal delivery pages"],
+  ["Saudi Arabia", "Low Calorie Saudi", "diet prepared meals", "P2", "active_region_check", "Riyadh healthy meal-plan delivery brand with balanced tailored plans and delivery in Saudi Arabia", "https://lowcalorie.sa/en/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Saudi low-calorie and healthy meal-plan pages"],
+  ["Qatar", "Benefit Qatar", "diet prepared meals", "P1", "active", "Qatar nutritionist-designed fresh meal-plan delivery brand for weight loss, muscle gain, performance, and busy people", "https://benefit.qa/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Qatar prepared meal-plan pages"],
+  ["Kuwait", "LineUpFit", "diet prepared meals", "P1", "active", "Kuwait fresh calorie-counted healthy meal delivery with weight-loss, fitness, and high-protein programs", "https://lineupfit.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Kuwait healthy meal-plan anchor"],
+  ["Kuwait", "Protein Fitness Meals", "high protein meal prep", "P2", "active", "Kuwait diet-plan manufacturer focused on protein and fitness meal plans", "https://proteinfitnessmeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Kuwait high-protein meal-prep alternatives"],
+  ["Romania", "LifeBox Romania", "diet prepared meals", "P1", "active", "Romania healthy balanced daily meal subscriptions delivered in Bucharest with nutrition-focused menu plans", "https://www.lifebox.ro/en/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Romania prepared meal delivery anchor"],
+  ["Czech Republic", "Yes Krabicky", "diet prepared meals", "P1", "active_region_check", "Czech premium boxed-diet meal delivery from a Michelin Bib Gourmand chef route", "https://yeskrabicky.cz/en", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Czech boxed diet and premium prepared meal pages"],
+  ["Czech Republic", "Zdrave Stravovani", "diet prepared meals", "P1", "active", "Czech boxed diet provider with up to five meals daily, multiple programs, nutrition counselling, and nationwide-style delivery coverage", "https://www.zdravestravovani.cz/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Czech diet meal delivery pages"],
+  ["Czech Republic", "FitKitchen Czech Republic", "diet prepared meals", "P2", "active_region_check", "Prague and Brno boxed-diet delivery service for healthy portions and daily structured eating", "https://fitkitchen.cz/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Czech local boxed diet alternatives"],
+  ["Czech Republic", "Popapej", "diet prepared meals", "P2", "active_region_check", "Czech boxed-meal service with classic, fitness, low-carb, bodybuilding, and meat-free programs", "https://www.popapej.cz/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Czech fitness and low-carb prepared meal pages"],
+  ["Slovakia", "Zdrave Stravovanie Slovakia", "diet prepared meals", "P1", "active", "Slovakia boxed diet route delivering fresh meals for healthy balanced weekday eating", "https://zdravestravovanie.sk/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Slovakia prepared meal delivery anchor"],
+  ["Estonia", "HealthyFood Tallinn", "diet prepared meals", "P1", "active_region_check", "Tallinn healthy meal-plan delivery with Slim, Balance, and Muscle programs", "https://healthyfood.ee/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Estonia/Tallinn prepared meal anchor"],
+  ["Hungary", "Food Revolution Hungary", "prepared meals", "P1", "active_region_check", "Hungary premium chef-prepared meal delivery and diet service with weekly menu and sign-up route", "https://foodrevo.hu/en/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Hungary premium prepared meal anchor"]
+].map(([country, brand, category, priority, site_status, market_role, official_url, affiliate_program_target, evidence_status, next_action]) => ({
+  country,
+  brand,
+  category,
+  priority,
+  site_status,
+  market_role,
+  official_url,
+  affiliate_program_target,
+  evidence_status,
+  next_action
+}));
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let value = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+    if (char === '"') {
+      if (quoted && next === '"') {
+        value += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (char === "," && !quoted) {
+      row.push(value);
+      value = "";
+    } else if ((char === "\n" || char === "\r") && !quoted) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(value);
+      if (row.some((cell) => cell.length)) rows.push(row);
+      row = [];
+      value = "";
+    } else {
+      value += char;
+    }
+  }
+  if (value.length || row.length) {
+    row.push(value);
+    if (row.some((cell) => cell.length)) rows.push(row);
+  }
+  return rows;
+}
+
+function csvCell(value) {
+  const text = String(value ?? "");
+  return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function toCsv(rows) {
+  return `${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
+}
+
+if (!fs.existsSync(brandUniversePath)) {
+  throw new Error(`Missing ${brandUniversePath}`);
+}
+
+const rows = parseCsv(fs.readFileSync(brandUniversePath, "utf8"));
+const header = rows[0];
+const records = rows.slice(1).map((row) => Object.fromEntries(header.map((column, index) => [column, row[index] ?? ""])));
+const byKey = new Map(records.map((record, index) => [`${record.country}::${record.brand}`.toLowerCase(), { record, index }]));
+const inserted = [];
+const updated = [];
+
+for (const addition of additions) {
+  const key = `${addition.country}::${addition.brand}`.toLowerCase();
+  const existing = byKey.get(key);
+  if (existing) {
+    records[existing.index] = { ...existing.record, ...addition };
+    updated.push(addition);
+  } else {
+    records.push(addition);
+    inserted.push(addition);
+    byKey.set(key, { record: addition, index: records.length - 1 });
+  }
+}
+
+fs.writeFileSync(brandUniversePath, toCsv([header, ...records.map((record) => header.map((column) => record[column] ?? ""))]));
+fs.writeFileSync(waveCsvPath, toCsv([header, ...additions.map((record) => header.map((column) => record[column] ?? ""))]));
+
+fs.mkdirSync(path.dirname(waveReportPath), { recursive: true });
+fs.writeFileSync(
+  waveReportPath,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      wave: "027",
+      waveRows: additions.length,
+      rowsInserted: inserted.length,
+      rowsUpdated: updated.length,
+      countriesTouched: [...new Set(additions.map((row) => row.country))].sort(),
+      sourceOfTruth: path.relative(root, brandUniversePath),
+      waveCsv: path.relative(root, waveCsvPath),
+      note: "Adds verified under-covered Turkey, Portugal, Latin America, Gulf, Central/Eastern Europe, Slovakia, Estonia, and Hungary meal-kit, prepared meal, boxed diet, frozen meal, and high-protein meal-prep brands with regional and route caveats where needed."
+    },
+    null,
+    2
+  )}\n`
+);
+
+console.log(`Wave 027 complete: ${inserted.length} inserted, ${updated.length} updated.`);

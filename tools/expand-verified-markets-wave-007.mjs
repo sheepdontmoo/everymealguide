@@ -1,0 +1,154 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const brandUniversePath = path.join(root, "seo", "global-brand-universe.csv");
+const waveCsvPath = path.join(root, "seo", "verified-expansion-wave-007.csv");
+const waveReportPath = path.join(root, "reports", "verified-expansion-wave-007.json");
+
+const checkedDate = "2026-06-23";
+
+const additions = [
+  ["germany", "HelloFresh", "meal kit", "1", "active", "German meal-kit box with weekly recipes, pre-portioned ingredients, flexible subscription, and affiliate/partner surface", "https://www.hellofresh.de/", "yes", `official_source_checked_${checkedDate}`, "Keep as Germany meal-kit anchor and apply after live domain exists"],
+  ["germany", "Marley Spoon", "meal kit", "1", "active", "German meal-kit and recipe delivery brand with family-friendly menus, market add-ons, and partner program surface", "https://marleyspoon.de/", "affiliate application", `official_source_checked_${checkedDate}`, "Add to Germany meal-kit comparisons and partner queue"],
+  ["germany", "prepmymeal", "high protein meal prep", "1", "active", "German frozen high-protein ready-meal brand with fitness positioning and direct DTC checkout", "https://prepmymeal.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use for Germany high-protein and frozen meal-prep pages"],
+  ["germany", "every", "frozen plant-based meals", "2", "active", "Plant-based frozen comfort-meal delivery with flexible subscription and ready-in-minutes meals", "https://every-foods.com/en", "direct partnership", `official_source_checked_${checkedDate}`, "Add to vegan, frozen, and prepared-meal comparison sets"],
+  ["germany", "Löwenanteil", "high protein prepared meals", "2", "active", "German organic high-protein shelf-stable fitness meal brand with Germany and wider Europe options", "https://www.loewenanteil.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to high-protein prepared meal and fitness comparison sets"],
+  ["france", "HelloFresh", "meal kit", "1", "active", "France meal-kit box with 54+ weekly recipes, family/express/vegetarian options, and flexible subscription", "https://www.hellofresh.fr/", "yes", `official_source_checked_${checkedDate}`, "Keep as France meal-kit anchor and affiliate target"],
+  ["france", "Quitoque", "meal kit", "1", "active", "French recipe-box and meal-kit brand positioned as a leading French box repas service", "https://www.quitoque.fr/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as France meal-kit challenger and outreach target"],
+  ["france", "Seazon", "prepared meals", "1", "active", "France fresh ready-meal subscription with chef-cooked meals ready in minutes", "https://seazon.fr/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as France prepared-meal anchor"],
+  ["france", "Les Commis", "meal kit", "2", "active", "French panier-recette service delivering fresh ingredients and recipes across France", "https://lescommis.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to France meal-kit comparisons and partner outreach"],
+  ["netherlands", "HelloFresh", "meal kit", "1", "active", "Netherlands meal-kit box with fresh ingredients, weekly menus, and flexible plan options", "https://www.hellofresh.nl/", "yes", `official_source_checked_${checkedDate}`, "Keep as Netherlands meal-kit anchor"],
+  ["netherlands", "Uitgekookt", "prepared meals", "1", "active", "Dutch fresh ready-meal delivery service with chef-prepared meals delivered to the home", "https://uitgekookt.nl/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Netherlands prepared-meal anchor"],
+  ["netherlands", "Factor", "prepared meals", "1", "active", "HelloFresh ready-to-eat brand available in the Netherlands with chef-prepared meals", "https://www.factormeals.nl/kant-en-klare-maaltijden?locale=en-NL", "yes", `official_and_group_source_checked_${checkedDate}`, "Add to Netherlands prepared-meal and high-protein comparisons"],
+  ["netherlands", "Marley Spoon", "meal kit", "2", "active", "Meal-kit brand with Netherlands market presence to compare against HelloFresh and category challengers", "https://marleyspoon.nl/", "affiliate application", `brand_source_checked_${checkedDate}`, "Verify local checkout path and add to Netherlands meal-kit comparisons"],
+  ["belgium", "HelloFresh", "meal kit", "1", "active", "Belgium meal-kit box with 50+ weekly recipes and dietitian-approved recipe positioning", "https://www.hellofresh.be/", "yes", `official_source_checked_${checkedDate}`, "Keep as Belgium meal-kit anchor"],
+  ["belgium", "Foodbag", "meal kit", "1", "active", "Belgian meal-box service and local HelloFresh alternative with broad recipe positioning", "https://www.foodbag.be/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Belgium challenger and outreach target"],
+  ["belgium", "Factor", "prepared meals", "1", "active", "Ready-to-eat Factor meals available in Flanders according to HelloFresh Group expansion evidence", "https://www.factormeals.be/", "yes", `group_source_checked_${checkedDate}`, "Add to Belgium/Flanders prepared-meal comparisons and verify local checkout path"],
+  ["new-zealand", "My Food Bag", "meal kit", "1", "active", "New Zealand meal-kit brand with weekly recipe choices, locally sourced ingredients, and ready-made range", "https://www.myfoodbag.co.nz/", "affiliate application", `official_source_checked_${checkedDate}`, "Keep as New Zealand anchor brand"],
+  ["new-zealand", "HelloFresh", "meal kit", "1", "active", "New Zealand HelloFresh meal-kit market with weekly recipe subscription", "https://www.hellofresh.co.nz/", "yes", `official_source_checked_${checkedDate}`, "Add as New Zealand comparison anchor"],
+  ["new-zealand", "Woop", "meal kit", "1", "active", "New Zealand food box with pre-prepared ingredients, sauces, and recipe cards", "https://woop.co.nz/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to New Zealand premium meal-kit comparisons"],
+  ["new-zealand", "Bargain Box", "meal kit", "1", "active", "New Zealand value family meal kit from the My Food Bag family, positioned around affordable recipes", "https://www.bargainbox.co.nz/", "affiliate application", `official_source_checked_${checkedDate}`, "Add to New Zealand budget and family pages"],
+  ["new-zealand", "Fitfood", "prepared meals", "1", "active", "New Zealand ready-made healthy meals delivered nationwide with keto, weight management, and high-protein options", "https://www.fitfood.nz/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as New Zealand prepared and high-protein anchor"],
+  ["spain", "Wetaca", "prepared meals", "1", "active", "Spanish weekly prepared-meal service with refrigerated ready meals and recurring menu demand", "https://wetaca.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Spain prepared-meal anchor"],
+  ["spain", "MenuDiet", "prepared meals", "1", "active", "Spanish healthy prepared-meal delivery service with weekly menus and mainland Spain delivery claims", "https://www.menudiet.es/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Spain diet/prepared meal comparison and outreach"],
+  ["spain", "DinDins", "prepared meals", "2", "active", "Spain ready-made meal delivery brand for fresh and frozen chef-cooked meals", "https://dindins.es/", "direct partnership", `official_source_checked_${checkedDate}`, "Add as Spain challenger for prepared and frozen meal pages"],
+  ["spain", "HelloFresh Spain", "meal kit", "3", "not_active_market_exit", "HelloFresh Spain should be accounted for historically, but current source context indicates Spain exit/withdrawal rather than an active recommendation", "https://www.hellofreshgroup.com/", "not ready", `market_exit_source_checked_${checkedDate}`, "Do not recommend as active; route users to current Spain alternatives"],
+  ["italy", "Nutribees", "prepared meals", "1", "active", "Italian healthy ready-meal delivery brand with nationwide refrigerated delivery and personalised menu positioning", "https://www.nutribees.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Italy prepared-meal anchor"],
+  ["italy", "Foorban", "prepared meals", "2", "active", "Italian fresh meal and workplace lunch solution with consumer prepared-meal relevance", "https://www.foorban.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Italy prepared-meal and lunch comparison sets"],
+  ["italy", "HelloFresh Italy", "meal kit", "3", "not_active_market_exit", "HelloFresh Italy should be accounted for historically, but current source context indicates Italy exit/withdrawal rather than an active recommendation", "https://www.hellofreshgroup.com/", "not ready", `market_exit_source_checked_${checkedDate}`, "Do not recommend as active; route users to current Italy alternatives"],
+  ["sweden", "Linas Matkasse", "meal kit", "1", "active", "Swedish meal-kit brand operated by Cheffelo/Linas Matkasse with weekly dinner-box positioning", "https://www.linasmatkasse.se/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Sweden meal-kit anchor"],
+  ["sweden", "HelloFresh", "meal kit", "1", "active", "HelloFresh Sweden active market to compare against Linas Matkasse and local meal-kit brands", "https://www.hellofresh.se/", "yes", `group_and_market_source_checked_${checkedDate}`, "Add to Sweden meal-kit comparison and affiliate queue"],
+  ["denmark", "RetNemt", "meal kit", "1", "active", "Danish meal-kit brand operated in the Cheffelo Nordic group with family meal-box positioning", "https://www.retnemt.dk/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Denmark meal-kit anchor"],
+  ["denmark", "Aarstiderne", "meal kit", "1", "active", "Danish organic meal-box and produce-box brand delivering meal boxes with ingredients and recipes", "https://www.aarstiderne.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Denmark organic meal-kit anchor"],
+  ["denmark", "HelloFresh", "meal kit", "1", "active", "HelloFresh Denmark active market to compare against RetNemt and Aarstiderne", "https://www.hellofresh.dk/", "yes", `group_and_market_source_checked_${checkedDate}`, "Add to Denmark meal-kit comparison and affiliate queue"],
+  ["norway", "Godtlevert", "meal kit", "1", "active", "Norwegian meal-kit brand operated by Cheffelo with home-delivered dinner boxes", "https://www.godtlevert.no/", "direct partnership", `official_source_checked_${checkedDate}`, "Use as Norway meal-kit anchor"],
+  ["norway", "Adams Matkasse", "meal kit", "2", "merged_into_godtlevert", "Norwegian meal-kit brand being consolidated into Godtlevert, so it should be accounted for but not treated as a separate active first route", "https://www.godtlevert.no/", "verify before monetization", `merger_source_checked_${checkedDate}`, "Account for brand search demand and route users to Godtlevert context"],
+  ["norway", "HelloFresh", "meal kit", "1", "active", "HelloFresh Norway active market to compare against Godtlevert and Adams Matkasse brand searches", "https://www.hellofresh.no/", "yes", `group_and_market_source_checked_${checkedDate}`, "Add to Norway meal-kit comparison and affiliate queue"],
+  ["switzerland", "HelloFresh", "meal kit", "1", "active", "HelloFresh Switzerland active market with meal-kit demand and affiliate surface", "https://www.hellofresh.ch/", "yes", `group_and_market_source_checked_${checkedDate}`, "Use as Switzerland meal-kit anchor and verify local checkout"],
+  ["switzerland", "Löwenanteil", "high protein prepared meals", "2", "active", "German-language high-protein prepared-meal brand with Switzerland shipping option", "https://www.loewenanteil.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Switzerland high-protein prepared-meal comparisons"],
+  ["austria", "HelloFresh", "meal kit", "1", "active", "HelloFresh Austria active market with meal-kit demand and affiliate surface", "https://www.hellofresh.at/", "yes", `group_and_market_source_checked_${checkedDate}`, "Use as Austria meal-kit anchor after target market expansion"],
+  ["austria", "Löwenanteil", "high protein prepared meals", "2", "active", "German-language high-protein prepared-meal brand with Austria shipping option", "https://www.loewenanteil.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Austria high-protein prepared-meal comparisons"]
+].map(([country, brand, category, priority, site_status, market_role, official_url, affiliate_program_target, evidence_status, next_action]) => ({
+  country,
+  brand,
+  category,
+  priority,
+  site_status,
+  market_role,
+  official_url,
+  affiliate_program_target,
+  evidence_status,
+  next_action
+}));
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let value = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+    if (char === '"') {
+      if (quoted && next === '"') {
+        value += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (char === "," && !quoted) {
+      row.push(value);
+      value = "";
+    } else if ((char === "\n" || char === "\r") && !quoted) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(value);
+      if (row.some((cell) => cell.length)) rows.push(row);
+      row = [];
+      value = "";
+    } else {
+      value += char;
+    }
+  }
+  if (value.length || row.length) {
+    row.push(value);
+    if (row.some((cell) => cell.length)) rows.push(row);
+  }
+  return rows;
+}
+
+function csvCell(value) {
+  const text = String(value ?? "");
+  return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function toCsv(rows) {
+  return `${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
+}
+
+if (!fs.existsSync(brandUniversePath)) {
+  throw new Error(`Missing ${brandUniversePath}`);
+}
+
+const rows = parseCsv(fs.readFileSync(brandUniversePath, "utf8"));
+const header = rows[0];
+const records = rows.slice(1).map((row) => Object.fromEntries(header.map((column, index) => [column, row[index] ?? ""])));
+const existing = new Set(records.map((record) => `${record.country}::${record.brand}`.toLowerCase()));
+const newRecords = [];
+const skipped = [];
+
+for (const addition of additions) {
+  const key = `${addition.country}::${addition.brand}`.toLowerCase();
+  if (existing.has(key)) {
+    skipped.push(addition);
+    continue;
+  }
+  records.push(addition);
+  newRecords.push(addition);
+  existing.add(key);
+}
+
+fs.writeFileSync(brandUniversePath, toCsv([header, ...records.map((record) => header.map((column) => record[column] ?? ""))]));
+fs.writeFileSync(waveCsvPath, toCsv([header, ...additions.map((record) => header.map((column) => record[column] ?? ""))]));
+
+fs.mkdirSync(path.dirname(waveReportPath), { recursive: true });
+fs.writeFileSync(
+  waveReportPath,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      wave: "007",
+      waveRows: additions.length,
+      rowsAdded: newRecords.length,
+      skippedExisting: skipped.length,
+      countriesTouched: [...new Set(additions.map((row) => row.country))].sort(),
+      sourceOfTruth: path.relative(root, brandUniversePath),
+      waveCsv: path.relative(root, waveCsvPath),
+      note: "Adds verified priority-2 Europe and New Zealand coverage from official/current sources; market exits are accounted for but not recommended as active brands."
+    },
+    null,
+    2
+  )}\n`
+);
+
+console.log(`Wave 007 complete: ${newRecords.length} brand-market rows added, ${skipped.length} skipped as existing.`);

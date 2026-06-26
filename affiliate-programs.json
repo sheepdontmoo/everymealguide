@@ -1,0 +1,52 @@
+{
+  "HelloFresh": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved HelloFresh affiliate deep link."
+  },
+  "Factor": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Factor affiliate deep link."
+  },
+  "Gousto": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Gousto affiliate deep link."
+  },
+  "CookUnity": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved CookUnity affiliate deep link."
+  },
+  "EveryPlate": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved EveryPlate affiliate deep link."
+  },
+  "Dinnerly": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Dinnerly affiliate deep link."
+  },
+  "Home Chef": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Home Chef affiliate deep link."
+  },
+  "Fresh N Lean": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Fresh N Lean affiliate deep link."
+  },
+  "Purple Carrot": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Purple Carrot affiliate deep link."
+  },
+  "Green Chef": {
+    "status": "apply",
+    "url": "",
+    "note": "Replace with approved Green Chef affiliate deep link."
+  }
+}

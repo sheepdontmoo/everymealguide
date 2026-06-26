@@ -1,0 +1,95 @@
+{
+  "statusDate": "2026-06-24",
+  "overallLocalCompletion": 100,
+  "overallGoalCompletionEstimate": 74,
+  "actuallyLive": true,
+  "monetized": false,
+  "production": {
+    "primaryUrl": "https://www.everymealguide.com/",
+    "apexUrl": "https://everymealguide.com/",
+    "vercelProject": "dinner-compare",
+    "latestVerifiedDeployment": "https://dinner-compare-gr37e9fjp-darren-buckleys-projects.vercel.app",
+    "domainStatus": "Vercel reports everymealguide.com and www.everymealguide.com configured correctly for project dinner-compare.",
+    "dns": [
+      "A @ 216.198.79.1",
+      "A @ 64.29.17.1",
+      "CNAME www ebb54be685367ccf.vercel-dns-017.com."
+    ]
+  },
+  "gates": [
+    {
+      "name": "Local static site",
+      "status": "ready_local",
+      "evidence": "Static homepage, expanded generated money routes, public hubs, branded 404 page, stylesheet, JavaScript, sitemap and robots generation exist."
+    },
+    {
+      "name": "Brand accountability",
+      "status": "ready_local",
+      "evidence": "BRAND_ACCOUNTABILITY.md, BRAND_SOURCE_LEDGER.json, BRAND_COVERAGE_ROADMAP.md, public /company-accountability/ and /latest-offer-checks/ pages, and audit:brands account for every company. Fresh N Lean is watchlist-only."
+    },
+    {
+      "name": "SEO foundation",
+      "status": "ready_live",
+      "evidence": "Canonical URLs, sitemap generation, robots generation, llms.txt generation, schema graph, FAQ schema, SEO docs, internal comparison hub, and expanded high-intent best/vs/review coverage exist. robots.txt points at https://www.everymealguide.com/sitemap.xml."
+    },
+    {
+      "name": "Affiliate structure",
+      "status": "ready_local",
+      "evidence": "/go/{brand}/ routes, affiliate set/clear helpers, disclosure, sponsored/nofollow CTAs, and launch control exist."
+    },
+    {
+      "name": "Visual QA",
+      "status": "not_complete",
+      "evidence": "Visual QA checklist and report scaffold exist, but browser-led visual QA has not been run in this gate."
+    },
+    {
+      "name": "Domain",
+      "status": "complete",
+      "evidence": "EveryMealGuide.com is purchased through Namecheap, attached to Vercel, and Vercel reports apex and www configured correctly."
+    },
+    {
+      "name": "Public deployment",
+      "status": "complete",
+      "evidence": "Production Vercel deployment is ready and aliased to https://everymealguide.com and https://www.everymealguide.com."
+    },
+    {
+      "name": "Google verification file",
+      "status": "ready_live",
+      "evidence": "googlea432a8df6c28372f.html exists locally and the live www path resolves to a 53-byte verification file after Vercel's trailing-slash redirect."
+    },
+    {
+      "name": "Analytics",
+      "status": "not_complete",
+      "evidence": "Pageview, matcher, newsletter, partner-redirect, and affiliate-click event scaffolds exist with measurement launch control and analytics event contract, but no live analytics provider is connected."
+    },
+    {
+      "name": "Search Console",
+      "status": "human_gate",
+      "evidence": "Domain and HTML verification file are ready. Search Console Verify and sitemap submission still need to be completed in the Google account UI."
+    },
+    {
+      "name": "Affiliate approvals",
+      "status": "human_gate",
+      "evidence": "All affiliate program statuses remain pending/apply. Applications can now be submitted using the live domain."
+    },
+    {
+      "name": "Real affiliate URLs",
+      "status": "not_complete",
+      "evidence": "Approved tracking URLs have not been added."
+    },
+    {
+      "name": "Revenue proof",
+      "status": "not_complete",
+      "evidence": "Weekly growth report scaffold exists, but there is no live traffic, affiliate clicks, or merchant-side conversion data yet."
+    }
+  ],
+  "nextBestSequence": [
+    "Click Verify in Google Search Console for https://www.everymealguide.com/",
+    "Submit https://www.everymealguide.com/sitemap.xml in Search Console",
+    "Connect analytics and confirm pageview plus affiliate_click events",
+    "Run browser visual QA on homepage, best page, deals page, vs page, review page, and country page",
+    "Apply to P0 affiliate programs now that the live domain exists",
+    "Add first approved affiliate URL and redeploy",
+    "Track first affiliate click and merchant-side result"
+  ]
+}

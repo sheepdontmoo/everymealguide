@@ -1,0 +1,45 @@
+# Full-Throttle Scorecard
+
+Generated: 2026-06-23T18:23:14.007Z
+
+Overall: 77/100
+
+| Area | Score |
+|---|---:|
+| localSiteDesign | 84% |
+| brandCoverageSystem | 100% |
+| seoPageStructure | 85% |
+| affiliateReadiness | 63% |
+| sourceVerification | 81% |
+| liveLaunchReadiness | 66% |
+| revenueReadiness | 42% |
+
+## Evidence
+
+- brandRows: 323
+- sitemapUrlCount: 106
+- generatedWavePages: 48
+- priorityPagesGenerated: 8
+- polishedWavePages: 48
+- upgradedMoneyPages: 10
+- goLivePacketReady: true
+- globalBrandFamiliesSplit: true
+- wave2CandidatesClassified: 185
+- reachableSourceChecks: 43
+- sourceChecksTotal: 50
+- brandDirectoryReady: true
+- generatedCountryPages: 5
+
+## Remaining local blockers
+
+- Verify official URLs for Wave 002 top-25 batch
+- Resolve 4 Wave 001 manual source follow-ups
+- Run live deployment only after approval
+
+## Human gates
+
+- Domain decision
+- Deploy approval
+- Analytics/Search Console approval
+- Affiliate application batch approval
+- Affiliate URL swap approval

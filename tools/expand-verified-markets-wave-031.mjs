@@ -1,0 +1,140 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const brandUniversePath = path.join(root, "seo", "global-brand-universe.csv");
+const waveCsvPath = path.join(root, "seo", "verified-expansion-wave-031.csv");
+const waveReportPath = path.join(root, "reports", "verified-expansion-wave-031.json");
+
+const checkedDate = "2026-06-24";
+
+const additions = [
+  ["US", "Front Porch Pantry", "prepared meals", "P2", "active_region_check", "Texas-based fully cooked meal delivery service shipping fresh prepared meals across Texas, Oklahoma, Louisiana, and Arkansas", "https://frontporchpantry.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to South/Central US prepared-meal and family dinner pages"],
+  ["US", "My Healthy Penguin", "high protein meal prep", "P3", "active_region_check", "Southern California macro-balanced fresh meal-prep delivery brand serving Inland Empire, Los Angeles, Orange County, and San Diego routes", "https://myhealthypenguin.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Southern California high-protein meal-prep alternatives"],
+  ["US", "Prepboys Meal Prep", "high protein meal prep", "P3", "active_region_check", "Bay Area meal-prep service with one-time packs, subscriptions, pickup, and local delivery", "https://www.prepboysmealprep.com/", "direct partnership after reputation check", `official_source_checked_${checkedDate}`, "Add to Bay Area meal-prep alternatives with cautious source note"],
+  ["US", "Clean Eats Meal Prep", "diet prepared meals", "P3", "active_region_check", "New Jersey meal-prep delivery service with recurring one, two, and three meal-per-day packs", "https://www.cleaneatsmealprep.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to New Jersey diet meal-prep alternatives"],
+  ["US", "Fit Kitchen Meal Prep", "high protein meal prep", "P3", "active_region_check", "Charlotte ready-to-eat healthy meal-prep brand offering pickup, home or office delivery, and custom meals", "https://fitkitchenmealprep.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Charlotte high-protein meal-prep pages"],
+  ["US", "All Meal Prep", "prepared meals", "P3", "active_region_check", "Chicago local meal-prep delivery company with 80-plus healthy meal-prep options and custom meal preps", "https://allmealprep.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chicago prepared-meal alternatives"],
+  ["US", "Eat Clean Chicago", "prepared meals", "P3", "active_region_check", "Chicago meal-prep company delivering dietitian-curated ready-to-heat prepared meals with subscription options", "https://eatcleanchicago.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chicago healthy meal-prep pages"],
+  ["US", "Clean Eats Bay Area", "prepared meals", "P3", "active_region_check", "Bay Area custom meal-prep service with keto, vegan, and nutrition-focused prepared meal options", "https://www.mycleaneats.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Bay Area prepared-meal alternatives"],
+  ["US", "Prepped N' Plated", "high protein meal prep", "P3", "active_region_check", "Chicago-area meal-prep service focused on fresh healthy prepared meals, macros, and local delivery", "https://preppednplated.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chicago macro meal-prep alternatives"],
+  ["US", "Primal Organic", "organic prepared meals", "P3", "active_region_check", "Miami organic meal-plan delivery brand with paleo, keto, vegan, and high-protein low-carb options", "https://www.primalorganicmiami.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Miami organic and low-carb meal-plan pages"],
+  ["US", "MacroBox Meals", "high protein meal prep", "P3", "active_region_check", "Orange County fresh macro-labeled meal delivery and pickup service with weekly ordering", "https://www.macroboxmeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Orange County macro meal-prep alternatives"],
+  ["US", "Lean Kitchen Co", "high protein meal prep", "P3", "active_region_check", "US meal-prep franchise route offering fresh chef-prepared high-protein grab-and-go meals, pickup, and delivery at participating locations", "https://leankitchenco.com/", "direct partnership after franchise-route check", `official_source_checked_${checkedDate}`, "Add to regional high-protein meal-prep pages with location caveat"],
+  ["US", "Power Plate Meals", "prepared meals", "P3", "active_region_check", "Upper Midwest prepared-meal brand offering weekly changing ready-to-eat meal delivery and pickup with no weekly commitment", "https://powerplatemeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Midwest prepared-meal alternatives"],
+  ["US", "Fitlicious Meal Prep", "prepared meals", "P3", "active_region_check", "Los Angeles chef-prepared health-focused meal-prep service delivering fresh meals on Wednesdays and Sundays", "https://fitliciousmealprep.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Los Angeles prepared-meal alternatives"],
+  ["US", "Urban Crunch Meal", "high protein meal prep", "P3", "active_region_check", "Los Angeles ready-made meal-prep service with prepared meals, build-your-own meals, and proteins by the pound", "https://urbancrunchmeal.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to LA high-protein meal-prep alternatives"],
+  ["US", "Macro Made Meals", "high protein meal prep", "P3", "active_region_check", "Greater Chicagoland macro-friendly meal-prep brand with rotating menu and local ordering", "https://macromademeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chicagoland macro meal-prep alternatives"],
+  ["US", "Mimi's Macros", "high protein meal prep", "P3", "active_region_check", "Northern Kentucky and Cincinnati-area chef-made macro-balanced meal-prep delivery brand", "https://mimismacros.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Cincinnati/Northern Kentucky macro meal-prep alternatives"],
+  ["US", "Eat Macro Meals", "high protein meal prep", "P3", "active_region_check", "US regional macro meal-prep delivery service building meals from fresh mostly organic ingredients", "https://www.eatmacromeals.com/", "direct partnership after delivery-area check", `official_source_checked_${checkedDate}`, "Add to regional macro meal-prep alternatives"],
+  ["US", "Primal Balance Nutrition", "organic prepared meals", "P3", "active_region_check", "Southern California organic non-GMO meal-prep delivery brand serving San Diego, Orange County, and Los Angeles", "https://www.primalbalancenutrition.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to organic/no-seed-oil meal-prep alternatives"],
+  ["US", "Healthy And Fresh Meal Prep", "high protein meal prep", "P3", "active_region_check", "Orange County and Los Angeles performance and keto meal-prep delivery brand with weekly menu changes", "https://healthyandfreshmealprep.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Southern California performance meal-prep alternatives"],
+  ["US", "Beehive Meals", "frozen family meals", "P2", "active", "US freezer meal delivery brand shipping slow-cooker family freezer meals to all 50 states", "https://beehivemeals.com/", "affiliate application", `official_source_checked_${checkedDate}`, "Add to frozen family dinner and kids/family meal pages"],
+  ["Canada", "One Life Meals", "diet prepared meals", "P2", "active_region_check", "Greater Toronto Area healthy meal-prep subscription brand with weight-loss plans and fresh chef-prepared meals", "https://www.onelifemeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Toronto diet and weight-loss prepared-meal pages"],
+  ["Canada", "Honey Bee Meals", "prepared meals", "P2", "active_region_check", "Toronto and GTA ready-to-eat prepared-meal brand delivering twice weekly with rotating healthy meals and snacks", "https://honeybeemeals.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Toronto prepared-meal alternatives"],
+  ["Puerto Rico", "Macrobox Kitchen", "high protein meal prep", "P3", "active_region_check", "Puerto Rico local macro meal-prep subscription route with protein-labeled prepared meals", "https://macroboxmeals.net/", "direct partnership after local-route check", `official_source_checked_${checkedDate}`, "Add as Puerto Rico macro meal-prep anchor with territory caveat"]
+].map(([country, brand, category, priority, site_status, market_role, official_url, affiliate_program_target, evidence_status, next_action]) => ({
+  country,
+  brand,
+  category,
+  priority,
+  site_status,
+  market_role,
+  official_url,
+  affiliate_program_target,
+  evidence_status,
+  next_action
+}));
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let value = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+    if (char === '"') {
+      if (quoted && next === '"') {
+        value += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (char === "," && !quoted) {
+      row.push(value);
+      value = "";
+    } else if ((char === "\n" || char === "\r") && !quoted) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(value);
+      if (row.some((cell) => cell.length)) rows.push(row);
+      row = [];
+      value = "";
+    } else {
+      value += char;
+    }
+  }
+  if (value.length || row.length) {
+    row.push(value);
+    if (row.some((cell) => cell.length)) rows.push(row);
+  }
+  return rows;
+}
+
+function csvCell(value) {
+  const text = String(value ?? "");
+  return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function toCsv(rows) {
+  return `${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
+}
+
+if (!fs.existsSync(brandUniversePath)) {
+  throw new Error(`Missing ${brandUniversePath}`);
+}
+
+const rows = parseCsv(fs.readFileSync(brandUniversePath, "utf8"));
+const header = rows[0];
+const records = rows.slice(1).map((row) => Object.fromEntries(header.map((column, index) => [column, row[index] ?? ""])));
+const byKey = new Map(records.map((record, index) => [`${record.country}::${record.brand}`.toLowerCase(), { record, index }]));
+const inserted = [];
+const updated = [];
+
+for (const addition of additions) {
+  const key = `${addition.country}::${addition.brand}`.toLowerCase();
+  const existing = byKey.get(key);
+  if (existing) {
+    records[existing.index] = { ...existing.record, ...addition };
+    updated.push(addition);
+  } else {
+    records.push(addition);
+    inserted.push(addition);
+    byKey.set(key, { record: addition, index: records.length - 1 });
+  }
+}
+
+fs.writeFileSync(brandUniversePath, toCsv([header, ...records.map((record) => header.map((column) => record[column] ?? ""))]));
+fs.writeFileSync(waveCsvPath, toCsv([header, ...additions.map((record) => header.map((column) => record[column] ?? ""))]));
+
+fs.mkdirSync(path.dirname(waveReportPath), { recursive: true });
+fs.writeFileSync(
+  waveReportPath,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      wave: "031",
+      waveRows: additions.length,
+      rowsInserted: inserted.length,
+      rowsUpdated: updated.length,
+      countriesTouched: [...new Set(additions.map((row) => row.country))].sort(),
+      sourceOfTruth: path.relative(root, brandUniversePath),
+      waveCsv: path.relative(root, waveCsvPath),
+      note: "Adds source-backed US, Canada, and Puerto Rico regional prepared-meal, macro meal-prep, organic meal-prep, freezer family meal, diet meal, and high-protein meal-prep brands."
+    },
+    null,
+    2
+  )}\n`
+);
+
+console.log(`Wave 031 complete: ${inserted.length} inserted, ${updated.length} updated.`);

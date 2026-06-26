@@ -1,0 +1,10 @@
+priority,item,why_it_matters,success_metric,status,human_gate
+P0,Deploy local homepage decision upgrades,Live site currently lacks latest inline-result and trust sections,Homepage explains purpose and gives recommendation in under 60 seconds,ready_for_deploy,User approval to deploy
+P0,Confirm analytics destination,Decision-path events need a real destination beyond local browser storage,Decision path clicks visible in analytics dashboard,blocked,Analytics ownership/tool choice
+P0,Submit sitemap in Search Console,Organic traffic cannot ramp reliably without indexing visibility,Search Console sees sitemap and indexed pages,blocked,Google account/Search Console verification
+P1,Measure matcher vs instant-answer usage,Find whether users prefer quiz or direct cards,Decision path click distribution,waiting_for_traffic,Traffic required
+P1,Add country auto-detection prompt,Country fit is a major decision factor,More country-specific shortlist clicks,not_started,Privacy/geolocation approach decision
+P1,Improve top shortlist page templates,Homepage can answer fast but destination pages must reinforce confidence,Affiliate/check clicks from shortlist pages,not_started,None
+P2,Add plain-English comparison scoring,Users need to understand why one brand is better for them,Review/comparison engagement and offer clicks,not_started,None
+P2,Add post-click feedback prompt,Learn whether recommendation was useful,Feedback rate and positive response share,not_started,Privacy/tooling decision
+P2,Create first affiliate application sprint,Revenue cannot start without approvals,100 applications submitted,blocked,Affiliate account access and send approval

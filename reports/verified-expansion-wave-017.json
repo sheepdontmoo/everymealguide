@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-24T07:45:50.039Z",
+  "wave": "017",
+  "waveRows": 30,
+  "rowsInserted": 24,
+  "rowsUpdated": 6,
+  "countriesTouched": [
+    "Czech Republic",
+    "Greece",
+    "Hungary",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Turkey",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-017.csv",
+  "note": "Adds Poland, Czechia, Romania, Portugal, Hungary, Turkey, Greece, and extra US prepared/diet brands, with active, app-route, regional, brand-family, closed, and B2B caveats."
+}

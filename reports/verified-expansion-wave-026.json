@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-24T08:25:37.375Z",
+  "wave": "026",
+  "waveRows": 25,
+  "rowsInserted": 12,
+  "rowsUpdated": 13,
+  "countriesTouched": [
+    "Canada",
+    "Ireland",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-026.csv",
+  "note": "Adds Ireland, UK, Canada, and US meal-kit, prepared, senior frozen, shelf-stable, pantry-helper, and product-route variants with active, route-check, regional, and alternatives-only caveats."
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-24T09:18:25.536Z",
+  "wave": "031",
+  "waveRows": 24,
+  "rowsInserted": 23,
+  "rowsUpdated": 1,
+  "countriesTouched": [
+    "Canada",
+    "Puerto Rico",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-031.csv",
+  "note": "Adds source-backed US, Canada, and Puerto Rico regional prepared-meal, macro meal-prep, organic meal-prep, freezer family meal, diet meal, and high-protein meal-prep brands."
+}

@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-06-23T17:37:13.170Z",
+  "files": [
+    "GO_LIVE_APPROVAL_PACKET.md",
+    "DEPLOYMENT_APPROVAL_CHECKLIST.md"
+  ],
+  "approvalPhrase": "Approve live deploy to Vercel",
+  "noExternalActionsTaken": true
+}

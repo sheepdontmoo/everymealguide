@@ -1,0 +1,11 @@
+brand,slug,priority,likely_page_fit,status,url_field,next_action,notes
+HelloFresh,hellofresh,P0,"best meal delivery, meal kits, HelloFresh vs Gousto, deals",not_applied,blank,"Apply after live domain and contact email are ready","Major meal-kit brand; strong commercial intent."
+Factor,factor,P0,"prepared meals, high protein, Factor review, Factor vs CookUnity",not_applied,blank,"Apply after live domain and contact email are ready","High-intent prepared-meal buyer pages."
+CookUnity,cookunity,P0,"prepared meals, chef-made meals, Factor vs CookUnity",not_applied,blank,"Apply after live domain and contact email are ready","Strong premium prepared-meal comparison fit."
+Gousto,gousto,P1,"UK meal kits, HelloFresh vs Gousto, family meal kits",not_applied,blank,"Apply after live domain and contact email are ready","UK-specific strength."
+EveryPlate,everyplate,P1,"cheap meal delivery, budget meal kits, EveryPlate vs Dinnerly",not_applied,blank,"Apply after live domain and contact email are ready","Budget angle."
+Dinnerly,dinnerly,P1,"cheap meal delivery, budget meal kits, EveryPlate vs Dinnerly",not_applied,blank,"Apply after live domain and contact email are ready","Budget comparison fit."
+Home Chef,home-chef,P1,"meal kits, HelloFresh vs Home Chef, Home Chef review",not_applied,blank,"Apply after live domain and contact email are ready","US meal-kit comparison fit."
+Fresh N Lean,fresh-n-lean,P2,"prepared meals, high protein, fitness meals",not_applied,blank,"Apply after live domain and contact email are ready","Useful for fitness/nutrition pages."
+Purple Carrot,purple-carrot,P2,"vegan meal delivery, plant-based meal kits",not_applied,blank,"Apply after live domain and contact email are ready","Plant-based niche fit."
+Green Chef,green-chef,P2,"healthy meal kits, Green Chef vs Purple Carrot",not_applied,blank,"Apply after live domain and contact email are ready","Plant-forward/healthy page fit."

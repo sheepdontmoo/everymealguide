@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-06-24T07:43:27.139Z",
+  "wave": "016",
+  "waveRows": 30,
+  "rowsInserted": 30,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "Argentina",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Japan",
+    "Kenya",
+    "Kuwait",
+    "Malaysia",
+    "Mexico",
+    "Nigeria",
+    "Peru",
+    "Philippines",
+    "Qatar",
+    "Saudi Arabia",
+    "South Africa",
+    "South Korea",
+    "Thailand",
+    "UAE"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-016.csv",
+  "note": "International scale wave across Japan, South Korea, Latin America, Africa, Southeast Asia, and GCC with app-route, regional, closed, brand-variant, and non-commercial caveats."
+}

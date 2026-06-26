@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-24T07:22:59.041Z",
+  "wave": "009",
+  "waveRows": 26,
+  "rowsInserted": 5,
+  "rowsUpdated": 21,
+  "countriesTouched": [
+    "Australia",
+    "Canada",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-009.csv",
+  "note": "Adds and upserts kids, medical/diet, senior, frozen, and grocery-dinner brands that broaden Every Meal Guide beyond mainstream meal kits."
+}

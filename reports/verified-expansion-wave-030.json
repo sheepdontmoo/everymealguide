@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-24T09:07:23.078Z",
+  "wave": "030",
+  "waveRows": 24,
+  "rowsInserted": 24,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "Australia",
+    "France",
+    "Hong Kong",
+    "New Zealand",
+    "Singapore",
+    "South Africa",
+    "Spain",
+    "UAE",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-030.csv",
+  "note": "Adds source-backed New Zealand, South Africa, UAE, Singapore, Hong Kong, France, Spain, Australia, and US prepared-meal, frozen ready-meal, high-protein meal-prep, diet, meal-kit, and delivery-route brands."
+}

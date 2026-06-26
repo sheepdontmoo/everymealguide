@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-06-24T08:06:40.091Z",
+  "wave": "022",
+  "waveRows": 25,
+  "rowsInserted": 17,
+  "rowsUpdated": 8,
+  "countriesTouched": [
+    "Brazil",
+    "Colombia",
+    "Hong Kong",
+    "Kuwait",
+    "Malaysia",
+    "Mexico",
+    "Peru",
+    "Philippines",
+    "Qatar",
+    "Saudi Arabia",
+    "Singapore",
+    "Thailand",
+    "UAE"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-022.csv",
+  "note": "Adds Latin America, Gulf, and Southeast/East Asia consumer meal-plan, prepared-meal, frozen, high-protein, and diet meal brands with app-route, regional, and direct-partnership caveats."
+}

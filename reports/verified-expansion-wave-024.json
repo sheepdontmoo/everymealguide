@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-24T08:15:08.362Z",
+  "wave": "024",
+  "waveRows": 25,
+  "rowsInserted": 19,
+  "rowsUpdated": 6,
+  "countriesTouched": [
+    "Canada",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-024.csv",
+  "note": "Adds US and Canada local chef meals, ready salad/bowl delivery, smoothie subscriptions, grocery dinner helpers, produce boxes, and protein boxes with precise adjacent-category caveats."
+}

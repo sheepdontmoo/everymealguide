@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-23T22:22:23.285Z",
+  "wave": "006",
+  "countries": [
+    "uae",
+    "singapore",
+    "south-africa",
+    "hong-kong",
+    "india"
+  ],
+  "rowsAdded": 24,
+  "waveRows": 24,
+  "countryPagesWritten": [
+    "/countries/uae/best-meal-delivery/",
+    "/countries/singapore/best-meal-delivery/",
+    "/countries/south-africa/best-meal-delivery/",
+    "/countries/hong-kong/best-meal-delivery/",
+    "/countries/india/best-meal-delivery/"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-006.csv"
+}

@@ -1,0 +1,37 @@
+id,workstream,priority,task,status,gate,notes
+A001,brand_universe,P0,Expand brand universe to 300+ rows,completed,local_only,Add 160+ more brand-market rows from official/current sources
+A002,brand_universe,P0,Verify official URLs for Wave 001,in_progress,local_only,"Official URL, country fit, active/inactive status"
+A003,brand_universe,P0,Add Ireland full country coverage,in_progress,local_only,Ireland is currently weakest country coverage
+A004,brand_universe,P0,Split global brands into country variants,completed,local_only,"HelloFresh, Factor, Green Chef, Dinnerly, EveryPlate, Marley Spoon"
+A005,brand_universe,P1,Classify watchlist and inactive brands,pending,local_only,Avoid recommending dead brands
+B001,pages,P0,Build country hub: USA,completed,local_only,"Country hub with top brands, categories, and caveats"
+B002,pages,P0,Build country hub: UK,completed,local_only,UK meal kits + prepared meals
+B003,pages,P0,Build country hub: Ireland,completed,local_only,New country page required
+B004,pages,P0,Build country hub: Australia,completed,local_only,AU prepared meals and meal kits
+B005,pages,P0,Build country hub: Canada,completed,local_only,Canada meal kits + prepared meals
+B006,pages,P0,Build category hub: prepared meals,completed,local_only,Prepared/no-cook global intent
+B007,pages,P0,Build category hub: meal kits,completed,local_only,Meal-kit intent
+B008,pages,P0,Build category hub: meal prep/high protein,completed,local_only,Fitness and macro intent
+B009,pages,P1,Build category hub: vegan/plant-based,pending,local_only,Plant-based providers
+B010,pages,P1,Build category hub: weight loss/diet meals,pending,local_only,Requires careful no-medical-claims copy
+B011,pages,P1,Build category hub: frozen ready meals,pending,local_only,Frozen prepared meals
+B012,pages,P1,Build category hub: kids/family meals,pending,local_only,Kids and family intent
+C001,comparisons,P0,Create HelloFresh vs Blue Apron,completed,local_only,US comparison
+C002,comparisons,P0,Create HelloFresh vs Chefs Plate,completed,local_only,Canada comparison
+C003,comparisons,P0,Create Youfoodz vs My Muscle Chef,completed,local_only,Australia comparison
+C004,comparisons,P0,Create Gousto vs Mindful Chef,completed,local_only,UK comparison
+C005,comparisons,P0,Create DropChef vs Clean Cut Meals,completed,local_only,Ireland comparison
+C006,comparisons,P1,Create EveryPlate vs Dinnerly Australia,pending,local_only,Budget AU comparison
+C007,comparisons,P1,Create BistroMD vs Nutrisystem,pending,local_only,Diet meal comparison
+D001,affiliate,P0,Find affiliate program/network for Wave 001,in_progress,local_only,No application yet
+D002,affiliate,P0,Prepare affiliate application copy pack,completed,local_only,Reusable but brand-specific
+D003,affiliate,P0,Create approved-links storage format,completed,local_only,For future approved URLs
+D004,affiliate,P0,Create go-route swap checklist,completed,local_only,Prevent broken outbound links
+E001,launch,P0,Select domain,blocked,needs_approval,Live decision required
+E002,launch,P0,Deploy to Vercel,blocked,needs_approval,External live action
+E003,launch,P0,Set analytics,blocked,needs_approval,External tracking setup
+E004,launch,P0,Set Search Console/Bing,blocked,needs_approval,External account setup
+E005,launch,P0,Submit sitemap,blocked,needs_approval,External submission
+F001,ops,P1,Create weekly offer-check process,pending,local_only,Keep offers defensible
+F002,ops,P1,Create weekly brand status refresh,pending,local_only,Watchlist/inactive updates
+F003,ops,P1,Create affiliate click audit process,pending,local_only,Post-launch tracking

@@ -1,0 +1,30 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/googlea432a8df6c28372f.html",
+      "destination": "/api/google-verification"
+    },
+    {
+      "source": "/googlea432a8df6c28372f.html/",
+      "destination": "/api/google-verification"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

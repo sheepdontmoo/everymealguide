@@ -1,0 +1,101 @@
+rank,brand,target_route,countries,categories,draft_file,submission_status,human_gate
+1,15gram,direct,Belgium,meal kit,001-15gram.md,draft_only_not_submitted,requires_human_submission_or_program_login
+2,28Ishrana,direct,Serbia,diet prepared meals,002-28ishrana.md,draft_only_not_submitted,requires_human_submission_or_program_login
+3,518 Kitchen,direct,US,specialty prepared meals,003-518-kitchen.md,draft_only_not_submitted,requires_human_submission_or_program_login
+4,A Dozen Cousins,affiliate,US,shelf-stable meals,004-a-dozen-cousins.md,draft_only_not_submitted,requires_human_submission_or_program_login
+5,A Dozen Cousins Rice & Beans,affiliate,US,shelf-stable meals,005-a-dozen-cousins-rice-and-beans.md,draft_only_not_submitted,requires_human_submission_or_program_login
+6,A Life Plus,direct,Australia,diet prepared meals,006-a-life-plus.md,draft_only_not_submitted,requires_human_submission_or_program_login
+7,Aarstiderne,direct,denmark,organic meal kit,007-aarstiderne.md,draft_only_not_submitted,requires_human_submission_or_program_login
+8,Abel & Cole,affiliate,UK,grocery dinner delivery,008-abel-and-cole.md,draft_only_not_submitted,requires_human_submission_or_program_login
+9,Abel & Cole Recipe Boxes,affiliate,UK,organic meal kit,009-abel-and-cole-recipe-boxes.md,draft_only_not_submitted,requires_human_submission_or_program_login
+10,Activate Foods,direct,Australia,prepared meals,010-activate-foods.md,draft_only_not_submitted,requires_human_submission_or_program_login
+11,allplants,affiliate,UK,frozen plant-based meals,011-allplants.md,draft_only_not_submitted,requires_human_submission_or_program_login
+12,Angel Delivery,direct,New Zealand,frozen meals,012-angel-delivery.md,draft_only_not_submitted,requires_human_submission_or_program_login
+13,Apetito UK,direct,UK,frozen senior meals,013-apetito-uk.md,draft_only_not_submitted,requires_human_submission_or_program_login
+14,Athletes Kitchen,direct,Canada,high protein meal prep,014-athletes-kitchen.md,draft_only_not_submitted,requires_human_submission_or_program_login
+15,Athletes Kitchen Toronto,direct,Canada,prepared meals,015-athletes-kitchen-toronto.md,draft_only_not_submitted,requires_human_submission_or_program_login
+16,Aussie Meal Prep,direct,Australia,prepared meals,016-aussie-meal-prep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+17,Aussie Muscle Meals,direct,Australia,high protein meal prep,017-aussie-muscle-meals.md,draft_only_not_submitted,requires_human_submission_or_program_login
+18,Balance Box,direct,UK,diet prepared meals,018-balance-box.md,draft_only_not_submitted,requires_human_submission_or_program_login
+19,Balance Meals,direct,UK,prepared meals,019-balance-meals.md,draft_only_not_submitted,requires_human_submission_or_program_login
+20,Balanced Bites,direct,US,frozen prepared meals,020-balanced-bites.md,draft_only_not_submitted,requires_human_submission_or_program_login
+21,Bargain Box,direct,New Zealand; new-zealand,budget meal kit; meal kit,021-bargain-box.md,draft_only_not_submitted,requires_human_submission_or_program_login
+22,Be Fit Food,direct,Australia,diet prepared meals,022-be-fit-food.md,draft_only_not_submitted,requires_human_submission_or_program_login
+23,bistroMD,affiliate,US,diet prepared meals,023-bistromd.md,draft_only_not_submitted,requires_human_submission_or_program_login
+24,Blue Apron,affiliate,US,meal kit,024-blue-apron.md,draft_only_not_submitted,requires_human_submission_or_program_login
+25,Body Chief,direct,Poland,diet prepared meals,025-body-chief.md,draft_only_not_submitted,requires_human_submission_or_program_login
+26,BodyChef Ireland,direct,Ireland,diet prepared meals,026-bodychef-ireland.md,draft_only_not_submitted,requires_human_submission_or_program_login
+27,Bofrost,affiliate,germany,frozen meals,027-bofrost.md,draft_only_not_submitted,requires_human_submission_or_program_login
+28,BOL Foods,direct,UK,ready meals,028-bol-foods.md,draft_only_not_submitted,requires_human_submission_or_program_login
+29,Bondi Meal Prep,direct,Australia,prepared meals,029-bondi-meal-prep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+30,Brisbane Meal Prep,direct,Australia,prepared meals,030-brisbane-meal-prep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+31,ButcherBox,affiliate,US,protein box,031-butcherbox.md,draft_only_not_submitted,requires_human_submission_or_program_login
+32,Calo,direct,uae,prepared meals,032-calo.md,draft_only_not_submitted,requires_human_submission_or_program_login
+33,Calori,direct,finland,prepared meals,033-calori.md,draft_only_not_submitted,requires_human_submission_or_program_login
+34,Catered Fit,direct,US,prepared meals,034-catered-fit.md,draft_only_not_submitted,requires_human_submission_or_program_login
+35,Cerebelly,affiliate,US,kids and baby meals,035-cerebelly.md,draft_only_not_submitted,requires_human_submission_or_program_login
+36,Charlie Bigham's,affiliate,UK,premium ready meals,036-charlie-bigham-s.md,draft_only_not_submitted,requires_human_submission_or_program_login
+37,Chef Made Meals Australia,direct,Australia,prepared meals,037-chef-made-meals-australia.md,draft_only_not_submitted,requires_human_submission_or_program_login
+38,Chef Meals Australia,direct,Australia,prepared meals,038-chef-meals-australia.md,draft_only_not_submitted,requires_human_submission_or_program_login
+39,Chefgood,direct,Australia,prepared meals,039-chefgood.md,draft_only_not_submitted,requires_human_submission_or_program_login
+40,ChefPrep,direct,Australia,prepared meals,040-chefprep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+41,Chefs for Foodies,direct,UK,chef-led kits,041-chefs-for-foodies.md,draft_only_not_submitted,requires_human_submission_or_program_login
+42,Chefs Plate,affiliate,Canada,meal kit,042-chefs-plate.md,draft_only_not_submitted,requires_human_submission_or_program_login
+43,Chefs Plate Market,direct,Canada,meal kit add-ons,043-chefs-plate-market.md,draft_only_not_submitted,requires_human_submission_or_program_login
+44,Clean Creations,direct,US,prepared meals,044-clean-creations.md,draft_only_not_submitted,requires_human_submission_or_program_login
+45,Clean Cut Meals,direct,Ireland,high protein meal prep,045-clean-cut-meals.md,draft_only_not_submitted,requires_human_submission_or_program_login
+46,Clean Eats Canada,direct,Canada,prepared meals,046-clean-eats-canada.md,draft_only_not_submitted,requires_human_submission_or_program_login
+47,Clean Eats Ireland,direct,Ireland,prepared meals,047-clean-eats-ireland.md,draft_only_not_submitted,requires_human_submission_or_program_login
+48,Clean Eatz Kitchen,direct,US,prepared meals,048-clean-eatz-kitchen.md,draft_only_not_submitted,requires_human_submission_or_program_login
+49,Comme J'aime,affiliate,france,diet prepared meals,049-comme-j-aime.md,draft_only_not_submitted,requires_human_submission_or_program_login
+50,COOK,affiliate,UK,frozen meals,050-cook.md,draft_only_not_submitted,requires_human_submission_or_program_login
+51,Cook it,direct,Canada,meal kit,051-cook-it.md,draft_only_not_submitted,requires_human_submission_or_program_login
+52,Cook My Grub,direct,UK,prepared meals,052-cook-my-grub.md,draft_only_not_submitted,requires_human_submission_or_program_login
+53,CookUnity,affiliate,US,prepared meals,053-cookunity.md,draft_only_not_submitted,requires_human_submission_or_program_login
+54,CookUnity Canada,affiliate,Canada,prepared meals,054-cookunity-canada.md,draft_only_not_submitted,requires_human_submission_or_program_login
+55,Core Powerfoods,direct,Australia,high protein prepared meals,055-core-powerfoods.md,draft_only_not_submitted,requires_human_submission_or_program_login
+56,Cork Meal Prep,direct,Ireland,prepared meals,056-cork-meal-prep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+57,Cortilia,affiliate,Italy,grocery dinner delivery,057-cortilia.md,draft_only_not_submitted,requires_human_submission_or_program_login
+58,DabbaDrop,direct,UK,plant-based prepared meals,058-dabbadrop.md,draft_only_not_submitted,requires_human_submission_or_program_login
+59,Daily Harvest,affiliate,US,frozen plant-based meals,059-daily-harvest.md,draft_only_not_submitted,requires_human_submission_or_program_login
+60,Delidoor,direct,Australia,frozen prepared meals,060-delidoor.md,draft_only_not_submitted,requires_human_submission_or_program_login
+61,Detox Kitchen,direct,UK,prepared meals,061-detox-kitchen.md,draft_only_not_submitted,requires_human_submission_or_program_login
+62,Diet-to-Go,affiliate,US,diet prepared meals,062-diet-to-go.md,draft_only_not_submitted,requires_human_submission_or_program_login
+63,Dietbon,affiliate,france,diet prepared meals,063-dietbon.md,draft_only_not_submitted,requires_human_submission_or_program_login
+64,Dietlicious,direct,Australia,diet prepared meals,064-dietlicious.md,draft_only_not_submitted,requires_human_submission_or_program_login
+65,Dineamic,direct,Australia,prepared meals,065-dineamic.md,draft_only_not_submitted,requires_human_submission_or_program_login
+66,Dinner Sorted,direct,Australia,meal kit,066-dinner-sorted.md,draft_only_not_submitted,requires_human_submission_or_program_login
+67,Dinner Twist,direct,Australia,meal kit,067-dinner-twist.md,draft_only_not_submitted,requires_human_submission_or_program_login
+68,Dinnerly,affiliate,Global; US,budget meal kit,068-dinnerly.md,draft_only_not_submitted,requires_human_submission_or_program_login
+69,Dinnerly Australia,direct,Australia,budget meal kit,069-dinnerly-australia.md,draft_only_not_submitted,requires_human_submission_or_program_login
+70,Dishpatch,affiliate,UK,restaurant meal kits,070-dishpatch.md,draft_only_not_submitted,requires_human_submission_or_program_login
+71,DropChef,affiliate,Ireland,meal kit and prepared meals,071-dropchef.md,draft_only_not_submitted,requires_human_submission_or_program_login
+72,Dublin Meal Prep,direct,Ireland,prepared meals,072-dublin-meal-prep.md,draft_only_not_submitted,requires_human_submission_or_program_login
+73,Dublin Meat Company Ready Meals,direct,Ireland,prepared meals,073-dublin-meat-company-ready-meals.md,draft_only_not_submitted,requires_human_submission_or_program_login
+74,Easy Platter,direct,Canada,meal kit,074-easy-platter.md,draft_only_not_submitted,requires_human_submission_or_program_login
+75,Eat Clean Bro,direct,US,prepared meals,075-eat-clean-bro.md,draft_only_not_submitted,requires_human_submission_or_program_login
+76,Eat Clean Meal Prep UK,direct,UK,prepared meals,076-eat-clean-meal-prep-uk.md,draft_only_not_submitted,requires_human_submission_or_program_login
+77,Eat Fit Food,direct,Australia,prepared meals,077-eat-fit-food.md,draft_only_not_submitted,requires_human_submission_or_program_login
+78,EatFit,direct,india,healthy meal delivery,078-eatfit.md,draft_only_not_submitted,requires_human_submission_or_program_login
+79,Eatto,direct,Ireland,frozen prepared meals,079-eatto.md,draft_only_not_submitted,requires_human_submission_or_program_login
+80,Epicured,direct,US,medical diet meals,080-epicured.md,draft_only_not_submitted,requires_human_submission_or_program_login
+81,Ethey,direct,Canada,prepared meals,081-ethey.md,draft_only_not_submitted,requires_human_submission_or_program_login
+82,EveryPlate,affiliate,Global; US,budget meal kit,082-everyplate.md,draft_only_not_submitted,requires_human_submission_or_program_login
+83,EveryPlate Australia,direct,Australia,budget meal kit,083-everyplate-australia.md,draft_only_not_submitted,requires_human_submission_or_program_login
+84,Evolve Paleo Chef,direct,US,specialty prepared meals,084-evolve-paleo-chef.md,draft_only_not_submitted,requires_human_submission_or_program_login
+85,Factor,affiliate,Germany; Global; Netherlands; US; belgium; sweden,prepared meals,085-factor.md,draft_only_not_submitted,requires_human_submission_or_program_login
+86,Factor Canada,affiliate,Canada,prepared meals,086-factor-canada.md,draft_only_not_submitted,requires_human_submission_or_program_login
+87,Field Doctor,affiliate,UK,frozen diet prepared meals,087-field-doctor.md,draft_only_not_submitted,requires_human_submission_or_program_login
+88,Fit Foods Ireland,direct,Ireland,prepared meals,088-fit-foods-ireland.md,draft_only_not_submitted,requires_human_submission_or_program_login
+89,Fit Fuel UK,direct,UK,prepared meals,089-fit-fuel-uk.md,draft_only_not_submitted,requires_human_submission_or_program_login
+90,Fit Kitchen Canada,direct,Canada,prepared meals,090-fit-kitchen-canada.md,draft_only_not_submitted,requires_human_submission_or_program_login
+91,Fit Kitchen UK,direct,UK,prepared meals,091-fit-kitchen-uk.md,draft_only_not_submitted,requires_human_submission_or_program_login
+92,FitChef,direct,south-africa,prepared meals,092-fitchef.md,draft_only_not_submitted,requires_human_submission_or_program_login
+93,Fitlife Foods,direct,US,prepared meals,093-fitlife-foods.md,draft_only_not_submitted,requires_human_submission_or_program_login
+94,FlexPro Meals,direct,US,fitness prepared meals,094-flexpro-meals.md,draft_only_not_submitted,requires_human_submission_or_program_login
+95,Food Darzee,direct,india,diet prepared meals,095-food-darzee.md,draft_only_not_submitted,requires_human_submission_or_program_login
+96,Foodbag,direct,belgium,meal kit and ready meals,096-foodbag.md,draft_only_not_submitted,requires_human_submission_or_program_login
+97,FoodSt,direct,Australia,prepared meals,097-foodst.md,draft_only_not_submitted,requires_human_submission_or_program_login
+98,Fresh Fitness Food,direct,UK,prepared meals,098-fresh-fitness-food.md,draft_only_not_submitted,requires_human_submission_or_program_login
+99,Fresh Meal Plan,affiliate,US,prepared meals,099-fresh-meal-plan.md,draft_only_not_submitted,requires_human_submission_or_program_login
+100,Fresh N Lean,direct,US,prepared meals,100-fresh-n-lean.md,draft_only_not_submitted,requires_human_submission_or_program_login

@@ -1,0 +1,26 @@
+priority_rank,page_type,url,status,brands,source_count
+1,country_category,/countries/uae/cheapest-meal-delivery/,upgraded,Nutrition Kitchen UAE | TheMeal UAE | Calo | Kcal Life | Right Bite | Delicut,6
+2,country_category,/countries/france/cheapest-meal-delivery/,upgraded,Comme J'aime | Dietbon | HelloFresh | Quitoque | Seazon | Cheef,10
+3,country_category,/countries/singapore/cheapest-meal-delivery/,upgraded,Grain | Nutrition Kitchen | Keto Eato | Ketomei | YoloFoods | Freshkitchen Meals,7
+4,country_category,/countries/italy/cheapest-meal-delivery/,upgraded,HelloFresh Italy | Nutribees | Foorban | Mi Piace Cosi | Fratelli Desideri | My Cooking Box,6
+5,country_category,/countries/south-africa/cheapest-meal-delivery/,upgraded,DinnerLink | KookBox | FitChef | Frozen For You | UCOOK | Daily Dish,6
+6,country_category,/countries/spain/cheapest-meal-delivery/,upgraded,DinDins | HelloFresh Spain | MenuDiet | Wetaca | Eatsana | Phosh Food,6
+7,country_category,/countries/australia/cheapest-meal-delivery/,upgraded,Dinner Sorted | Dinnerly Australia | EveryPlate Australia | You Plate It | HelloFresh Australia | Marley Spoon Australia,4
+8,country_category,/countries/brazil/cheapest-meal-delivery/,upgraded,Liv Up | Chef Bob | Green Table | Keep Light | Pronto Light | Congelados da Sônia,6
+9,country_category,/countries/canada/cheapest-meal-delivery/,upgraded,Chef's Plate | Cook it | Fresh Prep | OTR Meals | Ethey | Chefs Plate,5
+10,country_category,/countries/germany/cheapest-meal-delivery/,upgraded,Marley Spoon | Just Spices | Bofrost | HelloFresh | every | Every Foods,10
+11,country_category,/countries/hong-kong/cheapest-meal-delivery/,upgraded,NOSH | Nutrition Kitchen | Eatology | Fittery | Eatology Hong Kong | Nutrition Kitchen Hong Kong,5
+12,country_category,/countries/india/cheapest-meal-delivery/,upgraded,Food Darzee | ACTIVeat | Healthie | Kcal Healthy Food | Calorie Care | FreshMenu,6
+13,country_category,/countries/ireland/cheapest-meal-delivery/,upgraded,DropChef | Gourmet Fuel | Clean Cut Meals | Eatto | Fit Foods Ireland | GourmetFuel,5
+14,country_category,/countries/japan/cheapest-meal-delivery/,upgraded,FIT FOOD HOME | GREEN SPOON Japan | Mitsuboshi Farm | Muscle Deli | nosh Japan | Oisix,6
+15,country_category,/countries/mexico/cheapest-meal-delivery/,upgraded,Manzana Verde | Manzana Verde Mexico | Nurish | Come Bien | Eat Fit Mexico | Fit Food Mexico,6
+16,country_category,/countries/netherlands/cheapest-meal-delivery/,upgraded,Marley Spoon | Crisp | Marley Spoon Netherlands | Boerschappen | MarleenKookt | Factor,10
+17,country_category,/countries/new-zealand/cheapest-meal-delivery/,upgraded,HelloFresh | My Food Bag | My Food Bag | Woop | Green Dinner Table | Bargain Box,10
+18,country_category,/countries/switzerland/cheapest-meal-delivery/,upgraded,HelloFresh | Weekly Food | Farmy | Allcook Kitchen | Löwenanteil | merciChef,10
+19,country_category,/countries/uk/cheapest-meal-delivery/,upgraded,Mindful Chef | M&S Cook Menu | Pasta Evangelists | The Good Prep | HomeCooks | Mindful Chef Ready Meals,5
+20,country_category,/countries/us/cheapest-meal-delivery/,upgraded,Factor | Clean Eatz Kitchen | Gobble | Marley Spoon | Sunbasket | A Dozen Cousins,10
+21,use_case,/countries/kuwait/best-healthy-meal-delivery/,upgraded,Calo Kuwait | LineUpFit | Diet Care | Anona Diet | Diet Care Kuwait | Protein Kuwait,6
+22,use_case,/countries/kuwait/best-prepared-meal-delivery/,upgraded,Calo Kuwait | LineUpFit | Diet Care | Anona Diet | Diet Care Kuwait | Protein Kuwait,6
+23,country_category,/countries/us/best-high-protein-meal-prep/,upgraded,Trifecta | FlexPro Meals | Real Good Foods | CookinGenie | Fuel Meals,5
+24,country_category,/countries/belgium/cheapest-meal-delivery/,upgraded,Foodbag | Factor | HelloFresh | Marley Spoon | Simply You Box | 15gram,10
+25,country_category,/countries/south-korea/cheapest-meal-delivery/,upgraded,Fresheasy | MyChef | Cookat | Heodak | Market Kurly Meal Kits | Tasty9,6

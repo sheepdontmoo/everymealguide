@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-06-24T12:29:38.640Z",
+  "strategy": "fast long-tail first",
+  "pagesTargeted": 27,
+  "pagesUpdated": 27,
+  "missing": [],
+  "noLiveActions": [
+    "no deploy",
+    "no Search Console indexing request",
+    "no affiliate redirect swap",
+    "no paid API"
+  ],
+  "firstTenIndexingCandidates": [
+    "https://www.everymealguide.com/best/meal-delivery-services/",
+    "https://www.everymealguide.com/best/prepared-meal-delivery/",
+    "https://www.everymealguide.com/best/meal-kits/",
+    "https://www.everymealguide.com/best/high-protein-meal-delivery/",
+    "https://www.everymealguide.com/best/cheap-meal-delivery/",
+    "https://www.everymealguide.com/best/meal-kits-for-families/",
+    "https://www.everymealguide.com/best/vegan-meal-delivery/",
+    "https://www.everymealguide.com/best/keto-meal-delivery/",
+    "https://www.everymealguide.com/best/gluten-free-meal-delivery/",
+    "https://www.everymealguide.com/deals/best-meal-delivery-deals/"
+  ]
+}

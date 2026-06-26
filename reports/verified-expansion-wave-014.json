@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-06-24T07:38:56.054Z",
+  "wave": "014",
+  "waveRows": 25,
+  "rowsInserted": 10,
+  "rowsUpdated": 15,
+  "countriesTouched": [
+    "Australia",
+    "Canada",
+    "Ireland",
+    "New Zealand",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-014.csv",
+  "note": "Mixed scale wave adding US, Canada, Australia, New Zealand, Ireland, and UK long-tail prepared, frozen, diet, high-protein, and grocery-helper brands with explicit inactive/non-commercial caveats."
+}

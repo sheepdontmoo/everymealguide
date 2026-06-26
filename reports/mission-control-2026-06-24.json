@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-24T11:48:50.519Z",
+  "coverage": {
+    "brandRows": 917,
+    "uniqueBrands": 878,
+    "uniqueCountries": 63,
+    "sitemapUrls": 5185,
+    "goEligibleBrands": 744,
+    "approvedAffiliateLinks": 0,
+    "approvedAffiliateRoutes": 0
+  },
+  "partnerPipeline": {
+    "queueRows": 879,
+    "draftRows": 100,
+    "trackerRows": 100,
+    "submittedRows": 0,
+    "approvedRows": 0,
+    "statusCounts": {
+      "draft_only_not_submitted": 100
+    }
+  },
+  "seoPipeline": {
+    "backlogCandidates": 5245,
+    "readyToBrief": 817,
+    "briefsGenerated": 100,
+    "notReadyCandidates": 4428
+  },
+  "targetProgress": {
+    "brandsPct": 88,
+    "countriesPct": 100,
+    "seoUrlsPct": 52,
+    "partnerApplicationsPct": 0
+  },
+  "evidenceBoundaries": {
+    "localOnly": true,
+    "deployedThisRun": false,
+    "submittedApplications": 0,
+    "approvedAffiliateLinks": 0,
+    "firstAffiliateRevenueVerified": false,
+    "trafficVerified": false
+  },
+  "nextActions": [
+    "Submit partner applications manually or through an approved workflow, then add only approved tracking URLs.",
+    "Add at least 122 more verified unique brands with official URLs.",
+    "Convert ready SEO briefs into high-quality pages after editorial review; current URL gap is 4815.",
+    "Submit 100 partner applications with proof before counting the 100+ milestone."
+  ]
+}

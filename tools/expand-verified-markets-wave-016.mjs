@@ -1,0 +1,146 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const brandUniversePath = path.join(root, "seo", "global-brand-universe.csv");
+const waveCsvPath = path.join(root, "seo", "verified-expansion-wave-016.csv");
+const waveReportPath = path.join(root, "reports", "verified-expansion-wave-016.json");
+
+const checkedDate = "2026-06-24";
+
+const additions = [
+  ["Japan", "Co-op Deli", "grocery dinner delivery", "P2", "active", "Japanese co-op grocery and meal ingredient delivery service with household dinner planning relevance", "https://efriends.coopdeli.jp/", "direct partnership after fit check", `official_source_checked_${checkedDate}`, "Add to Japan grocery dinner and family meal planning pages"],
+  ["Japan", "Watami no Takushoku", "prepared meals", "P2", "active", "Japanese home-delivered prepared meal and bento service with senior/easy dinner demand", "https://www.watami-takushoku.co.jp/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Japan senior prepared meal and bento pages"],
+  ["Japan", "TastyTable FOOD", "meal kit", "P3", "active", "Japanese premium cooking kit and dinner box candidate", "https://tastytable-food.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Japan premium meal-kit challenger pages"],
+  ["Japan", "Tsukurioki.jp", "prepared meals", "P2", "active", "Japanese prepared side-dish and weekly meal delivery service for families", "https://www.tsukurioki.jp/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Japan family prepared meal pages"],
+  ["South Korea", "Tasty9", "prepared meals", "P2", "active", "South Korean ready meal and home meal replacement brand tied to Fresheasy market ecosystem", "https://www.tasty9.co.kr/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Korea prepared meal challenger pages"],
+  ["South Korea", "Heodak", "high protein prepared meals", "P2", "active", "Korean chicken breast, diet, and fitness prepared food brand in Fresheasy ecosystem", "https://www.heodak.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Korea high-protein and diet meal pages"],
+  ["South Korea", "Market Kurly Meal Kits", "grocery dinner delivery", "P2", "active", "Korean premium grocery marketplace with meal-kit and ready-meal relevance", "https://www.kurly.com/", "affiliate application", `official_source_checked_${checkedDate}`, "Add to Korea grocery-dinner and ready-meal marketplace pages"],
+  ["Mexico", "Come Bien", "prepared meals", "P2", "active", "Mexico prepared meal and healthy eating candidate for ready-to-eat dinner demand", "https://comebien.mx/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico prepared meal challenger pages"],
+  ["Mexico", "Healthy Box Mexico", "prepared meals", "P2", "active_region_check", "Mexico healthy meal prep and prepared food candidate with regional availability to verify", "https://healthybox.mx/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico regional healthy meal pages"],
+  ["Mexico", "Food & Fit", "diet prepared meals", "P3", "active_region_check", "Mexico diet and healthy prepared meal candidate with local delivery caveats", "https://foodandfit.mx/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Mexico diet prepared meal challenger pages"],
+  ["Brazil", "Green Table", "prepared meals", "P2", "active", "Brazil healthy prepared meal and frozen dinner brand with Sao Paulo demand", "https://greentable.com.br/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Brazil prepared meal challenger pages"],
+  ["Brazil", "Congelados da Sônia", "frozen meals", "P3", "active", "Brazil frozen prepared meals brand for easy home dinners", "https://congeladosdasonia.com.br/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Brazil frozen meal pages"],
+  ["Brazil", "Marmita Fitness Brasil", "high protein meal prep", "P3", "active_region_check", "Brazil fitness meal-prep candidate for local high-protein searches", "https://marmitafitnessbrasil.com.br/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Brazil regional high-protein pages"],
+  ["Peru", "Manzana Verde Peru", "diet prepared meals", "P1", "active_app_route", "Peru healthy meal subscription app with meal plans, nutrition advice, and home/office delivery", "https://play.google.com/store/apps/details?id=la.manzana_verde_app", "direct partnership after app route check", `app_store_source_checked_${checkedDate}`, "Add to Peru diet prepared meal pages"],
+  ["Colombia", "Manzana Verde Colombia", "diet prepared meals", "P1", "active_app_route", "Colombia healthy meal subscription app route with prepared meal plans and delivery", "https://play.google.com/store/apps/details?id=la.manzana_verde_app", "direct partnership after app route check", `app_store_source_checked_${checkedDate}`, "Add to Colombia diet prepared meal pages"],
+  ["Chile", "MyWay", "prepared meals", "P2", "active_region_check", "Chile healthy prepared meal and meal-plan candidate with local delivery verification needed", "https://myway.cl/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Chile prepared meal candidate pages"],
+  ["Argentina", "Viandas Cook", "prepared meals", "P3", "active_region_check", "Argentina prepared meal and viandas delivery candidate with local availability to verify", "https://viandascook.com.ar/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Argentina prepared meal regional pages"],
+  ["South Africa", "DinnerLink", "prepared meals marketplace", "P3", "active", "South African home-cooked meal marketplace candidate for local prepared dinner demand", "https://dinnerlink.co.za/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to South Africa local cooked meal marketplace pages"],
+  ["South Africa", "Food & Trees for Africa Meals", "non-commercial meal support", "P4", "non_commercial", "South African food support/non-commercial route relevant for meal-help searches but not a consumer buying path", "https://trees.org.za/", "not ready", `non_commercial_source_checked_${checkedDate}`, "Account for non-commercial food support, do not monetize"],
+  ["Nigeria", "FoodCourt", "prepared meals marketplace", "P2", "active_app_route", "Nigeria food and meal delivery app with prepared meal marketplace relevance", "https://www.foodcourtapp.com/", "direct partnership after app route check", `official_source_checked_${checkedDate}`, "Add to Nigeria app-led prepared meal marketplace pages"],
+  ["Kenya", "Kune Food", "prepared meals", "P3", "closed_or_inactive", "formerly notable Kenya prepared meal delivery startup, now inactive/closed; account for alternatives search demand only", "https://kunefood.com/", "not ready", `closure_source_checked_${checkedDate}`, "Do not recommend; create alternatives angle if Kenya pages expand"],
+  ["Thailand", "Paleo Robbie", "prepared meals", "P2", "active", "Thailand/Bangkok healthy prepared meals, grocery, and paleo meal delivery brand", "https://paleorobbie.com/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Thailand prepared meal and paleo pages"],
+  ["Thailand", "Fitmeal Thailand", "high protein meal prep", "P2", "active_region_check", "Thailand fitness meal prep and prepared meal delivery candidate", "https://fitmeal.me/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Thailand high-protein meal-prep pages"],
+  ["Malaysia", "Dahmakan", "prepared meals", "P2", "active_app_route", "Malaysia app-led ready meal and food delivery brand historically tied to prepared meals", "https://dahmakan.com/", "direct partnership after active route check", `official_source_checked_${checkedDate}`, "Add to Malaysia app-led prepared meal pages with active-route caveat"],
+  ["Malaysia", "Clean Eats Malaysia", "healthy meal delivery", "P3", "active_region_check", "Malaysia healthy meal delivery and meal prep candidate", "https://cleaneats.my/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Malaysia healthy meal challenger pages"],
+  ["Philippines", "Smart Meals PH", "diet prepared meals", "P3", "active_region_check", "Philippines diet prepared meal and calorie-controlled meal delivery candidate", "https://smartmeals.ph/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Philippines diet meal candidate pages"],
+  ["UAE", "Meals on Me Pro", "high protein meal prep", "P3", "brand_variant", "UAE Meals on Me high-protein/performance positioning variant; route through main Meals on Me until separate program is verified", "https://hellomealsonme.com/", "direct partnership", `brand_variant_source_checked_${checkedDate}`, "Avoid duplicate affiliate claim; use for high-protein internal categorization"],
+  ["Saudi Arabia", "Diet Center", "diet prepared meals", "P1", "active", "Saudi diet and healthy prepared meal delivery brand with structured meal plans", "https://dietcenter.com.sa/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Saudi Arabia diet meal pages"],
+  ["Qatar", "Diet Delights Qatar", "diet prepared meals", "P2", "active", "Qatar diet and healthy prepared meal delivery brand", "https://dietdelights.com.qa/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Qatar diet prepared meal pages"],
+  ["Kuwait", "Diet Care", "diet prepared meals", "P2", "active", "Kuwait diet meal delivery and prepared meal-plan brand", "https://www.dietcare.com.kw/", "direct partnership", `official_source_checked_${checkedDate}`, "Add to Kuwait diet prepared meal pages"]
+].map(([country, brand, category, priority, site_status, market_role, official_url, affiliate_program_target, evidence_status, next_action]) => ({
+  country,
+  brand,
+  category,
+  priority,
+  site_status,
+  market_role,
+  official_url,
+  affiliate_program_target,
+  evidence_status,
+  next_action
+}));
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let value = "";
+  let quoted = false;
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+    if (char === '"') {
+      if (quoted && next === '"') {
+        value += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (char === "," && !quoted) {
+      row.push(value);
+      value = "";
+    } else if ((char === "\n" || char === "\r") && !quoted) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(value);
+      if (row.some((cell) => cell.length)) rows.push(row);
+      row = [];
+      value = "";
+    } else {
+      value += char;
+    }
+  }
+  if (value.length || row.length) {
+    row.push(value);
+    if (row.some((cell) => cell.length)) rows.push(row);
+  }
+  return rows;
+}
+
+function csvCell(value) {
+  const text = String(value ?? "");
+  return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function toCsv(rows) {
+  return `${rows.map((row) => row.map(csvCell).join(",")).join("\n")}\n`;
+}
+
+if (!fs.existsSync(brandUniversePath)) {
+  throw new Error(`Missing ${brandUniversePath}`);
+}
+
+const rows = parseCsv(fs.readFileSync(brandUniversePath, "utf8"));
+const header = rows[0];
+const records = rows.slice(1).map((row) => Object.fromEntries(header.map((column, index) => [column, row[index] ?? ""])));
+const byKey = new Map(records.map((record, index) => [`${record.country}::${record.brand}`.toLowerCase(), { record, index }]));
+const inserted = [];
+const updated = [];
+
+for (const addition of additions) {
+  const key = `${addition.country}::${addition.brand}`.toLowerCase();
+  const existing = byKey.get(key);
+  if (existing) {
+    records[existing.index] = { ...existing.record, ...addition };
+    updated.push(addition);
+  } else {
+    records.push(addition);
+    inserted.push(addition);
+    byKey.set(key, { record: addition, index: records.length - 1 });
+  }
+}
+
+fs.writeFileSync(brandUniversePath, toCsv([header, ...records.map((record) => header.map((column) => record[column] ?? ""))]));
+fs.writeFileSync(waveCsvPath, toCsv([header, ...additions.map((record) => header.map((column) => record[column] ?? ""))]));
+
+fs.mkdirSync(path.dirname(waveReportPath), { recursive: true });
+fs.writeFileSync(
+  waveReportPath,
+  `${JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      wave: "016",
+      waveRows: additions.length,
+      rowsInserted: inserted.length,
+      rowsUpdated: updated.length,
+      countriesTouched: [...new Set(additions.map((row) => row.country))].sort(),
+      sourceOfTruth: path.relative(root, brandUniversePath),
+      waveCsv: path.relative(root, waveCsvPath),
+      note: "International scale wave across Japan, South Korea, Latin America, Africa, Southeast Asia, and GCC with app-route, regional, closed, brand-variant, and non-commercial caveats."
+    },
+    null,
+    2
+  )}\n`
+);
+
+console.log(`Wave 016 complete: ${inserted.length} inserted, ${updated.length} updated.`);

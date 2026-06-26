@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-06-23T17:36:26.657Z",
+  "globalRowsUpdated": 6,
+  "before": [
+    {
+      "brand": "Marley Spoon",
+      "priority": "P1",
+      "site_status": "brand_family"
+    },
+    {
+      "brand": "Dinnerly",
+      "priority": "P1",
+      "site_status": "brand_family"
+    },
+    {
+      "brand": "EveryPlate",
+      "priority": "P1",
+      "site_status": "brand_family"
+    },
+    {
+      "brand": "Green Chef",
+      "priority": "P1",
+      "site_status": "brand_family"
+    },
+    {
+      "brand": "HelloFresh",
+      "priority": "P0",
+      "site_status": "brand_family"
+    },
+    {
+      "brand": "Factor",
+      "priority": "P0",
+      "site_status": "brand_family"
+    }
+  ],
+  "after": [
+    {
+      "brand": "Marley Spoon",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    },
+    {
+      "brand": "Dinnerly",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    },
+    {
+      "brand": "EveryPlate",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    },
+    {
+      "brand": "Green Chef",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    },
+    {
+      "brand": "HelloFresh",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    },
+    {
+      "brand": "Factor",
+      "priority": "P3",
+      "site_status": "brand_family_reference_only"
+    }
+  ],
+  "countryVariantCounts": {
+    "HelloFresh": 1,
+    "Factor": 1,
+    "EveryPlate": 1,
+    "Dinnerly": 1,
+    "Green Chef": 1,
+    "Marley Spoon": 1,
+    "HelloFresh UK": 1,
+    "Green Chef UK": 1,
+    "HelloFresh Ireland": 1,
+    "HelloFresh Australia": 1,
+    "Marley Spoon Australia": 1,
+    "Dinnerly Australia": 1,
+    "EveryPlate Australia": 1,
+    "HelloFresh Canada": 1,
+    "Factor Canada": 1,
+    "HelloFresh Market Australia": 1,
+    "Marley Spoon Market Australia": 1,
+    "HelloFresh Market Canada": 1
+  }
+}

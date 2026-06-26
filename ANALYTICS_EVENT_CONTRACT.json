@@ -1,0 +1,52 @@
+{
+  "statusDate": "2026-06-23",
+  "purpose": "Canonical event contract for Every Meal Guide launch analytics.",
+  "providerRecommendation": {
+    "firstChoice": "Plausible",
+    "reason": "Simple custom events, lightweight setup, privacy-friendly enough for early launch measurement.",
+    "alsoRequired": ["Google Search Console", "affiliate network dashboards"],
+    "temporaryProofPath": "Client events are also sent to /api/track and logged in Vercel as privacy-safe everymealguide_event records until a full analytics provider is connected."
+  },
+  "events": [
+    {
+      "name": "page_view",
+      "status": "client_and_vercel_log_active",
+      "priority": "P0",
+      "whyItMatters": "Measures traffic by route and confirms pages are being discovered.",
+      "properties": ["path", "title", "page_type", "timestamp"]
+    },
+    {
+      "name": "affiliate_click",
+      "status": "client_and_vercel_log_active",
+      "priority": "P0",
+      "whyItMatters": "Core monetization event that measures outbound commercial intent.",
+      "properties": ["brand", "path", "label", "href", "affiliateStatus", "pageTitle", "timestamp"]
+    },
+    {
+      "name": "matcher_submit",
+      "status": "client_and_vercel_log_active",
+      "priority": "P1",
+      "whyItMatters": "Shows whether users engage with the homepage decision helper.",
+      "properties": ["country", "budget", "diet", "mealType", "path", "timestamp"]
+    },
+    {
+      "name": "newsletter_interest",
+      "status": "scaffolded",
+      "priority": "P2",
+      "whyItMatters": "Measures whether deal alerts can become a later email asset.",
+      "properties": ["path", "sourceSection", "timestamp"]
+    },
+    {
+      "name": "partner_redirect_ready",
+      "status": "client_and_vercel_log_active",
+      "priority": "P1",
+      "whyItMatters": "Confirms approved /go/ redirect pages are being reached before merchant handoff.",
+      "properties": ["brand", "status", "path", "timestamp"]
+    }
+  ],
+  "doNotClaimUntil": {
+    "analyticsLive": "A provider script is connected on the public domain and pageviews are visible. Vercel event logs are temporary proof only.",
+    "monetized": "At least one approved affiliate URL is live and an affiliate click is recorded in both site logs and an affiliate dashboard.",
+    "revenueProof": "A merchant dashboard shows a visit, conversion, sale, or commission signal."
+  }
+}

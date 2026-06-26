@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-23T22:18:28.281Z",
+  "wave": "004",
+  "countries": [
+    "spain",
+    "italy",
+    "sweden",
+    "denmark",
+    "norway"
+  ],
+  "rowsAdded": 0,
+  "countryPagesWritten": [
+    "/countries/spain/best-meal-delivery/",
+    "/countries/italy/best-meal-delivery/",
+    "/countries/sweden/best-meal-delivery/",
+    "/countries/denmark/best-meal-delivery/",
+    "/countries/norway/best-meal-delivery/"
+  ],
+  "waveRows": 20,
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-004.csv"
+}

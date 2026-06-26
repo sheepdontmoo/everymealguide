@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-23T14:52:19.796Z",
+  "total": 50,
+  "reachable": 43,
+  "sourceFound": 4,
+  "automationBlocked": 3,
+  "watchlist": 1,
+  "stillNeedsManual": [
+    "UK: Prep Kitchen - official_source_blocked",
+    "UK: Tastily - watchlist_social_source_found",
+    "US: Blue Apron - official_source_blocked",
+    "US: Nutrisystem - official_source_blocked"
+  ]
+}

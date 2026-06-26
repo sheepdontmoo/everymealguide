@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-06-24T08:31:23.329Z",
+  "wave": "027",
+  "waveRows": 27,
+  "rowsInserted": 27,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "Argentina",
+    "Chile",
+    "Colombia",
+    "Czech Republic",
+    "Estonia",
+    "Hungary",
+    "Kuwait",
+    "Mexico",
+    "Peru",
+    "Portugal",
+    "Qatar",
+    "Romania",
+    "Saudi Arabia",
+    "Slovakia",
+    "Turkey"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-027.csv",
+  "note": "Adds verified under-covered Turkey, Portugal, Latin America, Gulf, Central/Eastern Europe, Slovakia, Estonia, and Hungary meal-kit, prepared meal, boxed diet, frozen meal, and high-protein meal-prep brands with regional and route caveats where needed."
+}

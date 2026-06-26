@@ -1,0 +1,26 @@
+country,brand,category,priority,lane,verification_score,official_url,next_action
+Australia,Foober,prepared meals,P2,wave_002_priority_verify,15,,Find official URL and active ordering path
+Australia,Core Powerfoods,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Eat Fit Food,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Gourmet Dinner Service,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,Muscle Meals Direct,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Ethey,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Fed,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Canada,Meels,prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+UK,Grubby,plant-based meal kit,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+US,Seattle Sutton's Healthy Eating,diet prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+US,Sprinly,plant-based prepared meals,P2,wave_002_priority_verify,13,,Find official URL and active ordering path
+Australia,My Foodie Box,meal kit,P2,wave_002_secondary_verify,12,,Find official URL and active ordering path
+Ireland,Vegan Meal Prep Ireland,plant-based prepared meals,P3,wave_002_secondary_verify,12,,Find official URL and active ordering path
+UK,Mindful Chef Ready Meals,prepared meals,P2,wave_002_secondary_verify,12,,Find official URL and active ordering path
+Australia,Meals on Wheels Australia,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Plant Based Meals Australia,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Soulara Active,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Australia,Vegan Meals Australia,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Heart to Home Meals Alberta,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Heart to Home Meals Ontario,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Plant Prepped,meal kit,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+Canada,Vegan Meal Prep Canada,plant-based prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,Abel & Cole Recipe Boxes,organic meal kit,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,DabbaDrop,prepared meals,P3,wave_002_secondary_verify,11,,Find official URL and active ordering path
+UK,Dishpatch,restaurant meal kits,P2,wave_002_secondary_verify,11,,Find official URL and active ordering path

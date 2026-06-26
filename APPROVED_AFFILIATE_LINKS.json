@@ -1,0 +1,11 @@
+{
+  "purpose": "Store only approved affiliate URLs after partner acceptance. Do not paste speculative, scraped, or third-party affiliate links here.",
+  "rules": [
+    "Only add a URL after Every Meal Guide is approved by the affiliate program or network.",
+    "Each URL needs brand, country, destination type, source network, approval date, and owner confirmation.",
+    "Placeholder /go/ routes remain local until approved URLs exist.",
+    "Run npm.cmd run affiliate:validate-approved before regenerating routes.",
+    "Run click QA after any URL swap."
+  ],
+  "links": []
+}

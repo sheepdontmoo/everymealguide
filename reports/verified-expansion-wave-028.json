@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-06-24T08:48:56.518Z",
+  "wave": "028",
+  "waveRows": 38,
+  "rowsInserted": 38,
+  "rowsUpdated": 0,
+  "countriesTouched": [
+    "Bahrain",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus",
+    "Egypt",
+    "Estonia",
+    "Greece",
+    "Hungary",
+    "Latvia",
+    "Lithuania",
+    "Morocco",
+    "Oman",
+    "Serbia",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-028.csv",
+  "note": "Adds source-backed under-covered Eastern Europe, Baltic, Cyprus, Gulf, Egypt, Morocco, Greece, Hungary, and US regional prepared-meal, boxed-diet, high-protein meal-prep, family, and meal-kit brands."
+}

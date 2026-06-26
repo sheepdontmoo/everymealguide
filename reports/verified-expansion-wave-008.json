@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-24T07:05:37.189Z",
+  "wave": "008",
+  "waveRows": 43,
+  "rowsInserted": 0,
+  "rowsUpdated": 43,
+  "countriesTouched": [
+    "Australia",
+    "Canada",
+    "UK",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-008.csv",
+  "note": "Upserts US, Canada, Australia, and UK prepared-meal/high-protein coverage so stale needs_official_check rows become verified active rows where official source evidence exists."
+}

@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-24T07:57:42.476Z",
+  "wave": "021",
+  "waveRows": 25,
+  "rowsInserted": 20,
+  "rowsUpdated": 5,
+  "countriesTouched": [
+    "Denmark",
+    "Finland",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Spain",
+    "Sweden"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-021.csv",
+  "note": "Adds priority-market brands across Germany, France, Netherlands, Spain, Italy, Sweden, Denmark, Norway, Finland, and New Zealand, including active, regional, app-route, rebrand, and inactive alternatives caveats."
+}

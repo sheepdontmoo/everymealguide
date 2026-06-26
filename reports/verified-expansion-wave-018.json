@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-06-24T07:49:53.211Z",
+  "wave": "018",
+  "waveRows": 21,
+  "rowsInserted": 15,
+  "rowsUpdated": 6,
+  "countriesTouched": [
+    "Canada",
+    "Europe",
+    "France",
+    "Global",
+    "US"
+  ],
+  "sourceOfTruth": "seo\\global-brand-universe.csv",
+  "waveCsv": "seo\\verified-expansion-wave-018.csv",
+  "note": "Adds complete-nutrition meal replacement, baby/kids food, diet meal replacement, and Canadian prepared meal coverage with active, route-check, inactive, and monetization caveats."
+}
