@@ -390,8 +390,14 @@ for (const group of bySlug.values()) {
   const pageDir = path.join(reviewsRoot, group.slug);
   const pagePath = path.join(pageDir, "index.html");
 
-  if (fs.existsSync(pagePath)) existing += 1;
-  else created += 1;
+  if (fs.existsSync(pagePath)) {
+    existing += 1;
+    updated += 1;
+    sitemapUrls.push(`https://www.everymealguide.com/reviews/${group.slug}/`);
+    continue;
+  }
+
+  created += 1;
 
   const countries = new Set(group.rows.map((row) => row.country));
   const categories = new Set(group.rows.map((row) => categoryFormat(row.category)));
