@@ -59,81 +59,74 @@
     <main id="main">
 
       <!-- ── Hero ── -->
-      <section class="hp-hero">
-        <div class="hp-hero__inner">
-
-          <div class="hp-hero__copy">
-            <div class="hp-trust" aria-label="Every Meal Guide coverage snapshot">
-              <span>40+ brands tracked</span>
-              <span>23 countries covered</span>
-              <span>Weekly deal checks</span>
-            </div>
-            <h1>Find the right meal delivery in 60 seconds.</h1>
-            <p class="hp-hero__sub">
-              Answer four questions. Get a personalised shortlist — no paid rankings, no bias.
-            </p>
+      <section class="hp-hero" id="hero">
+        <div class="hp-hero__inner hp-hero__inner--centered">
+          <div class="hp-trust" aria-label="Every Meal Guide coverage snapshot">
+            <span>40+ brands tracked</span>
+            <span>23 countries covered</span>
+            <span>Weekly deal checks</span>
           </div>
-
-          <form class="hp-form" id="matcher" aria-label="Meal delivery matcher">
-            <div class="hp-form__head">
-              <span>Your first move</span>
-              <strong>4 answers. One shortlist.</strong>
-            </div>
-            <div class="hp-form__fields">
-              <label>
-                Country or region
-                <select name="country">
-                  <option>United States</option>
-                  <option>United Kingdom</option>
-                  <option>Ireland</option>
-                  <option>Canada</option>
-                  <option>Australia</option>
-                </select>
-              </label>
-              <label>
-                Budget concern
-                <select name="budget">
-                  <option>Best value</option>
-                  <option>Lowest price</option>
-                  <option>Premium quality</option>
-                </select>
-              </label>
-              <label>
-                Diet priority
-                <select name="diet">
-                  <option>No preference</option>
-                  <option>High protein</option>
-                  <option>Vegetarian</option>
-                  <option>Vegan</option>
-                </select>
-              </label>
-              <label>
-                Dinner style
-                <select name="type">
-                  <option>Prepared meals</option>
-                  <option>Meal kits</option>
-                  <option>Family dinners</option>
-                  <option>High protein</option>
-                  <option>Budget meals</option>
-                  <option>Vegetarian / vegan</option>
-                </select>
-              </label>
-            </div>
-            <button class="hp-form__btn" type="button">Find my match →</button>
-            <div class="match-result" data-match-result hidden aria-live="polite">
-              <span data-match-result-kicker>Start here</span>
-              <strong data-match-result-title>Prepared meal shortlist</strong>
-              <p data-match-result-copy>Best when you want dinner ready in minutes with little or no cooking.</p>
-              <small data-match-result-next>Before you pay: check delivery, normal weekly price, and skip or cancel rules.</small>
-              <div class="match-result-actions">
-                <a class="button secondary" data-match-result-link data-decision-path="matcher-result" href="/best/prepared-meal-delivery/">Open this shortlist</a>
-                <a class="button text-link" href="/best/meal-delivery-services/">Compare all top picks</a>
-              </div>
-            </div>
-          </form>
-
+          <h1>Which meal delivery is right for you?</h1>
+          <p class="hp-hero__sub">Do you want to cook?</p>
+          <div class="hp-choice" role="group" aria-label="Dinner style choice">
+            <button class="hp-choice__btn" type="button" data-panel="prepared">No — just heat and eat</button>
+            <button class="hp-choice__btn" type="button" data-panel="kits">Yes — I want to cook fresh</button>
+          </div>
         </div>
       </section>
+
+      <!-- ── Answer panels (pre-rendered for crawlability) ── -->
+      <div class="hp-answers" id="answer">
+        <div class="hp-answer" id="hp-answer-prepared" hidden>
+          <h2 class="hp-answer__heading">Best heat-and-eat picks</h2>
+          <div class="hp-answer__grid">
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">Factor 🍱</strong>
+              <p class="hp-ans-card__reason">Best no-cook routine — ready in 2 minutes.</p>
+              <span class="hp-ans-card__deal">Up to 50% off your first box</span>
+              <a class="hp-ans-card__cta" href="/go/factor/" data-track="affiliate-click" data-brand="Factor" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">CookUnity 👨‍🍳</strong>
+              <p class="hp-ans-card__reason">Chef-made meals, restaurant taste at home.</p>
+              <span class="hp-ans-card__deal">First week discount available</span>
+              <a class="hp-ans-card__cta" href="/go/cookunity/" data-track="affiliate-click" data-brand="CookUnity" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">Trifecta 💪</strong>
+              <p class="hp-ans-card__reason">Macro-balanced prep meals for fitness goals.</p>
+              <span class="hp-ans-card__deal">First order discount available</span>
+              <a class="hp-ans-card__cta" href="/go/trifecta/" data-track="affiliate-click" data-brand="Trifecta" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+          </div>
+          <p class="hp-answer__more"><a href="/best/meal-delivery-services/">Want to compare all options? See top picks →</a></p>
+        </div>
+
+        <div class="hp-answer" id="hp-answer-kits" hidden>
+          <h2 class="hp-answer__heading">Best cook-fresh picks</h2>
+          <div class="hp-answer__grid">
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">HelloFresh 🥘</strong>
+              <p class="hp-ans-card__reason">Most recipes, widest country availability.</p>
+              <span class="hp-ans-card__deal">Up to 60% off your first box</span>
+              <a class="hp-ans-card__cta" href="/go/hellofresh/" data-track="affiliate-click" data-brand="HelloFresh" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">EveryPlate 💰</strong>
+              <p class="hp-ans-card__reason">Cheapest meal kit that still tastes good.</p>
+              <span class="hp-ans-card__deal">Low starting price, first box</span>
+              <a class="hp-ans-card__cta" href="/go/everyplate/" data-track="affiliate-click" data-brand="EveryPlate" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+            <article class="hp-ans-card">
+              <strong class="hp-ans-card__name">Home Chef 🏠</strong>
+              <p class="hp-ans-card__reason">Easy 15-min kits, great for beginner cooks.</p>
+              <span class="hp-ans-card__deal">First box discount available</span>
+              <a class="hp-ans-card__cta" href="/go/home-chef/" data-track="affiliate-click" data-brand="Home Chef" data-affiliate-status="apply" rel="sponsored nofollow">View Deal →</a>
+            </article>
+          </div>
+          <p class="hp-answer__more"><a href="/best/meal-delivery-services/">Want to compare all options? See top picks →</a></p>
+        </div>
+      </div>
 
       <!-- ── Start here: choice cards ── -->
       <section class="hp-start" id="start" aria-labelledby="hp-start-heading">
@@ -382,6 +375,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <a class="mobile-sticky-cta" href="#matcher">Find my match →</a>
+    <a class="mobile-sticky-cta" href="#hero">Find my match →</a>
   </body>
 </html>

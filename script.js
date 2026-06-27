@@ -1053,3 +1053,28 @@ if (companyTableShouldRender()) {
   }
 })();
 
+(function () {
+  function run() {
+    var btns = document.querySelectorAll('.hp-choice__btn');
+    if (!btns.length) return;
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var panel = btn.dataset.panel;
+        document.querySelectorAll('.hp-answer').forEach(function (p) { p.hidden = true; });
+        btns.forEach(function (b) { b.classList.remove('hp-choice__btn--active'); });
+        var target = document.getElementById('hp-answer-' + panel);
+        if (target) {
+          target.hidden = false;
+          target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        btn.classList.add('hp-choice__btn--active');
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
+
