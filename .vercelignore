@@ -1,19 +1,13 @@
-# Generated static output. Vercel should rebuild these from source instead of
-# uploading thousands of local HTML files through the CLI upload API.
-best/
-countries/
-deals/
-go/
-reviews/
-vs/
+# Build runs locally. Generated HTML is committed to git and uploaded directly.
+# No server-side build runs on Vercel — see buildCommand in vercel.json.
 
-# Local reports, research notes, QA artifacts, and operator docs are not needed
-# in the production deploy bundle.
+# Local reports, research notes, QA artifacts, operator docs — not needed on CDN
 reports/
 research/
 qa/
 outreach/
 seo/
+tools/
 *.csv
 *.md
 *.log
