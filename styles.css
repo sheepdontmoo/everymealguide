@@ -4846,3 +4846,51 @@ body:not(.hp) .nav-toggle { color: var(--ink); }
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 @media (max-width: 768px) { .mobile-sticky-cta { display: block; } }
+
+/* ═══════════════════════════════════════════════════════
+   Review page hero — dark full-bleed to match homepage
+   ═══════════════════════════════════════════════════════ */
+[data-page-type="review"] .affiliate-disclosure {
+  background: var(--ink);
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+[data-page-type="review"] .affiliate-disclosure p {
+  color: rgba(255, 255, 255, 0.32);
+  font-size: 0.75rem;
+}
+[data-page-type="review"] .freshness-bar {
+  background: var(--ink);
+  padding-top: 0;
+}
+[data-page-type="review"] .freshness-bar span {
+  color: var(--tomato);
+}
+[data-page-type="review"] .page-hero {
+  background: var(--ink);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+[data-page-type="review"] .page-hero::after {
+  display: none;
+}
+[data-page-type="review"] .page-hero h1 {
+  color: white;
+  font-size: clamp(3.8rem, 8.5vw, 9.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+[data-page-type="review"] .page-kicker {
+  color: var(--tomato);
+  border-color: rgba(255, 135, 0, 0.4);
+  background: rgba(255, 135, 0, 0.1);
+}
+[data-page-type="review"] .page-hero > div > p {
+  color: rgba(255, 255, 255, 0.6);
+}
+[data-page-type="review"] .hero-verdict-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(255, 255, 255, 0.15);
+}
