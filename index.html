@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,9 +18,10 @@
     <meta property="og:url" content="https://www.everymealguide.com/" />
     <meta name="theme-color" content="#ff8700" />
     <link rel="icon" href="/assets/brand/everymealguide-mark-orange-cropped.png" type="image/png" />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="preconnect" href="https://images.pexels.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="homepage.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -36,8 +37,9 @@
       }
     </script>
   </head>
-  <body>
+  <body class="hp">
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <a class="brand" href="/" aria-label="Every Meal Guide home">
         <span class="brand-mark">EM</span>
@@ -50,90 +52,77 @@
         <a href="/best/meal-kits/">Meal Types</a>
         <a href="/reviews/factor/">Reviews</a>
         <a href="/deals/best-meal-delivery-deals/">Deals</a>
-        <a href="/countries/">Countries/Regions</a>
+        <a href="/countries/">Countries</a>
         <a href="/brand-directory/">All Brands</a>
       </nav>
       <a class="nav-action" href="/start/">Start 60-sec match</a>
     </header>
 
     <main id="main">
-      <section class="hero">
-        <div class="hero-copy">
-          <div class="trust-microbar" aria-label="Every Meal Guide coverage snapshot">
-            <span>Country first</span>
-            <span>Routine first</span>
-            <span>Normal price check</span>
-          </div>
-          <h1>Answer four questions. Get the right meal delivery shortlist in 60 seconds.</h1>
-          <p>
-            Pick your country, cooking effort, household, and biggest deal-breaker. We point you to the right type
-            of service before you waste time comparing brands that do not fit your week.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="/start/">Start the 60-second match</a>
-            <a class="button secondary" href="/best/meal-delivery-services/">Compare top picks</a>
-          </div>
-          <div class="sixty-second-answer" aria-label="Fast recommendation guide">
-            <span>Fast answer</span>
-            <div>
-              <strong>If you only have one minute:</strong>
-              <p>
-                No cooking tonight? Start with prepared meals. Still want fresh cooking? Start with meal kits.
-                Tight budget? Compare the week-two price before trusting any intro deal.
-              </p>
-            </div>
-          </div>
-          <div class="editorial-promise" aria-label="Editorial promise">
-            <strong>How we keep it useful.</strong>
-            <span>We sort by dinner problem, local availability, normal price, and cancellation comfort before any deal link.</span>
-          </div>
-        </div>
 
-        <div class="hero-intel-stack">
-          <form class="match-panel" id="matcher" aria-label="Meal delivery matcher">
-            <div class="panel-heading">
-              <span>Your first move</span>
-              <strong>Choose four answers, then open one shortlist.</strong>
+      <!-- ── Hero ── -->
+      <section class="hp-hero">
+        <div class="hp-hero__inner">
+
+          <div class="hp-hero__copy">
+            <div class="hp-trust" aria-label="Every Meal Guide coverage snapshot">
+              <span>200+ brands tracked</span>
+              <span>Updated June 2026</span>
+              <span>No paid rankings</span>
             </div>
-            <label>
-              Country or region
-              <select name="country">
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>Ireland</option>
-                <option>Canada</option>
-                <option>Australia</option>
-              </select>
-            </label>
-            <label>
-              Budget concern
-              <select name="budget">
-                <option>Best value</option>
-                <option>Lowest price</option>
-                <option>Premium quality</option>
-              </select>
-            </label>
-            <label>
-              Diet priority
-              <select name="diet">
-                <option>No preference</option>
-                <option>High protein</option>
-                <option>Vegetarian</option>
-                <option>Vegan</option>
-              </select>
-            </label>
-            <label>
-              Dinner style
-              <select name="type">
-                <option>Prepared meals</option>
-                <option>Meal kits</option>
-                <option>Family dinners</option>
-                <option>High protein</option>
-                <option>Budget meals</option>
-                <option>Vegetarian / vegan</option>
-              </select>
-            </label>
-            <button type="button">Show my best starting point</button>
+            <h1>Find your <br><em>perfect</em><br>meal delivery.</h1>
+            <p class="hp-hero__sub">
+              Answer four questions. Get the right meal delivery shortlist in 60 seconds —
+              no cooking required.
+            </p>
+          </div>
+
+          <form class="hp-form" id="matcher" aria-label="Meal delivery matcher">
+            <div class="hp-form__head">
+              <span>Your first move</span>
+              <strong>4 answers. One shortlist.</strong>
+            </div>
+            <div class="hp-form__fields">
+              <label>
+                Country or region
+                <select name="country">
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Ireland</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                </select>
+              </label>
+              <label>
+                Budget concern
+                <select name="budget">
+                  <option>Best value</option>
+                  <option>Lowest price</option>
+                  <option>Premium quality</option>
+                </select>
+              </label>
+              <label>
+                Diet priority
+                <select name="diet">
+                  <option>No preference</option>
+                  <option>High protein</option>
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                </select>
+              </label>
+              <label>
+                Dinner style
+                <select name="type">
+                  <option>Prepared meals</option>
+                  <option>Meal kits</option>
+                  <option>Family dinners</option>
+                  <option>High protein</option>
+                  <option>Budget meals</option>
+                  <option>Vegetarian / vegan</option>
+                </select>
+              </label>
+            </div>
+            <button class="hp-form__btn" type="button">Show my best starting point</button>
             <div class="match-result" data-match-result hidden aria-live="polite">
               <span data-match-result-kicker>Start here</span>
               <strong data-match-result-title>Prepared meal shortlist</strong>
@@ -146,178 +135,154 @@
             </div>
           </form>
 
-          <aside class="market-intel-card" aria-label="Every Meal Guide methodology snapshot">
-            <span>Why this works</span>
-              <h2>There is no single best service for everyone.</h2>
-            <dl>
-              <div><dt>No cooking</dt><dd>Prepared</dd></div>
-              <div><dt>Fresh cooking</dt><dd>Kits</dd></div>
-              <div><dt>Lowest cost</dt><dd>Budget</dd></div>
-            </dl>
-            <p>
-              The useful answer is simpler: match the service to your country, weeknight routine, budget, and tolerance
-              for subscriptions.
-            </p>
-          </aside>
-        </div>
-
-        <div class="hero-photo" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=84"
-            alt=""
-          />
-          <div class="photo-verdict">
-            <span>Trust rule</span>
-            <strong>Routine first. Deal second.</strong>
-          </div>
         </div>
       </section>
 
-      <section class="start-here-section" id="start" aria-labelledby="start-heading">
-        <div class="start-here-copy">
+      <!-- ── Start here: choice cards ── -->
+      <section class="hp-start" id="start" aria-labelledby="hp-start-heading">
+        <div class="hp-section-head">
           <span>First decision</span>
-          <h2 id="start-heading">Start with the dinner problem, then compare brands.</h2>
-          <p>
-            Meal delivery is not one thing. Pick the job first, then compare brands, countries, prices, and deals inside
-            that lane.
-          </p>
+          <h2 id="hp-start-heading">Start with the dinner problem.</h2>
+          <p>Meal delivery is not one thing. Pick the job first, then compare brands, prices, and deals inside that lane.</p>
         </div>
-        <div class="choice-grid" aria-label="Choose a meal delivery starting point">
-          <a class="choice-card featured" href="/best/prepared-meal-delivery/">
-            <span>No cooking</span>
+        <div class="hp-start__grid">
+          <a class="hp-card" href="/best/prepared-meal-delivery/" data-decision-path="start-no-cook" data-reveal>
+            <img class="hp-card__img" src="assets/images/cat/prepared-meals.jpg" alt="Prepared ready-to-eat meals in containers" width="800" height="548" loading="lazy" decoding="async" />
+            <span class="hp-card__tag">No cooking</span>
             <strong>I want meals already cooked</strong>
             <p>Prepared meals, ready meals, heat-and-eat plans, and no-cook dinners.</p>
           </a>
-          <a class="choice-card" href="/best/meal-kits/">
-            <span>Cook myself</span>
+          <a class="hp-card" href="/best/meal-kits/" data-decision-path="start-meal-kit" data-reveal>
+            <img class="hp-card__img" src="assets/images/cat/meal-kits.jpg" alt="Fresh meal kit ingredients and recipe card" width="800" height="548" loading="lazy" decoding="async" />
+            <span class="hp-card__tag">Cook myself</span>
             <strong>I want ingredients and recipes</strong>
             <p>Meal kits you cook yourself, with less shopping and less planning.</p>
           </a>
-          <a class="choice-card" href="/best/high-protein-meal-delivery/">
-            <span>Protein</span>
+          <a class="hp-card" href="/best/high-protein-meal-delivery/" data-decision-path="start-protein" data-reveal>
+            <img class="hp-card__img" src="assets/images/cat/high-protein.jpg" alt="High-protein meal with grilled chicken and greens" width="800" height="548" loading="lazy" decoding="async" />
+            <span class="hp-card__tag">Protein</span>
             <strong>I want high-protein meals</strong>
             <p>Fitness meals, macro-friendly plans, and protein-led prepared options.</p>
           </a>
-          <a class="choice-card" href="/best/cheap-meal-delivery/">
-            <span>Budget</span>
+          <a class="hp-card" href="/best/cheap-meal-delivery/" data-decision-path="start-budget" data-reveal>
+            <img class="hp-card__img" src="assets/images/cat/budget.jpg" alt="Affordable home-cooked budget meal" width="800" height="548" loading="lazy" decoding="async" />
+            <span class="hp-card__tag">Budget</span>
             <strong>I want the cheapest sensible option</strong>
             <p>Budget boxes and deals that still make sense after the first order.</p>
           </a>
-          <a class="choice-card" href="/best/meal-kits-for-families/">
-            <span>Family</span>
-            <strong>I am feeding a family</strong>
-            <p>Family meal kits, kid-friendly dinners, flexible servings, and routine fit.</p>
-          </a>
-          <a class="choice-card" href="/deals/best-meal-delivery-deals/">
-            <span>Deals</span>
-            <strong>I want a deal, but only if it fits</strong>
-            <p>Offer notes, first-box traps, and where the discount is actually useful.</p>
-          </a>
         </div>
       </section>
 
-      <section class="instant-answer-section" aria-labelledby="instant-answer-heading">
-        <div class="section-heading compact">
-          <span>Instant answer</span>
-          <h2 id="instant-answer-heading">If this is your situation, start here.</h2>
-          <p>These are not final rankings. They are the fastest safe starting points for common meal-delivery decisions.</p>
+      <!-- ── Top picks: brand ranking cards ── -->
+      <section class="hp-picks" aria-labelledby="hp-picks-heading">
+        <div class="hp-picks__head">
+          <div>
+            <div class="hp-section-head">
+              <span>Best first clicks</span>
+              <h2 id="hp-picks-heading">Top-rated meal delivery services.</h2>
+            </div>
+          </div>
+          <a href="/best/meal-delivery-services/">See full rankings →</a>
         </div>
-        <div class="instant-answer-grid">
-          <article class="instant-answer-card hero-pick">
-            <span>No cooking this week</span>
-            <h3>Start with prepared meals</h3>
-            <p>Best when you want meals ready in minutes and do not want to shop, chop, cook, or clean pans.</p>
-            <div>
-              <a class="button primary" data-decision-path="prepared-meals" href="/best/prepared-meal-delivery/">See prepared meals</a>
-              <a class="button text-link" data-decision-path="prepared-example-factor" href="/reviews/factor/">Example: Factor</a>
+        <div class="hp-picks__grid">
+
+          <article class="hp-pick" data-reveal>
+            <img class="hp-pick__img" src="assets/images/brand/factor.jpg" alt="Factor prepared high-protein meal" width="800" height="548" loading="lazy" decoding="async" />
+            <div class="hp-pick__rank">#1</div>
+            <strong>Factor</strong>
+            <div class="hp-pick__score">★ 8.9</div>
+            <p>The best prepared meal delivery. No cooking, high-protein options, and simple weekday lunch planning.</p>
+            <div class="hp-pick__chips">
+              <span class="hp-pick__chip">US</span>
+              <span class="hp-pick__chip">~$11/meal</span>
+              <span class="hp-pick__chip">Prepared</span>
             </div>
+            <a class="hp-pick__cta" data-track="affiliate-click" data-brand="Factor" data-affiliate-status="apply" href="/go/factor/" rel="sponsored nofollow">View Deal</a>
           </article>
-          <article class="instant-answer-card">
-            <span>I still want to cook</span>
-            <h3>Start with meal kits</h3>
-            <p>Best when you want fresh recipes and ingredients delivered, but still want dinner to feel home-cooked.</p>
-            <div>
-              <a class="button primary" data-decision-path="meal-kits" href="/best/meal-kits/">See meal kits</a>
-              <a class="button text-link" data-decision-path="meal-kit-example-hellofresh" href="/reviews/hellofresh/">Example: HelloFresh</a>
+
+          <article class="hp-pick" data-reveal>
+            <img class="hp-pick__img" src="assets/images/brand/hellofresh.jpg" alt="HelloFresh home-cooked meal kit dinner" width="800" height="548" loading="lazy" decoding="async" />
+            <div class="hp-pick__rank">#2</div>
+            <strong>HelloFresh</strong>
+            <div class="hp-pick__score">★ 8.8</div>
+            <p>Best overall meal kit. Broad recipe choice, family plans, and the widest country availability.</p>
+            <div class="hp-pick__chips">
+              <span class="hp-pick__chip">US · UK · IE · CA · AU</span>
+              <span class="hp-pick__chip">~$9/meal</span>
+              <span class="hp-pick__chip">Meal kit</span>
             </div>
+            <a class="hp-pick__cta" data-track="affiliate-click" data-brand="HelloFresh" data-affiliate-status="apply" href="/go/hellofresh/" rel="sponsored nofollow">View Deal</a>
           </article>
-          <article class="instant-answer-card">
-            <span>Lowest sensible price</span>
-            <h3>Start with budget boxes</h3>
-            <p>Best when price per serving matters more than premium recipes, chef-made meals, or specialist diet filters.</p>
-            <div>
-              <a class="button primary" data-decision-path="budget-meals" href="/best/cheap-meal-delivery/">See cheap options</a>
-              <a class="button text-link" data-decision-path="budget-example-everyplate" href="/reviews/everyplate/">Example: EveryPlate</a>
+
+          <article class="hp-pick" data-reveal>
+            <img class="hp-pick__img" src="assets/images/brand/cookunity.jpg" alt="CookUnity chef-made prepared meal" width="800" height="548" loading="lazy" decoding="async" />
+            <div class="hp-pick__rank">#3</div>
+            <strong>CookUnity</strong>
+            <div class="hp-pick__score">★ 8.7</div>
+            <p>Chef-made prepared meals from independent chefs. A premium pick when taste matters most.</p>
+            <div class="hp-pick__chips">
+              <span class="hp-pick__chip">US</span>
+              <span class="hp-pick__chip">~$13/meal</span>
+              <span class="hp-pick__chip">Prepared</span>
             </div>
+            <a class="hp-pick__cta" data-track="affiliate-click" data-brand="CookUnity" data-affiliate-status="apply" href="/go/cookunity/" rel="sponsored nofollow">View Deal</a>
           </article>
-          <article class="instant-answer-card">
-            <span>Fitness or macros</span>
-            <h3>Start with high-protein meals</h3>
-            <p>Best when protein, portions, calories, or meal-prep consistency matter more than recipe variety.</p>
-            <div>
-              <a class="button primary" data-decision-path="high-protein" href="/best/high-protein-meal-delivery/">See protein picks</a>
-              <a class="button text-link" data-decision-path="high-protein-us" href="/countries/us/best-high-protein-meal-prep/">US shortlist</a>
+
+          <article class="hp-pick" data-reveal>
+            <img class="hp-pick__img" src="assets/images/brand/gousto.jpg" alt="Gousto colourful home-cooked meal kit dish" width="800" height="548" loading="lazy" decoding="async" />
+            <div class="hp-pick__rank">#4</div>
+            <strong>Gousto</strong>
+            <div class="hp-pick__score">★ 8.6</div>
+            <p>Best recipe choice in the UK. Strong for households that want variety without restaurant prices.</p>
+            <div class="hp-pick__chips">
+              <span class="hp-pick__chip">UK</span>
+              <span class="hp-pick__chip">~£6/meal</span>
+              <span class="hp-pick__chip">Meal kit</span>
             </div>
+            <a class="hp-pick__cta" data-track="affiliate-click" data-brand="Gousto" data-affiliate-status="apply" href="/go/gousto/" rel="sponsored nofollow">View Deal</a>
           </article>
-          <article class="instant-answer-card">
-            <span>Family dinners</span>
-            <h3>Start with flexible servings</h3>
-            <p>Best when the real problem is feeding more than one person without repeating the same dinner every night.</p>
-            <div>
-              <a class="button primary" data-decision-path="family-meals" href="/best/meal-kits-for-families/">See family options</a>
-              <a class="button text-link" data-decision-path="kids-meals" href="/best/kids-meal-delivery/">Kids meals</a>
-            </div>
-          </article>
-          <article class="instant-answer-card">
-            <span>UK buyer</span>
-            <h3>Start with UK meal kits</h3>
-            <p>Best when delivery area and local recipe-box brands matter more than US-first recommendation lists.</p>
-            <div>
-              <a class="button primary" data-decision-path="uk-meal-kits" href="/countries/uk/best-meal-kits/">See UK kits</a>
-              <a class="button text-link" data-decision-path="uk-example-gousto" href="/reviews/gousto/">Example: Gousto</a>
-            </div>
-          </article>
+
         </div>
       </section>
 
-      <section class="country-shortcut-section" aria-labelledby="country-shortcut-heading">
-        <div class="country-shortcut-copy">
-          <span>Country first</span>
-          <h2 id="country-shortcut-heading">Meal delivery is local. Start with brands that actually serve you.</h2>
-          <p>
-            A great service in the wrong country is still the wrong answer. Choose your market first,
-            then compare format, price, and cancellation terms.
+      <!-- ── Deals strip ── -->
+      <section class="hp-deals" id="deals" aria-labelledby="hp-deals-heading">
+        <div class="hp-deals__head">
+          <span>This week</span>
+          <h2 id="hp-deals-heading">Best starting deals.</h2>
+          <p class="hp-deals__disclosure">
+            Disclosure: when you buy through our links, we may earn a commission at no extra cost to you.
           </p>
         </div>
-        <div class="country-shortcut-grid">
-          <a data-decision-path="country-us-best-meal-delivery" href="/countries/us/best-meal-delivery/">
-            <span>US</span>
-            <strong>United States</strong>
-            <small>Best meal delivery shortlist</small>
-          </a>
-          <a data-decision-path="country-uk-best-meal-delivery" href="/countries/uk/best-meal-delivery/">
-            <span>UK</span>
-            <strong>United Kingdom</strong>
-            <small>Meal kits, prepared meals, and diet plans</small>
-          </a>
-          <a data-decision-path="country-canada-best-meal-delivery" href="/countries/canada/best-meal-delivery/">
-            <span>CA</span>
-            <strong>Canada</strong>
-            <small>Canadian delivery and meal-prep options</small>
-          </a>
-          <a data-decision-path="country-australia-best-meal-delivery" href="/countries/australia/best-meal-delivery/">
-            <span>AU</span>
-            <strong>Australia</strong>
-            <small>Prepared meals, kits, and fitness meals</small>
-          </a>
-          <a data-decision-path="country-ireland-best-meal-delivery" href="/countries/ireland/best-meal-delivery/">
-            <span>IE</span>
-            <strong>Ireland</strong>
-            <small>Irish meal kits and prepared options</small>
-          </a>
+        <div class="hp-deals__grid">
+          <article class="hp-deal hp-deal--featured" data-reveal>
+            <span>HelloFresh</span>
+            <h3>Best first-box discount</h3>
+            <p>Strong recipe variety, family plans, and broad country coverage.</p>
+            <a data-track="affiliate-click" data-brand="HelloFresh" data-affiliate-status="apply" href="/go/hellofresh/" rel="sponsored nofollow">View Deal</a>
+          </article>
+          <article class="hp-deal" data-reveal>
+            <span>Factor</span>
+            <h3>Prepared meals</h3>
+            <p>No cooking, high-protein options, and simple lunch planning.</p>
+            <a data-track="affiliate-click" data-brand="Factor" data-affiliate-status="apply" href="/go/factor/" rel="sponsored nofollow">View Deal</a>
+          </article>
+          <article class="hp-deal" data-reveal>
+            <span>Gousto</span>
+            <h3>Best UK recipe choice</h3>
+            <p>Good for households that want variety without restaurant prices.</p>
+            <a data-track="affiliate-click" data-brand="Gousto" data-affiliate-status="apply" href="/go/gousto/" rel="sponsored nofollow">View Deal</a>
+          </article>
+          <article class="hp-deal" data-reveal>
+            <span>CookUnity</span>
+            <h3>Chef-made meals</h3>
+            <p>A premium pick when taste matters more than the lowest price.</p>
+            <a data-track="affiliate-click" data-brand="CookUnity" data-affiliate-status="apply" href="/go/cookunity/" rel="sponsored nofollow">View Deal</a>
+          </article>
         </div>
       </section>
 
+      <!-- ── Decision checklist (existing, keep for SEO) ── -->
       <section class="decision-checklist-section" aria-labelledby="decision-checklist-heading">
         <div class="decision-checklist-copy">
           <span>60-second rule</span>
@@ -351,305 +316,46 @@
         </ol>
       </section>
 
-      <section class="recommendation-trust-section" aria-labelledby="recommendation-trust-heading">
-        <div class="section-heading compact">
-          <span>Why trust the answer?</span>
-          <h2 id="recommendation-trust-heading">We put fit checks before brand links.</h2>
+      <!-- ── Country section ── -->
+      <section class="hp-countries" aria-labelledby="hp-countries-heading" id="countries">
+        <div class="hp-section-head">
+          <span>Country first</span>
+          <h2 id="hp-countries-heading">Meal delivery is local.</h2>
           <p>
-            Every Meal Guide can earn from some links. The public recommendation still starts with the checks that make
-            dinner easier for you.
+            A great service in the wrong country is still the wrong answer. Choose your market first,
+            then compare format, price, and cancellation terms.
           </p>
         </div>
-        <div class="recommendation-trust-grid">
-          <article>
-            <span>01</span>
-            <strong>Routine before deals</strong>
-            <p>No-cook people should see prepared meals before meal kits, even if a meal-kit discount looks louder.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <strong>Availability before hype</strong>
-            <p>A popular US brand is not useful to a UK, Ireland, Canada, or Australia visitor if delivery does not fit.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <strong>Normal price before discount</strong>
-            <p>Intro offers matter, but the real recommendation depends on week-two price, skip rules, and cancellation terms.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="starting-picks-section" aria-labelledby="starting-picks-heading">
-        <div class="section-heading compact">
-          <span>Best first clicks</span>
-          <h2 id="starting-picks-heading">If you only have one minute, start with one of these.</h2>
-          <p>These are starting lanes, not permanent winners. The right answer still depends on your country, routine, price, and delivery area.</p>
-        </div>
-        <div class="starting-picks-grid">
-          <a class="starting-pick-card" data-decision-path="first-click-prepared-factor" href="/reviews/factor/">
-            <span>No-cook starting point</span>
-            <strong>Factor-style prepared meals</strong>
-            <p>For busy weeks when ready-in-minutes matters more than cooking fresh recipes.</p>
+        <div class="hp-countries__grid">
+          <a class="hp-country" href="/countries/us/best-meal-delivery/" data-decision-path="country-us" data-reveal>
+            <span class="hp-country__flag">US</span>
+            <strong>United States</strong>
+            <small>Best meal delivery shortlist</small>
           </a>
-          <a class="starting-pick-card" data-decision-path="first-click-meal-kit-hellofresh" href="/reviews/hellofresh/">
-            <span>Cook-yourself starting point</span>
-            <strong>HelloFresh-style meal kits</strong>
-            <p>For people who still want to cook, but want the planning and shopping handled.</p>
+          <a class="hp-country" href="/countries/uk/best-meal-delivery/" data-decision-path="country-uk" data-reveal>
+            <span class="hp-country__flag">UK</span>
+            <strong>United Kingdom</strong>
+            <small>Meal kits, prepared meals, and diet plans</small>
           </a>
-          <a class="starting-pick-card" data-decision-path="first-click-budget-everyplate" href="/reviews/everyplate/">
-            <span>Budget starting point</span>
-            <strong>EveryPlate-style budget kits</strong>
-            <p>For shoppers who care most about weekly dinner cost after the intro deal.</p>
+          <a class="hp-country" href="/countries/canada/best-meal-delivery/" data-decision-path="country-ca" data-reveal>
+            <span class="hp-country__flag">CA</span>
+            <strong>Canada</strong>
+            <small>Canadian delivery and meal-prep options</small>
           </a>
-          <a class="starting-pick-card" data-decision-path="first-click-uk-gousto" href="/reviews/gousto/">
-            <span>UK starting point</span>
-            <strong>Gousto-style recipe boxes</strong>
-            <p>For UK households comparing recipe variety, servings, and flexible delivery.</p>
+          <a class="hp-country" href="/countries/australia/best-meal-delivery/" data-decision-path="country-au" data-reveal>
+            <span class="hp-country__flag">AU</span>
+            <strong>Australia</strong>
+            <small>Prepared meals, kits, and fitness meals</small>
+          </a>
+          <a class="hp-country" href="/countries/ireland/best-meal-delivery/" data-decision-path="country-ie" data-reveal>
+            <span class="hp-country__flag">IE</span>
+            <strong>Ireland</strong>
+            <small>Irish meal kits and prepared options</small>
           </a>
         </div>
       </section>
 
-      <section class="category-rail" aria-label="Popular categories">
-        <a href="/best/meal-kits/">Meal Kits</a>
-        <a href="/best/prepared-meal-delivery/">Prepared Meals</a>
-        <a href="/best/high-protein-meal-delivery/">High Protein</a>
-        <a href="/best/meal-kits-for-families/">Family</a>
-        <a href="/best/cheap-meal-delivery/">Budget</a>
-        <a href="/best/vegetarian-meal-delivery/">Vegetarian</a>
-      </section>
-
-      <section class="section band" id="deals">
-        <div class="section-heading">
-          <h2>Meal Delivery Deals Worth Checking</h2>
-          <a href="/deals/best-meal-delivery-deals/">View all deals</a>
-        </div>
-        <p class="nearby-affiliate-disclosure">
-          Disclosure: when you buy through our links, we may earn a commission at no extra cost to you.
-        </p>
-        <div class="deal-warning-grid homepage-warnings">
-          <article><span>Compare box two</span><strong>Intro discounts expire</strong><p>Look past the first order before you pick a subscription.</p></article>
-          <article><span>Pick format</span><strong>Cook or no-cook?</strong><p>Meal kits and prepared meals solve different weeknight problems.</p></article>
-          <article><span>Check region</span><strong>Delivery changes everything</strong><p>A great national pick is useless if it does not deliver locally.</p></article>
-        </div>
-        <div class="deal-grid">
-          <article class="deal-card feature">
-            <span>HelloFresh</span>
-            <h3>Best first-box discount</h3>
-            <p>Strong recipe variety, family plans, and broad country coverage.</p>
-            <a data-track="affiliate-click" data-brand="HelloFresh" data-affiliate-status="apply" href="/go/hellofresh/" rel="sponsored nofollow">View Deal</a>
-          </article>
-          <article class="deal-card">
-            <span>Factor</span>
-            <h3>Prepared meals for busy weeks</h3>
-            <p>No cooking, high-protein options, and simple lunch planning.</p>
-            <a data-track="affiliate-click" data-brand="Factor" data-affiliate-status="apply" href="/go/factor/" rel="sponsored nofollow">View Deal</a>
-          </article>
-          <article class="deal-card">
-            <span>Gousto</span>
-            <h3>Best recipe choice in the UK</h3>
-            <p>Good for households that want variety without restaurant prices.</p>
-            <a data-track="affiliate-click" data-brand="Gousto" data-affiliate-status="apply" href="/go/gousto/" rel="sponsored nofollow">View Deal</a>
-          </article>
-          <article class="deal-card">
-            <span>CookUnity</span>
-            <h3>Chef-made prepared meals</h3>
-            <p>A premium pick when taste matters more than the lowest price.</p>
-            <a data-track="affiliate-click" data-brand="CookUnity" data-affiliate-status="apply" href="/go/cookunity/" rel="sponsored nofollow">View Deal</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="proof-strip" aria-label="How Every Meal Guide ranks services">
-        <article class="proof-lead">
-          <span>Global coverage</span>
-          <strong>Broad company coverage</strong>
-          <p>Meal kits, ready meals, diet plans, grocery shortcuts, frozen dinners, and kids food are separated instead of dumped into one lazy ranking.</p>
-        </article>
-        <article>
-          <span>Reviewed for freshness</span>
-          <strong>Deal-aware rankings</strong>
-          <p>We separate the shiny first-box discount from what dinner costs after the trial.</p>
-        </article>
-        <article>
-          <span>Normal people first</span>
-          <strong>Budget, effort, diet, household</strong>
-          <p>The winner changes if you cook for one, feed kids, train hard, or hate chopping onions.</p>
-        </article>
-        <article>
-          <span>Affiliate clear</span>
-          <strong>Partner links marked</strong>
-          <p>Clicks may earn commission, but the page structure keeps editorial fit above payout.</p>
-        </article>
-      </section>
-
-      <section class="section" id="best">
-        <div class="section-heading">
-          <h2>Top Picks by Situation</h2>
-          <p>Fast verdicts for the questions people actually have before ordering.</p>
-        </div>
-        <div class="winner-grid">
-          <article>
-            <img
-              src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80"
-              alt="Fresh pasta dinner in a bowl"
-            />
-            <span>Best Meal Kit</span>
-            <h3>HelloFresh</h3>
-            <p>Best overall for broad recipe choice, first-box discounts, and easy family planning.</p>
-          </article>
-          <article>
-            <img
-              src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80"
-              alt="Prepared rice bowl meal"
-            />
-            <span>Best Prepared Meals</span>
-            <h3>Factor</h3>
-            <p>Best for people who want dinner solved without cooking or chopping.</p>
-          </article>
-          <article>
-            <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
-              alt="Family dinner table with several dishes"
-            />
-            <span>Best for Families</span>
-            <h3>Gousto</h3>
-            <p>Strong for household choice, kid-friendly meals, and weekly routine building.</p>
-          </article>
-          <article>
-            <img
-              src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80"
-              alt="Vegetables and grains prepared for dinner"
-            />
-            <span>Cheapest Option</span>
-            <h3>EveryPlate</h3>
-            <p>Best when price per serving matters more than niche diet filters.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="comparison-section" id="compare">
-        <div class="comparison-copy">
-          <h2>HelloFresh vs Gousto</h2>
-          <p>Which meal kit is better for your budget, taste, and routine?</p>
-          <div class="winner-strip">
-            <span>Budget: Gousto</span>
-            <span>Families: HelloFresh</span>
-            <span>Variety: Gousto</span>
-            <span>Fast prep: HelloFresh</span>
-          </div>
-        </div>
-
-        <div class="table-wrap" role="region" aria-label="HelloFresh versus Gousto comparison table">
-          <table>
-            <thead>
-              <tr>
-                <th>Factor</th>
-                <th>HelloFresh</th>
-                <th>Gousto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Price per serving</td>
-                <td>Mid-range</td>
-                <td>Often lower with offers</td>
-              </tr>
-              <tr>
-                <td>Prep time</td>
-                <td>20-40 minutes</td>
-                <td>20-45 minutes</td>
-              </tr>
-              <tr>
-                <td>Recipe variety</td>
-                <td>Very broad</td>
-                <td>Excellent choice</td>
-              </tr>
-              <tr>
-                <td>Family fit</td>
-                <td>Strong</td>
-                <td>Strong</td>
-              </tr>
-              <tr>
-                <td>Current deal</td>
-                <td><a data-track="affiliate-click" data-brand="HelloFresh" data-affiliate-status="apply" href="/go/hellofresh/" rel="sponsored nofollow">View Deal</a></td>
-                <td><a data-track="affiliate-click" data-brand="Gousto" data-affiliate-status="apply" href="/go/gousto/" rel="sponsored nofollow">View Deal</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="verdict-section">
-        <article>
-          <h3>Choose HelloFresh if...</h3>
-          <p>You want the easiest all-rounder with broad recipe coverage and family-friendly planning.</p>
-        </article>
-        <article>
-          <h3>Choose Gousto if...</h3>
-          <p>You care about recipe choice, flexible weekly menus, and strong UK meal-kit value.</p>
-        </article>
-        <article>
-          <h3>Choose neither if...</h3>
-          <p>You do not want to cook. Start with prepared meals like Factor or CookUnity instead.</p>
-        </article>
-      </section>
-
-      <section class="review-feature" id="reviews">
-        <div>
-          <h2>Factor Meals Review</h2>
-          <p>Honest thoughts on taste, value, nutrition, and convenience.</p>
-          <div class="score-grid">
-            <span>Taste <strong>8.7</strong></span>
-            <span>Value <strong>7.9</strong></span>
-            <span>Nutrition <strong>8.9</strong></span>
-            <span>Convenience <strong>9.5</strong></span>
-          </div>
-          <a class="button primary" data-track="affiliate-click" data-brand="Factor" data-affiliate-status="apply" href="/go/factor/" rel="sponsored nofollow">Claim Deal</a>
-          <a class="button text-link" href="/best/prepared-meal-delivery/">Compare Alternatives</a>
-        </div>
-        <aside class="review-rail">
-          <p class="rail-title">Quick Summary</p>
-          <dl>
-            <div><dt>Current deal</dt><dd>First-box offer</dd></div>
-            <div><dt>Price per meal</dt><dd>Premium</dd></div>
-            <div><dt>Prep time</dt><dd>2 minutes</dd></div>
-            <div><dt>Best for</dt><dd>Busy weeks</dd></div>
-          </dl>
-        </aside>
-      </section>
-
-      <section class="section country-section" id="countries">
-        <div class="section-heading">
-          <h2>Compare by Country</h2>
-          <p>Start global, but keep every recommendation practical by region.</p>
-        </div>
-        <div class="country-grid">
-          <a href="/countries/us/best-meal-delivery/">United States</a>
-          <a href="/countries/uk/best-meal-kits/">United Kingdom</a>
-          <a href="/countries/canada/best-meal-delivery/">Canada</a>
-          <a href="/countries/australia/best-meal-delivery/">Australia</a>
-          <a href="/countries/new-zealand/best-meal-delivery/">New Zealand</a>
-          <a href="/countries/germany/best-meal-delivery/">Germany</a>
-          <a href="/countries/france/best-meal-delivery/">France</a>
-          <a href="/countries/netherlands/best-meal-delivery/">Netherlands</a>
-          <a href="/countries/spain/best-meal-delivery/">Spain</a>
-          <a href="/countries/italy/best-meal-delivery/">Italy</a>
-          <a href="/countries/sweden/best-meal-delivery/">Sweden</a>
-          <a href="/countries/denmark/best-meal-delivery/">Denmark</a>
-          <a href="/countries/norway/best-meal-delivery/">Norway</a>
-          <a href="/countries/belgium/best-meal-delivery/">Belgium</a>
-          <a href="/countries/switzerland/best-meal-delivery/">Switzerland</a>
-          <a href="/countries/austria/best-meal-delivery/">Austria</a>
-          <a href="/countries/poland/best-meal-delivery/">Poland</a>
-          <a href="/countries/finland/best-meal-delivery/">Finland</a>
-          <a href="/countries/uae/best-meal-delivery/">UAE</a>
-          <a href="/countries/singapore/best-meal-delivery/">Singapore</a>
-          <a href="/countries/south-africa/best-meal-delivery/">South Africa</a>
-          <a href="/countries/hong-kong/best-meal-delivery/">Hong Kong</a>
-          <a href="/countries/india/best-meal-delivery/">India</a>
-        </div>
-      </section>
-
+      <!-- ── Newsletter ── -->
       <section class="newsletter">
         <h2>Get the best easy-dinner deals each week.</h2>
         <form>
@@ -657,6 +363,7 @@
           <button type="button">Join Free</button>
         </form>
       </section>
+
     </main>
 
     <footer class="footer">
@@ -670,7 +377,7 @@
         <a href="/latest-offer-checks/">Offer Checks</a>
         <a href="/methodology/">Methodology</a>
         <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
-        <a href="/company-accountability/">Company Accountability</a>
+        <a href="/countries/">Countries</a>
         <a href="/privacy/">Privacy</a>
         <a href="/contact/">Contact</a>
       </nav>
@@ -680,5 +387,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-

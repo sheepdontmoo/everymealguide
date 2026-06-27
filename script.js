@@ -1,3 +1,44 @@
+// Scroll-reveal: progressive enhancement for any page. Elements marked [data-reveal]
+// fade/rise in as they enter the viewport. Adds html.js so CSS only hides them when JS
+// is present — bots and no-JS browsers always see full content (SEO-safe).
+(function scrollReveal() {
+  var root = document.documentElement;
+  root.classList.add("js");
+
+  function start() {
+    var targets = document.querySelectorAll("[data-reveal]");
+    if (!targets.length) return;
+
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || !("IntersectionObserver" in window)) {
+      targets.forEach(function (el) { el.classList.add("is-revealed"); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-revealed");
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+
+    targets.forEach(function (el) { io.observe(el); });
+
+    // Safety net: if the observer never fires (odd viewport, webview quirks),
+    // never leave content stuck invisible — force-reveal everything after 2s.
+    window.setTimeout(function () {
+      targets.forEach(function (el) { el.classList.add("is-revealed"); });
+    }, 2000);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+
 function eventDisplayName(name) {
   return name
     .split("_")
@@ -877,3 +918,120 @@ if (companyTableShouldRender()) {
       console.warn("Every Meal Guide company table unavailable", error);
     });
 }
+
+// Mobile hamburger nav — injects toggle button, avoids editing every HTML page
+(function mobileNav() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var nav = header.querySelector('nav');
+  if (!nav) return;
+
+  var btn = document.createElement('button');
+  btn.className = 'nav-toggle';
+  btn.setAttribute('aria-label', 'Open navigation menu');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.setAttribute('aria-controls', 'site-nav');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  if (!nav.id) nav.id = 'site-nav';
+  nav.classList.add('main-nav');
+
+  // Insert before the nav CTA button
+  var cta = header.querySelector('.nav-action');
+  header.insertBefore(btn, cta || null);
+
+  function open() {
+    document.body.classList.add('nav-open');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-label', 'Close navigation menu');
+  }
+  function close() {
+    document.body.classList.remove('nav-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open navigation menu');
+  }
+
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.body.classList.contains('nav-open') ? close() : open();
+  });
+
+  // Close when a nav link is clicked
+  nav.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') close();
+  });
+
+  // Close on outside click
+  document.addEventListener('click', function(e) {
+    if (document.body.classList.contains('nav-open') && !header.contains(e.target)) close();
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') close();
+  });
+})();
+
+// vs page priority filter — builds pill bar from winner-strip data, highlights decision cards
+(function vsFilter() {
+  if (!document.body.matches('[data-page-type="comparison"]')) return;
+
+  var strip = document.querySelector('.winner-strip');
+  var cards = document.querySelector('.vs-decision-cards');
+  if (!strip || !cards) return;
+
+  // Parse "Label: Brand" pairs from winner strip spans
+  var priorities = Array.from(strip.querySelectorAll('span')).map(function(s) {
+    var parts = s.textContent.split(':');
+    if (parts.length < 2) return null;
+    var label = parts[0].trim();
+    var winner = parts[1].trim().toLowerCase();
+    // Skip ambiguous entries
+    if (winner === 'depends on routine' || winner === 'compare deals' || winner === 'either') return null;
+    return { label: label, winner: winner };
+  }).filter(Boolean);
+
+  if (!priorities.length) return;
+
+  // Build pill bar
+  var bar = document.createElement('div');
+  bar.className = 'vs-filter-bar';
+  bar.setAttribute('aria-label', 'Filter by priority');
+  var lbl = document.createElement('span');
+  lbl.className = 'vs-filter-label';
+  lbl.textContent = 'What matters most?';
+  bar.appendChild(lbl);
+
+  priorities.forEach(function(p) {
+    var btn = document.createElement('button');
+    btn.className = 'vs-filter-btn';
+    btn.textContent = p.label;
+    btn.dataset.winner = p.winner;
+    bar.appendChild(btn);
+  });
+
+  cards.before(bar);
+
+  // Highlight matching decision card on click
+  bar.addEventListener('click', function(e) {
+    var btn = e.target.closest('.vs-filter-btn');
+    if (!btn) return;
+    var winner = btn.dataset.winner;
+    var isToggle = btn.classList.contains('active');
+
+    document.querySelectorAll('.vs-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.vs-decision-cards article').forEach(function(a) {
+      a.classList.remove('is-winner', 'is-runner');
+    });
+
+    if (isToggle) return; // second click = clear
+
+    btn.classList.add('active');
+    document.querySelectorAll('.vs-decision-cards article').forEach(function(a) {
+      var label = (a.querySelector('span') || {}).textContent || '';
+      var matches = label.toLowerCase().includes(winner);
+      if (matches) a.classList.add('is-winner');
+      else if (!label.toLowerCase().includes('neither')) a.classList.add('is-runner');
+    });
+  });
+})();
+

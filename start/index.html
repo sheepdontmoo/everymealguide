@@ -9,6 +9,8 @@
       content="Answer four practical questions and get a clear meal delivery shortlist for your country, cooking style, household, and budget in under 60 seconds."
     />
     <link rel="canonical" href="https://www.everymealguide.com/start/" />
+    <meta name="theme-color" content="#ff8700" />
+    <link rel="icon" href="/assets/brand/everymealguide-mark-orange-cropped.png" type="image/png" />
     <link rel="stylesheet" href="/styles.css" />
     <style>
       .decision-start {
@@ -172,6 +174,45 @@
           position: static;
         }
       }
+
+      /* ── Progress bar ── */
+      .quiz-progress {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+      }
+      .quiz-progress-track {
+        flex: 1;
+        height: 6px;
+        background: rgba(40,32,28,0.1);
+        border-radius: 99px;
+        overflow: hidden;
+      }
+      .quiz-progress-fill {
+        height: 100%;
+        width: 0%;
+        background: #ff8700;
+        border-radius: 99px;
+        transition: width 0.4s cubic-bezier(.4,0,.2,1);
+      }
+      .quiz-progress-label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: rgba(40,32,28,0.45);
+        white-space: nowrap;
+        min-width: 80px;
+        text-align: right;
+      }
+
+      /* ── Result update flash ── */
+      @keyframes result-in {
+        from { opacity: 0.55; transform: translateY(5px); }
+        to   { opacity: 1;    transform: translateY(0); }
+      }
+      .decision-result.updating {
+        animation: result-in 0.22s ease forwards;
+      }
     </style>
     <script type="application/ld+json">
       {
@@ -189,14 +230,16 @@
         <span class="brand-mark">EM</span>
         <span>Every Meal Guide</span>
       </a>
-      <nav class="main-nav" aria-label="Primary navigation">
+      <nav aria-label="Primary navigation">
         <a href="/best/meal-delivery-services/">Top Picks</a>
-        <a href="/meal-delivery-comparisons/">Compare</a>
-        <a href="/reviews/">Reviews</a>
+        <a href="/meal-delivery-comparisons/">Compare Brands</a>
+        <a href="/best/meal-kits/">Meal Types</a>
+        <a href="/reviews/factor/">Reviews</a>
         <a href="/deals/best-meal-delivery-deals/">Deals</a>
         <a href="/countries/">Countries</a>
+        <a href="/brand-directory/">All Brands</a>
       </nav>
-      <a class="nav-action" href="/start/">Find my match</a>
+      <a class="nav-action" href="/start/">Find My Best Match</a>
     </header>
 
     <main class="decision-start">
@@ -218,6 +261,10 @@
 
       <section class="decision-start-grid" aria-label="Meal delivery recommendation builder">
         <form class="decision-builder" id="decision-builder">
+          <div class="quiz-progress" aria-label="Quiz progress">
+            <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+            <span class="quiz-progress-label" id="quiz-progress-label">0 of 4</span>
+          </div>
           <div class="decision-form-lead">
             <strong>Your first action: choose where you need delivery.</strong>
             <span>The result updates instantly. Open the shortlist after the four answers feel right.</span>
@@ -398,6 +445,11 @@
         control: "Check skip, pause, cancellation cut-off dates, and subscription settings.",
       };
 
+      const progressFill = document.querySelector("#quiz-progress-fill");
+      const progressLabel = document.querySelector("#quiz-progress-label");
+      const resultAside = document.querySelector(".decision-result");
+      const touched = new Set();
+
       function updateRecommendation() {
         const country = document.querySelector("#country").value;
         const format = document.querySelector("#format").value;
@@ -414,10 +466,24 @@
         document.querySelector("#result-primary-link").href = formatData.href;
         document.querySelector("#result-primary-link").textContent = formatData.cta || "Start with this shortlist";
         document.querySelector("#result-country-link").href = countryData[1];
+
+        resultAside.classList.remove("updating");
+        void resultAside.offsetWidth; // force reflow
+        resultAside.classList.add("updating");
       }
 
-      document.querySelector("#decision-builder").addEventListener("change", updateRecommendation);
+      document.querySelector("#decision-builder").addEventListener("change", function(e) {
+        if (e.target.tagName === "SELECT") {
+          touched.add(e.target.id);
+          const pct = Math.round(touched.size / 4 * 100);
+          progressFill.style.width = pct + "%";
+          progressLabel.textContent = touched.size + " of 4";
+        }
+        updateRecommendation();
+      });
+
       updateRecommendation();
     </script>
+    <script src="/script.js"></script>
   </body>
 </html>
