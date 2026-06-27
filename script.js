@@ -336,6 +336,29 @@ document.addEventListener("click", (event) => {
   });
 });
 
+const BRAND_LOGO_DOMAINS = {
+  "Blue Apron": "blueapron.com",
+  "Chefs Plate": "chefsplate.com",
+  CookUnity: "cookunity.com",
+  Dinnerly: "dinnerly.com",
+  EveryPlate: "everyplate.com",
+  Factor: "factor75.com",
+  Gousto: "gousto.co.uk",
+  "Green Chef": "greenchef.com",
+  HelloFresh: "hellofresh.com",
+  "Home Chef": "homechef.com",
+  Hungryroot: "hungryroot.com",
+  "Little Spoon": "littlespoon.com",
+  "Marley Spoon": "marleyspoon.com",
+  "Mindful Chef": "mindfulchef.com",
+  "My Muscle Chef": "mymusclechef.com",
+  "Purple Carrot": "purplecarrot.com",
+  Sprinly: "sprinly.com",
+  Thistle: "thistle.co",
+  Trifecta: "trifectanutrition.com",
+  Youfoodz: "youfoodz.com",
+};
+
 mountNearbyAffiliateDisclosures();
 mountBrandLogoLayer();
 
@@ -642,29 +665,6 @@ function companyTableShouldRender() {
     bodyType.includes("directory")
   );
 }
-
-const BRAND_LOGO_DOMAINS = {
-  "Blue Apron": "blueapron.com",
-  "Chefs Plate": "chefsplate.com",
-  CookUnity: "cookunity.com",
-  Dinnerly: "dinnerly.com",
-  EveryPlate: "everyplate.com",
-  Factor: "factor75.com",
-  Gousto: "gousto.co.uk",
-  "Green Chef": "greenchef.com",
-  HelloFresh: "hellofresh.com",
-  "Home Chef": "homechef.com",
-  Hungryroot: "hungryroot.com",
-  "Little Spoon": "littlespoon.com",
-  "Marley Spoon": "marleyspoon.com",
-  "Mindful Chef": "mindfulchef.com",
-  "My Muscle Chef": "mymusclechef.com",
-  "Purple Carrot": "purplecarrot.com",
-  Sprinly: "sprinly.com",
-  Thistle: "thistle.co",
-  Trifecta: "trifectanutrition.com",
-  Youfoodz: "youfoodz.com",
-};
 
 function brandLogoUrl(brand) {
   const domain = BRAND_LOGO_DOMAINS[brand];
