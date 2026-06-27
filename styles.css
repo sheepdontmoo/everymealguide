@@ -1887,6 +1887,12 @@ td:first-child {
   margin: 0;
 }
 
+.pricing-note {
+  font-size: 0.82rem;
+  color: var(--mu);
+  margin-top: 10px;
+}
+
 .route-review {
   min-height: 72vh;
 }
