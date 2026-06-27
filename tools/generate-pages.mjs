@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+﻿import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 
 const root = process.cwd();
@@ -1398,26 +1398,26 @@ function buyerSignalStrip(page) {
 
   const cards = page.type === "vs"
     ? [
-        ["Use this page when", `You are down to ${page.left} or ${page.right} and want the safer first order.`],
-        ["Main trap", "A bigger intro discount can still lose if the recipes, delivery area, or renewal price do not fit."],
-        ["Best next click", `Check ${page.left} and ${page.right} offers, then compare prepared meals if you mainly want no-cook dinners.`],
+        ["Good for", `You are down to ${page.left} or ${page.right} and want the safer first order.`],
+        ["Watch out", "A bigger intro discount can still lose if the recipes, delivery area, or renewal price do not fit."],
+        ["Best next step", `Check ${page.left} and ${page.right} offers, then compare prepared meals if you mainly want no-cook dinners.`],
       ]
     : page.type === "review"
       ? [
-          ["Use this review when", `You are considering ${page.brand} and want the practical buying risks before you click.`],
-          ["Main trap", "Do not treat a first-box deal as proof of long-term value. Check plan size and renewal terms."],
-          ["Best next click", `Open the ${page.brand} deal only after comparing at least one alternative in the same meal type.`],
+          ["Good for", `You are considering ${page.brand} and want the practical buying risks before you click.`],
+          ["Watch out", "Do not treat a first-box deal as proof of long-term value. Check plan size and renewal terms."],
+          ["Best next step", `Open the ${page.brand} deal only after comparing at least one alternative in the same meal type.`],
         ]
       : page.type === "deal" || page.type === "deals"
         ? [
-            ["Use this page when", "You want the cheapest sensible first order without getting caught by box-two pricing."],
-            ["Main trap", "The headline discount is marketing. The real decision is ongoing cost plus skip/cancel rules."],
-            ["Best next click", "Shortlist two services, check final checkout price, then choose the one you would still use at normal price."],
+            ["Good for", "You want the cheapest sensible first order without getting caught by box-two pricing."],
+            ["Watch out", "The headline discount is marketing. The real decision is ongoing cost plus skip/cancel rules."],
+            ["Best next step", "Shortlist two services, check final checkout price, then choose the one you would still use at normal price."],
           ]
         : [
-            ["Use this page when", "You want the fastest shortlist before reading long reviews or opening every offer page."],
-            ["Main trap", "Meal kits, prepared meals, and budget kits solve different problems. Do not rank them as one thing."],
-            ["Best next click", `Start with ${topBrand}, compare ${secondBrand}, then use the current deal as the tie-breaker.`],
+            ["Good for", "You want the fastest shortlist before reading long reviews or opening every offer page."],
+            ["Watch out", "Meal kits, prepared meals, and budget kits solve different problems. Do not rank them as one thing."],
+            ["Best next step", `Start with ${topBrand}, compare ${secondBrand}, then use the current deal as the tie-breaker.`],
           ];
 
   return `<section class="buyer-signal-strip" aria-label="Buying decision signals">
