@@ -1035,3 +1035,21 @@ if (companyTableShouldRender()) {
   });
 })();
 
+// ponytail: inject verified date labels on /best/ pages
+(function () {
+  function run() {
+    if (!document.querySelector('.ranking-list')) return;
+    document.querySelectorAll('.rank-main h2').forEach(function (h2) {
+      var span = document.createElement('span');
+      span.className = 'rank-verified';
+      span.textContent = 'Verified June 2026';
+      h2.insertAdjacentElement('afterend', span);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
+
