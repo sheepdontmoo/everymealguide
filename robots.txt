@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.everymealguide.com/sitemap.xml
+Sitemap: https://www.everymealguide.com/sitemap-calculators.xml
