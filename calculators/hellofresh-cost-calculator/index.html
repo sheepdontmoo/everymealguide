@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelloFresh Cost Calculator: Weekly, Monthly & Per-Meal Cost</title>
+    <meta name="description" content="Estimate your real HelloFresh weekly, monthly and annual cost using the current checkout quote, meals per week, servings, shipping and introductory discount." />
+    <link rel="canonical" href="https://www.everymealguide.com/calculators/hellofresh-cost-calculator/" />
+    <meta property="og:title" content="HelloFresh Cost Calculator" />
+    <meta property="og:description" content="Estimate your real HelloFresh weekly, monthly and annual cost using the current checkout quote, meals per week, servings, shipping and introductory discount." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.everymealguide.com/calculators/hellofresh-cost-calculator/" />
+    <meta name="theme-color" content="#ff8700" />
+    <link rel="icon" href="/assets/brand/everymealguide-mark-orange-cropped.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/assets/meal-cost-calculator.css" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"HelloFresh Cost Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","url":"https://www.everymealguide.com/calculators/hellofresh-cost-calculator/","description":"Estimate your real HelloFresh weekly, monthly and annual cost using the current checkout quote, meals per week, servings, shipping and introductory discount.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Every Meal Guide","item":"https://www.everymealguide.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://www.everymealguide.com/calculators/"},{"@type":"ListItem","position":3,"name":"HelloFresh Cost Calculator","item":"https://www.everymealguide.com/calculators/hellofresh-cost-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate the real cost of HelloFresh meal kit?","acceptedAnswer":{"@type":"Answer","text":"Multiply the recurring price per serving by the number of people and meals in the weekly box, then add shipping and recurring fees. Divide that total by the number of servings for the true delivered cost per serving."}},{"@type":"Question","name":"Should I use the introductory or recurring price?","acceptedAnswer":{"@type":"Answer","text":"Use the normal recurring per-serving price for the main comparison. Enter the introductory discount separately so you can see both the first-box and ongoing cost."}},{"@type":"Question","name":"How is the monthly estimate calculated?","acceptedAnswer":{"@type":"Answer","text":"The calculator multiplies the recurring weekly total by 52 weeks and divides by 12 months. This is more accurate for an average month than simply multiplying by four."}}]}]}</script>
+  </head>
+  <body data-page-type="calculator">
+    <a class="skip-link" href="#main">Skip to calculator</a>
+    <header class="site-header">
+      <a class="brand-mark" href="/">Every Meal Guide</a>
+      <nav aria-label="Primary navigation"><a href="/best/meal-delivery-services/">Top Picks</a><a href="/meal-delivery-comparisons/">Compare Brands</a><a href="/best/meal-kits/">Meal Types</a><a href="/reviews/factor/">Reviews</a><a href="/deals/best-meal-delivery-deals/">Deals</a><a href="/countries/">Countries</a><a href="/brand-directory/">All Brands</a></nav>
+      <a class="nav-action" href="/start/">Find My Best Match</a>
+    </header>
+    <main class="calculator-page" id="main">
+      <nav class="calculator-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/calculators/">Calculators</a><span>›</span><span>HelloFresh Cost Calculator</span></nav>
+      <section class="calculator-hero">
+        <div><span class="page-kicker">Meal-kit box cost</span><h1>HelloFresh Cost Calculator</h1><p>HelloFresh pricing changes by country, plan size and promotion. Copy the recurring per-serving amount and shipping fee from your local checkout so the result reflects the box you can actually order.</p></div>
+        <aside><strong>No stored prices</strong><p>Prices and promotions change. This calculator uses the current quote you enter and runs entirely in your browser.</p><span>Updated August 30, 2026</span></aside>
+      </section>
+      <section class="calculator-shell" aria-label="Meal delivery cost calculator">
+        <form class="calculator-form" data-meal-cost-form>
+          <div class="calculator-form__heading"><span>Your current quote</span><h2>Calculate the real delivered cost</h2><p>Use the normal price after any welcome deal. Required fields are marked.</p></div>
+          <div class="calculator-fields">
+            <label>Currency<select name="currency"><option value="USD">USD — $</option><option value="GBP">GBP — £</option><option value="EUR">EUR — €</option><option value="CAD">CAD — CA$</option><option value="AUD">AUD — A$</option></select></label>
+            <label>Recurring price per serving *<input name="price" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="e.g. 10.99" required /></label>
+            <label>People / servings per meal *<input name="people" type="number" min="1" step="1" inputmode="numeric" value="2" required /></label>
+            <label>Meals per week *<input name="meals" type="number" min="1" step="1" inputmode="numeric" value="3" required /></label>
+            <label>Weekly shipping<input name="shipping" type="number" min="0" step="0.01" inputmode="decimal" value="0" /></label>
+            <label>Other weekly fees or add-ons<input name="fees" type="number" min="0" step="0.01" inputmode="decimal" value="0" /></label>
+            <label>First-box discount (%)<input name="discount" type="number" min="0" max="100" step="0.1" inputmode="decimal" value="0" /></label>
+            <label>Your normal weekly grocery budget<input name="grocery" type="number" min="0" step="0.01" inputmode="decimal" value="0" /></label>
+          </div>
+          <p class="calculator-error" data-meal-cost-error hidden>Enter a positive price, household size and meal count. Discounts must be between 0% and 100%.</p>
+          <button class="calculator-submit" type="submit">Calculate my real cost</button>
+        </form>
+        <div class="calculator-results" data-meal-cost-results hidden aria-live="polite">
+          <div class="calculator-results__heading"><span>Recurring cost</span><h2>Your comparable total</h2><p>Based on <strong data-output="servings">0</strong> servings per week.</p></div>
+          <div class="calculator-result-grid">
+            <article><span>First box</span><strong data-output="first-box">—</strong><small>Discount applied to food, not fees</small></article>
+            <article class="primary"><span>Normal week</span><strong data-output="weekly">—</strong><small>Food, shipping and fees</small></article>
+            <article><span>True cost per serving</span><strong data-output="per-serving">—</strong><small>After delivery and fees</small></article>
+            <article><span>Average month</span><strong data-output="monthly">—</strong><small>52 weeks ÷ 12 months</small></article>
+            <article><span>Full year</span><strong data-output="annual">—</strong><small>Before skipped boxes</small></article>
+          </div>
+          <p class="calculator-comparison" data-grocery-comparison hidden></p>
+          <button class="calculator-copy" type="button" data-copy-calculation>Copy a link to this calculation</button>
+        </div>
+      </section>
+      <section class="calculator-guide">
+        <div class="section-heading"><span>How to use the answer</span><h2>Judge the repeat price, not the launch offer</h2></div>
+        <div class="calculator-guide__grid">
+          <article><span>What this measures</span><h3>The complete checkout cost</h3><p>HelloFresh sends ingredients and recipes rather than cooked meals. The calculator measures the subscription charge; pantry staples, cooking energy and your preparation time are separate.</p></article>
+          <article><span>What changes the answer</span><h3>Box size and fixed delivery fees</h3><p>The first-box price is not the long-term price. Put the undiscounted per-serving quote in the main field and the welcome percentage in the separate discount field.</p></article>
+          <article><span>Make a fair comparison</span><h3>Use identical weekly needs</h3><p>Compare the recurring result with EveryPlate or Gousto using the same number of people and recipes. That keeps a large discounted box from looking cheaper than a smaller regular box.</p></article>
+        </div>
+      </section>
+      <section class="calculator-method">
+        <h2>The formulas behind the calculator</h2>
+        <p><strong>Weekly servings</strong> = people × meals per week. <strong>Food subtotal</strong> = recurring price per serving × weekly servings. Shipping and other recurring fees are added before the true per-serving, monthly and annual figures are calculated.</p>
+        <p>The average monthly estimate uses weekly total × 52 ÷ 12. First-box discounts are applied to the food subtotal only because many services exclude delivery and extras from promotions. Check the exact offer terms before ordering.</p>
+      </section>
+      <section class="faq-section">
+        <h2>HelloFresh Cost Calculator FAQ</h2>
+        <details><summary>Which price should I enter?</summary><p>Enter the normal recurring price per serving shown for the plan you intend to order. Put the introductory percentage in the separate discount field so it does not distort the long-term total.</p></details>
+        <details><summary>Does the result include shipping?</summary><p>Yes, when you enter the delivery charge. Shipping and other recurring fees are included in the weekly total and true delivered cost per serving.</p></details>
+        <details><summary>Why is a month calculated as more than four weeks?</summary><p>A calendar year has 52 weeks. Dividing 52 by 12 gives about 4.33 weeks per average month, so multiplying by four understates a recurring weekly subscription.</p></details>
+        <details><summary>Are the prices saved?</summary><p>No. The calculation runs in your browser. If you copy a calculation link, the values are placed in that URL so you can reopen or compare it; they are not a live price feed.</p></details>
+      </section>
+      <section class="calculator-next"><div><span>Before you subscribe</span><h2>Compare cost with fit and flexibility</h2><p>A cheaper box is not better if the menu, preparation or cancellation rules do not fit your week.</p></div><a href="/reviews/hellofresh/">Read the HelloFresh review →</a></section>
+      <section class="related-links"><h2>More cost calculators</h2><div><a href="/calculators/meal-delivery-cost-calculator/">Meal Delivery Cost Calculator</a><a href="/calculators/factor-cost-calculator/">Factor Meals Cost Calculator</a><a href="/calculators/everyplate-cost-calculator/">EveryPlate Cost Calculator</a><a href="/calculators/gousto-cost-calculator/">Gousto Cost Calculator</a></div></section>
+    </main>
+    <footer class="footer"><p>Every Meal Guide</p><nav aria-label="Footer navigation"><a href="/best/meal-delivery-services/">Best</a><a href="/meal-delivery-comparisons/">Compare</a><a href="/calculators/">Calculators</a><a href="/methodology/">Methodology</a><a href="/affiliate-disclosure/">Affiliate Disclosure</a><a href="/privacy/">Privacy</a></nav><p>Affiliate links may earn us a commission. Calculator results depend on the figures you enter.</p></footer>
+    <script src="/assets/meal-cost-calculator.js" defer></script>
+  </body>
+</html>
